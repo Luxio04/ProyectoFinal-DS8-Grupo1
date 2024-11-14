@@ -73,12 +73,55 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.vb">
+    <Compile Include="FrmAdmin.Designer.vb">
+      <DependentUpon>FrmAdmin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAdmin.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="FrmCompra.Designer.vb">
+      <DependentUpon>FrmCompra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCompra.vb">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFactura.Designer.vb">
+      <DependentUpon>FrmFactura.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFactura.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmInventario.Designer.vb">
+      <DependentUpon>FrmInventario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmInventario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPedidos.Designer.vb">
+      <DependentUpon>FrmPedidos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPedidos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUser.Designer.vb">
+      <DependentUpon>FrmUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrincipal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrincipal.Designer.vb">
+      <DependentUpon>FrmPrincipal.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Models\clsCompra.vb" />
+    <Compile Include="Models\Component1.Designer.vb">
+      <DependentUpon>Component1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Component1.vb">
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -97,6 +140,21 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="FrmAdmin.resx">
+      <DependentUpon>FrmAdmin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCompra.resx">
+      <DependentUpon>FrmCompra.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFactura.resx">
+      <DependentUpon>FrmFactura.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrincipal.resx">
+      <DependentUpon>FrmPrincipal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUser.resx">
+      <DependentUpon>FrmUser.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
