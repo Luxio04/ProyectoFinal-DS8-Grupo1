@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\CESAR\\source\\repos\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6C2EF93E-392E-49DB-B9F7-B704F503A79C}|ProyectoFinal-DS8-Grupo1.vbproj|c:\\users\\cesar\\source\\repos\\proyectofinal-ds8-grupo1\\proyectofinal-ds8-grupo1\\frmadmin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{6C2EF93E-392E-49DB-B9F7-B704F503A79C}|ProyectoFinal-DS8-Grupo1.vbproj|solutionrelative:frmadmin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6C2EF93E-392E-49DB-B9F7-B704F503A79C}|ProyectoFinal-DS8-Grupo1.vbproj|c:\\users\\cesar\\source\\repos\\proyectofinal-ds8-grupo1\\proyectofinal-ds8-grupo1\\frmadmin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{6C2EF93E-392E-49DB-B9F7-B704F503A79C}|ProyectoFinal-DS8-Grupo1.vbproj|solutionrelative:frmadmin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6C2EF93E-392E-49DB-B9F7-B704F503A79C}|ProyectoFinal-DS8-Grupo1.vbproj|c:\\users\\cesar\\source\\repos\\proyectofinal-ds8-grupo1\\proyectofinal-ds8-grupo1\\frmprincipal.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{6C2EF93E-392E-49DB-B9F7-B704F503A79C}|ProyectoFinal-DS8-Grupo1.vbproj|solutionrelative:frmprincipal.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6C2EF93E-392E-49DB-B9F7-B704F503A79C}|ProyectoFinal-DS8-Grupo1.vbproj|c:\\users\\cesar\\source\\repos\\proyectofinal-ds8-grupo1\\proyectofinal-ds8-grupo1\\frmprincipal.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "AbsoluteMoniker": "D:0:0:{6C2EF93E-392E-49DB-B9F7-B704F503A79C}|ProyectoFinal-DS8-Grupo1.vbproj|C:\\Users\\CESAR\\source\\repos\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\frmprincipal.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{6C2EF93E-392E-49DB-B9F7-B704F503A79C}|ProyectoFinal-DS8-Grupo1.vbproj|solutionrelative:frmprincipal.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C2EF93E-392E-49DB-B9F7-B704F503A79C}|ProyectoFinal-DS8-Grupo1.vbproj|c:\\users\\cesar\\source\\repos\\proyectofinal-ds8-grupo1\\proyectofinal-ds8-grupo1\\models\\login\\frmcreateuser.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{6C2EF93E-392E-49DB-B9F7-B704F503A79C}|ProyectoFinal-DS8-Grupo1.vbproj|solutionrelative:models\\login\\frmcreateuser.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C2EF93E-392E-49DB-B9F7-B704F503A79C}|ProyectoFinal-DS8-Grupo1.vbproj|c:\\users\\cesar\\source\\repos\\proyectofinal-ds8-grupo1\\proyectofinal-ds8-grupo1\\models\\login\\frmcreateuser.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{6C2EF93E-392E-49DB-B9F7-B704F503A79C}|ProyectoFinal-DS8-Grupo1.vbproj|solutionrelative:models\\login\\frmcreateuser.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C2EF93E-392E-49DB-B9F7-B704F503A79C}|ProyectoFinal-DS8-Grupo1.vbproj|c:\\users\\cesar\\source\\repos\\proyectofinal-ds8-grupo1\\proyectofinal-ds8-grupo1\\models\\login\\clscreateuser.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{6C2EF93E-392E-49DB-B9F7-B704F503A79C}|ProyectoFinal-DS8-Grupo1.vbproj|solutionrelative:models\\login\\clscreateuser.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,15 +30,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "FrmPrincipal.vb [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\CESAR\\Source\\Repos\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\FrmPrincipal.vb",
+              "DocumentMoniker": "C:\\Users\\CESAR\\source\\repos\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\FrmPrincipal.vb",
               "RelativeDocumentMoniker": "FrmPrincipal.vb",
-              "ToolTip": "C:\\Users\\CESAR\\Source\\Repos\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\FrmPrincipal.vb [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\CESAR\\source\\repos\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\FrmPrincipal.vb [Dise\u00F1o]",
               "RelativeToolTip": "FrmPrincipal.vb [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2024-10-30T03:32:51.529Z",
@@ -43,40 +47,53 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FrmAdmin.vb",
-              "DocumentMoniker": "C:\\Users\\CESAR\\source\\repos\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\FrmAdmin.vb",
-              "RelativeDocumentMoniker": "FrmAdmin.vb",
-              "ToolTip": "C:\\Users\\CESAR\\source\\repos\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\FrmAdmin.vb",
-              "RelativeToolTip": "FrmAdmin.vb",
-              "ViewState": "AgIAABcAAAAAAAAAAAAAwBgAAAARAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "clsCreateUser.vb",
+              "DocumentMoniker": "C:\\Users\\CESAR\\source\\repos\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\Models\\Login\\clsCreateUser.vb",
+              "RelativeDocumentMoniker": "Models\\Login\\clsCreateUser.vb",
+              "ToolTip": "C:\\Users\\CESAR\\source\\repos\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\Models\\Login\\clsCreateUser.vb",
+              "RelativeToolTip": "Models\\Login\\clsCreateUser.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-11-14T21:28:49.212Z",
+              "WhenOpened": "2024-11-18T04:28:29.744Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FrmPrincipal.vb",
+              "DocumentMoniker": "C:\\Users\\CESAR\\source\\repos\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\FrmPrincipal.vb",
+              "RelativeDocumentMoniker": "FrmPrincipal.vb",
+              "ToolTip": "C:\\Users\\CESAR\\source\\repos\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\FrmPrincipal.vb",
+              "RelativeToolTip": "FrmPrincipal.vb",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAIwFIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-11-18T04:26:57.608Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "FrmPrincipal.vb",
-              "DocumentMoniker": "C:\\Users\\CESAR\\Source\\Repos\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\FrmPrincipal.vb",
-              "RelativeDocumentMoniker": "FrmPrincipal.vb",
-              "ToolTip": "C:\\Users\\CESAR\\Source\\Repos\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\FrmPrincipal.vb",
-              "RelativeToolTip": "FrmPrincipal.vb",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAwAAAARAAAAAAAAAA==",
+              "Title": "FrmCreateUser.vb",
+              "DocumentMoniker": "C:\\Users\\CESAR\\source\\repos\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\Models\\Login\\FrmCreateUser.vb",
+              "RelativeDocumentMoniker": "Models\\Login\\FrmCreateUser.vb",
+              "ToolTip": "C:\\Users\\CESAR\\source\\repos\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\Models\\Login\\FrmCreateUser.vb",
+              "RelativeToolTip": "Models\\Login\\FrmCreateUser.vb",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAzwC8AAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-11-14T21:26:45.894Z",
+              "WhenOpened": "2024-11-18T04:26:36.385Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FrmAdmin.vb [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\CESAR\\source\\repos\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\FrmAdmin.vb",
-              "RelativeDocumentMoniker": "FrmAdmin.vb",
-              "ToolTip": "C:\\Users\\CESAR\\source\\repos\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\FrmAdmin.vb [Dise\u00F1o]",
-              "RelativeToolTip": "FrmAdmin.vb [Dise\u00F1o]",
+              "DocumentIndex": 3,
+              "Title": "FrmCreateUser.vb [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\CESAR\\source\\repos\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\Models\\Login\\FrmCreateUser.vb",
+              "RelativeDocumentMoniker": "Models\\Login\\FrmCreateUser.vb",
+              "ToolTip": "C:\\Users\\CESAR\\source\\repos\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\Models\\Login\\FrmCreateUser.vb [Dise\u00F1o]",
+              "RelativeToolTip": "Models\\Login\\FrmCreateUser.vb [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-11-14T20:55:18.537Z",
+              "WhenOpened": "2024-11-18T03:50:07.032Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
@@ -86,6 +103,10 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             }
           ]
         }

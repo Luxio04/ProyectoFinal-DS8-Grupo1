@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class FrmPrincipal
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,86 +20,233 @@ Partial Class FrmPrincipal
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
-        Me.USERToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ADMINToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmPrincipal))
+        Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.SALIRToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.MenuStrip1.SuspendLayout()
+        Me.btnExit = New System.Windows.Forms.Button()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.btnAcceder = New System.Windows.Forms.Button()
+        Me.txtUser = New System.Windows.Forms.TextBox()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.LinkPass = New System.Windows.Forms.LinkLabel()
+        Me.LinkCrear = New System.Windows.Forms.LinkLabel()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.txtPassword = New System.Windows.Forms.TextBox()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.Panel1.SuspendLayout()
+        Me.Panel2.SuspendLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'MenuStrip1
+        'Panel1
         '
-        Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.USERToolStripMenuItem, Me.ADMINToolStripMenuItem, Me.SALIRToolStripMenuItem})
-        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
-        Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(800, 28)
-        Me.MenuStrip1.TabIndex = 0
-        Me.MenuStrip1.Text = "MenuStrip1"
-        '
-        'USERToolStripMenuItem
-        '
-        Me.USERToolStripMenuItem.Name = "USERToolStripMenuItem"
-        Me.USERToolStripMenuItem.Size = New System.Drawing.Size(58, 24)
-        Me.USERToolStripMenuItem.Text = "USER"
-        '
-        'ADMINToolStripMenuItem
-        '
-        Me.ADMINToolStripMenuItem.Name = "ADMINToolStripMenuItem"
-        Me.ADMINToolStripMenuItem.Size = New System.Drawing.Size(72, 24)
-        Me.ADMINToolStripMenuItem.Text = "ADMIN"
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(698, 12)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 1
-        Me.Button1.Text = "LOGIN"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(21, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(60, Byte), Integer))
+        Me.Panel1.Controls.Add(Me.Label1)
+        Me.Panel1.Controls.Add(Me.btnExit)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(1006, 37)
+        Me.Panel1.TabIndex = 0
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Comic Sans MS", 22.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(230, 170)
+        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.White
+        Me.Label1.Location = New System.Drawing.Point(12, 6)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(320, 52)
-        Me.Label1.TabIndex = 2
+        Me.Label1.Size = New System.Drawing.Size(132, 23)
+        Me.Label1.TabIndex = 1
         Me.Label1.Text = "Smart Inventory"
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
-        'SALIRToolStripMenuItem
+        'btnExit
         '
-        Me.SALIRToolStripMenuItem.Name = "SALIRToolStripMenuItem"
-        Me.SALIRToolStripMenuItem.Size = New System.Drawing.Size(61, 24)
-        Me.SALIRToolStripMenuItem.Text = "SALIR"
+        Me.btnExit.BackgroundImage = CType(resources.GetObject("btnExit.BackgroundImage"), System.Drawing.Image)
+        Me.btnExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.btnExit.Dock = System.Windows.Forms.DockStyle.Right
+        Me.btnExit.FlatAppearance.BorderSize = 0
+        Me.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnExit.Location = New System.Drawing.Point(952, 0)
+        Me.btnExit.Name = "btnExit"
+        Me.btnExit.Size = New System.Drawing.Size(54, 37)
+        Me.btnExit.TabIndex = 0
+        Me.btnExit.UseVisualStyleBackColor = True
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.ForeColor = System.Drawing.Color.White
+        Me.Label2.Location = New System.Drawing.Point(153, 28)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(100, 20)
+        Me.Label2.TabIndex = 1
+        Me.Label2.Text = "Inicio Seccion"
+        '
+        'btnAcceder
+        '
+        Me.btnAcceder.BackColor = System.Drawing.Color.Gray
+        Me.btnAcceder.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.btnAcceder.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.btnAcceder.Location = New System.Drawing.Point(129, 252)
+        Me.btnAcceder.Name = "btnAcceder"
+        Me.btnAcceder.Size = New System.Drawing.Size(138, 37)
+        Me.btnAcceder.TabIndex = 2
+        Me.btnAcceder.Text = "Acceder"
+        Me.btnAcceder.UseVisualStyleBackColor = False
+        '
+        'txtUser
+        '
+        Me.txtUser.Location = New System.Drawing.Point(76, 93)
+        Me.txtUser.Name = "txtUser"
+        Me.txtUser.Size = New System.Drawing.Size(268, 27)
+        Me.txtUser.TabIndex = 3
+        '
+        'Panel2
+        '
+        Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(21, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(60, Byte), Integer))
+        Me.Panel2.Controls.Add(Me.PictureBox2)
+        Me.Panel2.Controls.Add(Me.PictureBox1)
+        Me.Panel2.Controls.Add(Me.LinkPass)
+        Me.Panel2.Controls.Add(Me.LinkCrear)
+        Me.Panel2.Controls.Add(Me.Label4)
+        Me.Panel2.Controls.Add(Me.Label3)
+        Me.Panel2.Controls.Add(Me.Label2)
+        Me.Panel2.Controls.Add(Me.btnAcceder)
+        Me.Panel2.Controls.Add(Me.txtPassword)
+        Me.Panel2.Controls.Add(Me.txtUser)
+        Me.Panel2.Location = New System.Drawing.Point(321, 112)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(389, 339)
+        Me.Panel2.TabIndex = 4
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox2.BackgroundImage = CType(resources.GetObject("PictureBox2.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.PictureBox2.Location = New System.Drawing.Point(30, 158)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(40, 36)
+        Me.PictureBox2.TabIndex = 5
+        Me.PictureBox2.TabStop = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.PictureBox1.Location = New System.Drawing.Point(30, 84)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(40, 36)
+        Me.PictureBox1.TabIndex = 5
+        Me.PictureBox1.TabStop = False
+        '
+        'LinkPass
+        '
+        Me.LinkPass.AutoSize = True
+        Me.LinkPass.LinkColor = System.Drawing.Color.Brown
+        Me.LinkPass.Location = New System.Drawing.Point(138, 213)
+        Me.LinkPass.Name = "LinkPass"
+        Me.LinkPass.Size = New System.Drawing.Size(163, 20)
+        Me.LinkPass.TabIndex = 4
+        Me.LinkPass.TabStop = True
+        Me.LinkPass.Text = "¿Restaurar Contraseña?"
+        '
+        'LinkCrear
+        '
+        Me.LinkCrear.AutoSize = True
+        Me.LinkCrear.LinkColor = System.Drawing.Color.Brown
+        Me.LinkCrear.Location = New System.Drawing.Point(138, 304)
+        Me.LinkCrear.Name = "LinkCrear"
+        Me.LinkCrear.Size = New System.Drawing.Size(145, 20)
+        Me.LinkCrear.TabIndex = 4
+        Me.LinkCrear.TabStop = True
+        Me.LinkCrear.Text = "Crear Nuevo Usuario"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.ForeColor = System.Drawing.Color.White
+        Me.Label4.Location = New System.Drawing.Point(81, 144)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(83, 20)
+        Me.Label4.TabIndex = 1
+        Me.Label4.Text = "Contraseña"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.ForeColor = System.Drawing.Color.White
+        Me.Label3.Location = New System.Drawing.Point(81, 70)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(59, 20)
+        Me.Label3.TabIndex = 1
+        Me.Label3.Text = "Usuario"
+        '
+        'txtPassword
+        '
+        Me.txtPassword.Location = New System.Drawing.Point(76, 167)
+        Me.txtPassword.Name = "txtPassword"
+        Me.txtPassword.Size = New System.Drawing.Size(268, 27)
+        Me.txtPassword.TabIndex = 3
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
+        Me.PictureBox3.Location = New System.Drawing.Point(0, 0)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(1006, 531)
+        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox3.TabIndex = 5
+        Me.PictureBox3.TabStop = False
         '
         'FrmPrincipal
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.MenuStrip1)
-        Me.MainMenuStrip = Me.MenuStrip1
+        Me.ClientSize = New System.Drawing.Size(1006, 531)
+        Me.Controls.Add(Me.Panel2)
+        Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.PictureBox3)
+        Me.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Name = "FrmPrincipal"
-        Me.Text = "Proyecto Semestral"
-        Me.MenuStrip1.ResumeLayout(False)
-        Me.MenuStrip1.PerformLayout()
+        Me.Text = "Y"
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
+        Me.Panel2.ResumeLayout(False)
+        Me.Panel2.PerformLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents MenuStrip1 As MenuStrip
-    Friend WithEvents USERToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ADMINToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents Button1 As Button
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents btnExit As Button
     Friend WithEvents Label1 As Label
-    Friend WithEvents SALIRToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents Label2 As Label
+    Friend WithEvents btnAcceder As Button
+    Friend WithEvents txtUser As TextBox
+    Friend WithEvents Panel2 As Panel
+    Friend WithEvents txtPassword As TextBox
+    Friend WithEvents LinkPass As LinkLabel
+    Friend WithEvents LinkCrear As LinkLabel
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents PictureBox3 As PictureBox
 End Class
