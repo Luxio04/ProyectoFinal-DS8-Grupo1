@@ -73,7 +73,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="clsProducto.vb" />
+    <Compile Include="clsInventario.vb" />
     <Compile Include="FrmAdmin.Designer.vb">
       <DependentUpon>FrmAdmin.vb</DependentUpon>
     </Compile>
@@ -92,10 +92,10 @@
     <Compile Include="FrmFactura.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmProducto.Designer.vb">
-      <DependentUpon>FrmProducto.vb</DependentUpon>
+    <Compile Include="FrmInventario.Designer.vb">
+      <DependentUpon>FrmInventario.vb</DependentUpon>
     </Compile>
-    <Compile Include="FrmProducto.vb">
+    <Compile Include="FrmInventario.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmPedidos.Designer.vb">
@@ -150,8 +150,8 @@
     <EmbeddedResource Include="FrmFactura.resx">
       <DependentUpon>FrmFactura.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmProducto.resx">
-      <DependentUpon>FrmProducto.vb</DependentUpon>
+    <EmbeddedResource Include="FrmInventario.resx">
+      <DependentUpon>FrmInventario.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPrincipal.resx">
       <DependentUpon>FrmPrincipal.vb</DependentUpon>

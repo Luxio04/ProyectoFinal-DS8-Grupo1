@@ -1,6 +1,6 @@
 ﻿Imports System.Data.SqlClient
 Imports System.Configuration
-Public Class clsProducto
+Public Class clsInventario
     Private connectionString As String = My.Settings.ConexionBD
 
     ' Inserta un nuevo producto en la base de datos.

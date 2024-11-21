@@ -1,11 +1,11 @@
-﻿Public Class FrmProducto
+﻿Public Class FrmInventario
     Private Sub FrmInventario_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ' Cargar datos iniciales en el DataGridView
         LeerRegistros()
     End Sub
 
     Private Sub btnCrear_Click(sender As Object, e As EventArgs) Handles btnCrear.Click
-        Dim objConsulta As New clsProducto
+        Dim objConsulta As New clsInventario
         Dim mensaje As String
 
         ' Validar campos
@@ -26,7 +26,7 @@
             Return
         End If
 
-        Dim objConsulta As New clsProducto
+        Dim objConsulta As New clsInventario
         Dim mensaje As String
 
         ' Validar campos
@@ -72,7 +72,7 @@
 
     Private Sub LeerRegistros()
         ' Cargar los registros en el DataGridView
-        Dim objConsulta As New clsProducto
+        Dim objConsulta As New clsInventario
         Dim table As DataTable = objConsulta.LeerProductos()
         dgvProductos.DataSource = table
     End Sub
@@ -89,7 +89,7 @@
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        Dim objConsulta As New clsProducto
+        Dim objConsulta As New clsInventario
         Dim mensaje As String
 
         ' Validar si se ha seleccionado un producto en el DataGridView
@@ -109,5 +109,10 @@
 
         ' Actualizar DataGridView después de eliminar
         LeerRegistros()
+    End Sub
+
+    Private Sub VolverToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles VolverToolStripMenuItem.Click
+        FrmAdmin.Show()
+        Me.Hide()
     End Sub
 End Class

@@ -18,7 +18,6 @@ C:\Users\lucia\OneDrive\Escritorio\ProyectoFinal-DS8-Grupo1\ProyectoFinal-DS8-Gr
 C:\Users\lucia\OneDrive\Escritorio\ProyectoFinal-DS8-Grupo1\ProyectoFinal-DS8-Grupo1\obj\Debug\ProyectoFinal_DS8_Grupo1.FrmAdmin.resources
 C:\Users\lucia\OneDrive\Escritorio\ProyectoFinal-DS8-Grupo1\ProyectoFinal-DS8-Grupo1\obj\Debug\ProyectoFinal_DS8_Grupo1.FrmCompra.resources
 C:\Users\lucia\OneDrive\Escritorio\ProyectoFinal-DS8-Grupo1\ProyectoFinal-DS8-Grupo1\obj\Debug\ProyectoFinal_DS8_Grupo1.FrmFactura.resources
-C:\Users\lucia\OneDrive\Escritorio\ProyectoFinal-DS8-Grupo1\ProyectoFinal-DS8-Grupo1\obj\Debug\ProyectoFinal_DS8_Grupo1.FrmProducto.resources
 C:\Users\lucia\OneDrive\Escritorio\ProyectoFinal-DS8-Grupo1\ProyectoFinal-DS8-Grupo1\obj\Debug\ProyectoFinal_DS8_Grupo1.FrmPrincipal.resources
 C:\Users\lucia\OneDrive\Escritorio\ProyectoFinal-DS8-Grupo1\ProyectoFinal-DS8-Grupo1\obj\Debug\ProyectoFinal_DS8_Grupo1.FrmUser.resources
 C:\Users\lucia\OneDrive\Escritorio\ProyectoFinal-DS8-Grupo1\ProyectoFinal-DS8-Grupo1\obj\Debug\ProyectoFinal_DS8_Grupo1.Resources.resources
@@ -31,3 +30,4 @@ C:\Users\lucia\OneDrive\Escritorio\ProyectoFinal-DS8-Grupo1\ProyectoFinal-DS8-Gr
 C:\Users\lucia\OneDrive\Escritorio\ProyectoFinal-DS8-Grupo1\ProyectoFinal-DS8-Grupo1\bin\Debug\ProyectoFinal-DS8-Grupo1.exe
 C:\Users\lucia\OneDrive\Escritorio\ProyectoFinal-DS8-Grupo1\ProyectoFinal-DS8-Grupo1\bin\Debug\ProyectoFinal-DS8-Grupo1.pdb
 C:\Users\lucia\OneDrive\Escritorio\ProyectoFinal-DS8-Grupo1\ProyectoFinal-DS8-Grupo1\bin\Debug\ProyectoFinal-DS8-Grupo1.xml
+C:\Users\lucia\OneDrive\Escritorio\ProyectoFinal-DS8-Grupo1\ProyectoFinal-DS8-Grupo1\obj\Debug\ProyectoFinal_DS8_Grupo1.FrmInventario.resources

@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class FrmProducto
+Partial Class FrmInventario
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -100,6 +100,7 @@ Partial Class FrmProducto
         Me.txtID.Name = "txtID"
         Me.txtID.Size = New System.Drawing.Size(100, 20)
         Me.txtID.TabIndex = 6
+        Me.txtID.Visible = False
         '
         'txtNomProduct
         '
@@ -164,10 +165,11 @@ Partial Class FrmProducto
         Me.VolverToolStripMenuItem.Size = New System.Drawing.Size(51, 20)
         Me.VolverToolStripMenuItem.Text = "Volver"
         '
-        'FrmProducto
+        'FrmInventario
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
@@ -184,7 +186,7 @@ Partial Class FrmProducto
         Me.Controls.Add(Me.btnCrear)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
-        Me.Name = "FrmProducto"
+        Me.Name = "FrmInventario"
         Me.Text = "FrmInventario"
         CType(Me.dgvProductos, System.ComponentModel.ISupportInitialize).EndInit()
         Me.MenuStrip1.ResumeLayout(False)

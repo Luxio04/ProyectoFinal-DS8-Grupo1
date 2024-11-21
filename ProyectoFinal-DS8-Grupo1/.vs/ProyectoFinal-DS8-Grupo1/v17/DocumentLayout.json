@@ -3,6 +3,30 @@
   "WorkspaceRootPath": "C:\\Users\\lucia\\OneDrive\\Escritorio\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{6C2EF93E-392E-49DB-B9F7-B704F503A79C}|ProyectoFinal-DS8-Grupo1.vbproj|C:\\Users\\lucia\\OneDrive\\Escritorio\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\frmadmin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{6C2EF93E-392E-49DB-B9F7-B704F503A79C}|ProyectoFinal-DS8-Grupo1.vbproj|solutionrelative:frmadmin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C2EF93E-392E-49DB-B9F7-B704F503A79C}|ProyectoFinal-DS8-Grupo1.vbproj|c:\\users\\lucia\\onedrive\\escritorio\\proyectofinal-ds8-grupo1\\proyectofinal-ds8-grupo1\\clsinventario.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{6C2EF93E-392E-49DB-B9F7-B704F503A79C}|ProyectoFinal-DS8-Grupo1.vbproj|solutionrelative:clsinventario.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C2EF93E-392E-49DB-B9F7-B704F503A79C}|ProyectoFinal-DS8-Grupo1.vbproj|c:\\users\\lucia\\onedrive\\escritorio\\proyectofinal-ds8-grupo1\\proyectofinal-ds8-grupo1\\frminventario.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{6C2EF93E-392E-49DB-B9F7-B704F503A79C}|ProyectoFinal-DS8-Grupo1.vbproj|solutionrelative:frminventario.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C2EF93E-392E-49DB-B9F7-B704F503A79C}|ProyectoFinal-DS8-Grupo1.vbproj|c:\\users\\lucia\\onedrive\\escritorio\\proyectofinal-ds8-grupo1\\proyectofinal-ds8-grupo1\\frminventario.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{6C2EF93E-392E-49DB-B9F7-B704F503A79C}|ProyectoFinal-DS8-Grupo1.vbproj|solutionrelative:frminventario.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C2EF93E-392E-49DB-B9F7-B704F503A79C}|ProyectoFinal-DS8-Grupo1.vbproj|C:\\Users\\lucia\\OneDrive\\Escritorio\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\frmprincipal.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{6C2EF93E-392E-49DB-B9F7-B704F503A79C}|ProyectoFinal-DS8-Grupo1.vbproj|solutionrelative:frmprincipal.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C2EF93E-392E-49DB-B9F7-B704F503A79C}|ProyectoFinal-DS8-Grupo1.vbproj|C:\\Users\\lucia\\OneDrive\\Escritorio\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\frmprincipal.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{6C2EF93E-392E-49DB-B9F7-B704F503A79C}|ProyectoFinal-DS8-Grupo1.vbproj|solutionrelative:frmprincipal.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6C2EF93E-392E-49DB-B9F7-B704F503A79C}|ProyectoFinal-DS8-Grupo1.vbproj|c:\\users\\lucia\\onedrive\\escritorio\\proyectofinal-ds8-grupo1\\proyectofinal-ds8-grupo1\\my project\\settings.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}",
       "RelativeMoniker": "D:0:0:{6C2EF93E-392E-49DB-B9F7-B704F503A79C}|ProyectoFinal-DS8-Grupo1.vbproj|solutionrelative:my project\\settings.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}"
     },
@@ -18,32 +42,8 @@
       "RelativeMoniker": "D:0:0:{6C2EF93E-392E-49DB-B9F7-B704F503A79C}|ProyectoFinal-DS8-Grupo1.vbproj|solutionrelative:frmadmin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6C2EF93E-392E-49DB-B9F7-B704F503A79C}|ProyectoFinal-DS8-Grupo1.vbproj|C:\\Users\\lucia\\OneDrive\\Escritorio\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\frmprincipal.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{6C2EF93E-392E-49DB-B9F7-B704F503A79C}|ProyectoFinal-DS8-Grupo1.vbproj|solutionrelative:frmprincipal.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\lucia\\OneDrive\\Escritorio\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\bin\\Debug\\ProyectoFinal-DS8-Grupo1.exe||{177559E0-D141-11D0-92DF-00A0C9138C45}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:bin\\Debug\\ProyectoFinal-DS8-Grupo1.exe||{177559E0-D141-11D0-92DF-00A0C9138C45}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6C2EF93E-392E-49DB-B9F7-B704F503A79C}|ProyectoFinal-DS8-Grupo1.vbproj|C:\\Users\\lucia\\OneDrive\\Escritorio\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\frmproducto.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{6C2EF93E-392E-49DB-B9F7-B704F503A79C}|ProyectoFinal-DS8-Grupo1.vbproj|solutionrelative:frmproducto.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6C2EF93E-392E-49DB-B9F7-B704F503A79C}|ProyectoFinal-DS8-Grupo1.vbproj|C:\\Users\\lucia\\OneDrive\\Escritorio\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\frmadmin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{6C2EF93E-392E-49DB-B9F7-B704F503A79C}|ProyectoFinal-DS8-Grupo1.vbproj|solutionrelative:frmadmin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6C2EF93E-392E-49DB-B9F7-B704F503A79C}|ProyectoFinal-DS8-Grupo1.vbproj|C:\\Users\\lucia\\OneDrive\\Escritorio\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\frmprincipal.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{6C2EF93E-392E-49DB-B9F7-B704F503A79C}|ProyectoFinal-DS8-Grupo1.vbproj|solutionrelative:frmprincipal.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6C2EF93E-392E-49DB-B9F7-B704F503A79C}|ProyectoFinal-DS8-Grupo1.vbproj|C:\\Users\\lucia\\OneDrive\\Escritorio\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\clsproducto.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{6C2EF93E-392E-49DB-B9F7-B704F503A79C}|ProyectoFinal-DS8-Grupo1.vbproj|solutionrelative:clsproducto.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6C2EF93E-392E-49DB-B9F7-B704F503A79C}|ProyectoFinal-DS8-Grupo1.vbproj|C:\\Users\\lucia\\OneDrive\\Escritorio\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\frmproducto.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{6C2EF93E-392E-49DB-B9F7-B704F503A79C}|ProyectoFinal-DS8-Grupo1.vbproj|solutionrelative:frmproducto.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6C2EF93E-392E-49DB-B9F7-B704F503A79C}|ProyectoFinal-DS8-Grupo1.vbproj|C:\\Users\\lucia\\OneDrive\\Escritorio\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\frmuser.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
@@ -61,11 +61,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 5,
               "Title": "FrmPrincipal.vb [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\lucia\\OneDrive\\Escritorio\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\FrmPrincipal.vb",
               "RelativeDocumentMoniker": "FrmPrincipal.vb",
@@ -73,11 +73,20 @@
               "RelativeToolTip": "FrmPrincipal.vb [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2024-10-30T03:32:51.529Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "ProyectoFinal-DS8-Grupo1.exe",
               "DocumentMoniker": "C:\\Users\\lucia\\OneDrive\\Escritorio\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\bin\\Debug\\ProyectoFinal-DS8-Grupo1.exe",
               "RelativeDocumentMoniker": "bin\\Debug\\ProyectoFinal-DS8-Grupo1.exe",
@@ -99,7 +108,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "Settings.settings",
               "DocumentMoniker": "C:\\Users\\lucia\\OneDrive\\Escritorio\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\My Project\\Settings.settings",
               "RelativeDocumentMoniker": "My Project\\Settings.settings",
@@ -110,16 +119,8 @@
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "ProyectoFinal-DS8-Grupo1",
               "DocumentMoniker": "C:\\Users\\lucia\\OneDrive\\Escritorio\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1.vbproj",
               "RelativeDocumentMoniker": "ProyectoFinal-DS8-Grupo1.vbproj",
@@ -130,30 +131,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
               "Title": "FrmAdmin.vb",
               "DocumentMoniker": "C:\\Users\\lucia\\OneDrive\\Escritorio\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\FrmAdmin.vb",
               "RelativeDocumentMoniker": "FrmAdmin.vb",
-              "ToolTip": "C:\\Users\\lucia\\OneDrive\\Escritorio\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\FrmAdmin.vb",
-              "RelativeToolTip": "FrmAdmin.vb",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAIAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\lucia\\OneDrive\\Escritorio\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\FrmAdmin.vb*",
+              "RelativeToolTip": "FrmAdmin.vb*",
+              "ViewState": "AgIAAAQAAAAAAAAAAADgvxwAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-11-14T21:28:49.212Z"
+              "WhenOpened": "2024-11-14T21:28:49.212Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "FrmProducto.vb [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\lucia\\OneDrive\\Escritorio\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\FrmProducto.vb",
-              "RelativeDocumentMoniker": "FrmProducto.vb",
-              "ToolTip": "C:\\Users\\lucia\\OneDrive\\Escritorio\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\FrmProducto.vb [Dise\u00F1o]",
-              "RelativeToolTip": "FrmProducto.vb [Dise\u00F1o]",
+              "DocumentIndex": 3,
+              "Title": "FrmInventario.vb [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\lucia\\OneDrive\\Escritorio\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\FrmInventario.vb",
+              "RelativeDocumentMoniker": "FrmInventario.vb",
+              "ToolTip": "C:\\Users\\lucia\\OneDrive\\Escritorio\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\FrmInventario.vb [Dise\u00F1o]",
+              "RelativeToolTip": "FrmInventario.vb [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-11-14T22:55:15.399Z"
+              "WhenOpened": "2024-11-14T22:55:15.399Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "App.config",
               "DocumentMoniker": "C:\\Users\\lucia\\OneDrive\\Escritorio\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\App.config",
               "RelativeDocumentMoniker": "App.config",
@@ -161,32 +164,33 @@
               "RelativeToolTip": "App.config",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-11-14T23:47:46.467Z",
+              "WhenOpened": "2024-11-14T23:47:46.467Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "clsInventario.vb",
+              "DocumentMoniker": "C:\\Users\\lucia\\OneDrive\\Escritorio\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\clsInventario.vb",
+              "RelativeDocumentMoniker": "clsInventario.vb",
+              "ToolTip": "C:\\Users\\lucia\\OneDrive\\Escritorio\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\clsInventario.vb",
+              "RelativeToolTip": "clsInventario.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD4AAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-11-14T23:34:36.598Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "clsProducto.vb",
-              "DocumentMoniker": "C:\\Users\\lucia\\OneDrive\\Escritorio\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\clsProducto.vb",
-              "RelativeDocumentMoniker": "clsProducto.vb",
-              "ToolTip": "C:\\Users\\lucia\\OneDrive\\Escritorio\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\clsProducto.vb",
-              "RelativeToolTip": "clsProducto.vb",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD4AAAA7AAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "FrmInventario.vb",
+              "DocumentMoniker": "C:\\Users\\lucia\\OneDrive\\Escritorio\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\FrmInventario.vb",
+              "RelativeDocumentMoniker": "FrmInventario.vb",
+              "ToolTip": "C:\\Users\\lucia\\OneDrive\\Escritorio\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\FrmInventario.vb",
+              "RelativeToolTip": "FrmInventario.vb",
+              "ViewState": "AgIAAF4AAAAAAAAAAAAYwHUAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-11-14T23:34:36.598Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "FrmProducto.vb",
-              "DocumentMoniker": "C:\\Users\\lucia\\OneDrive\\Escritorio\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\FrmProducto.vb",
-              "RelativeDocumentMoniker": "FrmProducto.vb",
-              "ToolTip": "C:\\Users\\lucia\\OneDrive\\Escritorio\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\FrmProducto.vb",
-              "RelativeToolTip": "FrmProducto.vb",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-11-14T22:57:04.473Z"
+              "WhenOpened": "2024-11-14T22:57:04.473Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -207,20 +211,22 @@
               "RelativeDocumentMoniker": "FrmPrincipal.vb",
               "ToolTip": "C:\\Users\\lucia\\OneDrive\\Escritorio\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\FrmPrincipal.vb",
               "RelativeToolTip": "FrmPrincipal.vb",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-11-14T21:26:45.894Z"
+              "WhenOpened": "2024-11-14T21:26:45.894Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
               "Title": "FrmAdmin.vb [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\lucia\\OneDrive\\Escritorio\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\FrmAdmin.vb",
               "RelativeDocumentMoniker": "FrmAdmin.vb",
-              "ToolTip": "C:\\Users\\lucia\\OneDrive\\Escritorio\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\FrmAdmin.vb [Dise\u00F1o]",
-              "RelativeToolTip": "FrmAdmin.vb [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\lucia\\OneDrive\\Escritorio\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\FrmAdmin.vb [Dise\u00F1o]*",
+              "RelativeToolTip": "FrmAdmin.vb [Dise\u00F1o]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-11-14T20:55:18.537Z"
+              "WhenOpened": "2024-11-14T20:55:18.537Z",
+              "EditorCaption": " [Dise\u00F1o]"
             }
           ]
         }
