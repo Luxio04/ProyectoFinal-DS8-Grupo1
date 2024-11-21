@@ -26,7 +26,7 @@
     End Sub
 
     Private Sub BtnInvetario_Click(sender As Object, e As EventArgs) Handles BtnInvetario.Click
-        FrmInventario.Show()
+        FrmProducto.Show()
         Me.Hide()
     End Sub
 
