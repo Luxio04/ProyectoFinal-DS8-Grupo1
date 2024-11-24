@@ -148,6 +148,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Models\Login\FrmRecuperacion.resx">
+      <DependentUpon>FrmRecuperacion.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\ADMIN\FrmAdmin.resx">
       <DependentUpon>FrmAdmin.vb</DependentUpon>
     </EmbeddedResource>
