@@ -1,5 +1,5 @@
 ﻿Public Class FrmCompra
-    Private Sub VOLVERToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles VOLVERToolStripMenuItem.Click
+    Private Sub VOLVERToolStripMenuItem_Click(sender As Object, e As EventArgs)
         FrmUser.Show()
         Me.Close()
 

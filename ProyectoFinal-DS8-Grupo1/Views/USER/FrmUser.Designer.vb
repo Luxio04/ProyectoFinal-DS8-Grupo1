@@ -22,64 +22,172 @@ Partial Class FrmUser
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmUser))
+        Me.PanelManuPrinc = New System.Windows.Forms.Panel()
+        Me.PanelLogo = New System.Windows.Forms.Panel()
+        Me.PanelForms = New System.Windows.Forms.Panel()
+        Me.BtnCatalogo = New System.Windows.Forms.Button()
+        Me.BtnCompra = New System.Windows.Forms.Button()
+        Me.BtnFactura = New System.Windows.Forms.Button()
+        Me.BtnSalir = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.PictureFondo = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
-        Me.RealizarCompraToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.VOLVERToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.MenuStrip1.SuspendLayout()
+        Me.PanelManuPrinc.SuspendLayout()
+        Me.PanelLogo.SuspendLayout()
+        Me.PanelForms.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureFondo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
+        '
+        'PanelManuPrinc
+        '
+        Me.PanelManuPrinc.BackColor = System.Drawing.Color.FromArgb(CType(CType(21, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(60, Byte), Integer))
+        Me.PanelManuPrinc.Controls.Add(Me.BtnSalir)
+        Me.PanelManuPrinc.Controls.Add(Me.BtnFactura)
+        Me.PanelManuPrinc.Controls.Add(Me.BtnCompra)
+        Me.PanelManuPrinc.Controls.Add(Me.BtnCatalogo)
+        Me.PanelManuPrinc.Controls.Add(Me.PanelLogo)
+        Me.PanelManuPrinc.Dock = System.Windows.Forms.DockStyle.Left
+        Me.PanelManuPrinc.Location = New System.Drawing.Point(0, 0)
+        Me.PanelManuPrinc.Name = "PanelManuPrinc"
+        Me.PanelManuPrinc.Size = New System.Drawing.Size(260, 669)
+        Me.PanelManuPrinc.TabIndex = 0
+        '
+        'PanelLogo
+        '
+        Me.PanelLogo.Controls.Add(Me.PictureBox1)
+        Me.PanelLogo.Dock = System.Windows.Forms.DockStyle.Top
+        Me.PanelLogo.Location = New System.Drawing.Point(0, 0)
+        Me.PanelLogo.Name = "PanelLogo"
+        Me.PanelLogo.Size = New System.Drawing.Size(260, 143)
+        Me.PanelLogo.TabIndex = 1
+        '
+        'PanelForms
+        '
+        Me.PanelForms.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(153, Byte), Integer))
+        Me.PanelForms.Controls.Add(Me.Label1)
+        Me.PanelForms.Controls.Add(Me.PictureFondo)
+        Me.PanelForms.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelForms.Location = New System.Drawing.Point(260, 0)
+        Me.PanelForms.Name = "PanelForms"
+        Me.PanelForms.Size = New System.Drawing.Size(1093, 669)
+        Me.PanelForms.TabIndex = 1
+        '
+        'BtnCatalogo
+        '
+        Me.BtnCatalogo.Dock = System.Windows.Forms.DockStyle.Top
+        Me.BtnCatalogo.FlatAppearance.BorderSize = 0
+        Me.BtnCatalogo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnCatalogo.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnCatalogo.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(79, Byte), Integer))
+        Me.BtnCatalogo.Location = New System.Drawing.Point(0, 143)
+        Me.BtnCatalogo.Name = "BtnCatalogo"
+        Me.BtnCatalogo.Size = New System.Drawing.Size(260, 80)
+        Me.BtnCatalogo.TabIndex = 0
+        Me.BtnCatalogo.Text = "CATALOGO"
+        Me.BtnCatalogo.UseVisualStyleBackColor = True
+        '
+        'BtnCompra
+        '
+        Me.BtnCompra.Dock = System.Windows.Forms.DockStyle.Top
+        Me.BtnCompra.FlatAppearance.BorderSize = 0
+        Me.BtnCompra.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnCompra.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnCompra.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(79, Byte), Integer))
+        Me.BtnCompra.Location = New System.Drawing.Point(0, 223)
+        Me.BtnCompra.Name = "BtnCompra"
+        Me.BtnCompra.Size = New System.Drawing.Size(260, 80)
+        Me.BtnCompra.TabIndex = 0
+        Me.BtnCompra.Text = "COMPRAR"
+        Me.BtnCompra.UseVisualStyleBackColor = True
+        '
+        'BtnFactura
+        '
+        Me.BtnFactura.Dock = System.Windows.Forms.DockStyle.Top
+        Me.BtnFactura.FlatAppearance.BorderSize = 0
+        Me.BtnFactura.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnFactura.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnFactura.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(79, Byte), Integer))
+        Me.BtnFactura.Location = New System.Drawing.Point(0, 303)
+        Me.BtnFactura.Name = "BtnFactura"
+        Me.BtnFactura.Size = New System.Drawing.Size(260, 80)
+        Me.BtnFactura.TabIndex = 0
+        Me.BtnFactura.Text = "FACTURA"
+        Me.BtnFactura.UseVisualStyleBackColor = True
+        '
+        'BtnSalir
+        '
+        Me.BtnSalir.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.BtnSalir.FlatAppearance.BorderSize = 0
+        Me.BtnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnSalir.Font = New System.Drawing.Font("Times New Roman", 10.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnSalir.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(79, Byte), Integer))
+        Me.BtnSalir.Location = New System.Drawing.Point(0, 619)
+        Me.BtnSalir.Name = "BtnSalir"
+        Me.BtnSalir.Size = New System.Drawing.Size(260, 50)
+        Me.BtnSalir.TabIndex = 0
+        Me.BtnSalir.Text = "Cerrar Session"
+        Me.BtnSalir.UseVisualStyleBackColor = True
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(53, 6)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(160, 137)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 0
+        Me.PictureBox1.TabStop = False
+        '
+        'PictureFondo
+        '
+        Me.PictureFondo.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PictureFondo.Location = New System.Drawing.Point(0, 0)
+        Me.PictureFondo.Name = "PictureFondo"
+        Me.PictureFondo.Size = New System.Drawing.Size(1093, 669)
+        Me.PictureFondo.TabIndex = 0
+        Me.PictureFondo.TabStop = False
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Comic Sans MS", 19.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(274, 185)
+        Me.Label1.Font = New System.Drawing.Font("Times New Roman", 22.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(79, Byte), Integer))
+        Me.Label1.Location = New System.Drawing.Point(412, 301)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(277, 47)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Bienvenido User"
-        '
-        'MenuStrip1
-        '
-        Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RealizarCompraToolStripMenuItem, Me.VOLVERToolStripMenuItem})
-        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
-        Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(800, 28)
-        Me.MenuStrip1.TabIndex = 1
-        Me.MenuStrip1.Text = "MenuStrip1"
-        '
-        'RealizarCompraToolStripMenuItem
-        '
-        Me.RealizarCompraToolStripMenuItem.Name = "RealizarCompraToolStripMenuItem"
-        Me.RealizarCompraToolStripMenuItem.Size = New System.Drawing.Size(133, 24)
-        Me.RealizarCompraToolStripMenuItem.Text = "Realizar Compra"
-        '
-        'VOLVERToolStripMenuItem
-        '
-        Me.VOLVERToolStripMenuItem.Name = "VOLVERToolStripMenuItem"
-        Me.VOLVERToolStripMenuItem.Size = New System.Drawing.Size(75, 24)
-        Me.VOLVERToolStripMenuItem.Text = "VOLVER"
+        Me.Label1.Size = New System.Drawing.Size(268, 43)
+        Me.Label1.TabIndex = 2
+        Me.Label1.Text = "Smart Inventory"
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'FrmUser
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.MenuStrip1)
-        Me.MainMenuStrip = Me.MenuStrip1
+        Me.ClientSize = New System.Drawing.Size(1353, 669)
+        Me.Controls.Add(Me.PanelForms)
+        Me.Controls.Add(Me.PanelManuPrinc)
         Me.Name = "FrmUser"
         Me.Text = "USUARIO"
-        Me.MenuStrip1.ResumeLayout(False)
-        Me.MenuStrip1.PerformLayout()
+        Me.PanelManuPrinc.ResumeLayout(False)
+        Me.PanelLogo.ResumeLayout(False)
+        Me.PanelForms.ResumeLayout(False)
+        Me.PanelForms.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureFondo, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
 
+    Friend WithEvents PanelManuPrinc As Panel
+    Friend WithEvents PanelLogo As Panel
+    Friend WithEvents BtnCatalogo As Button
+    Friend WithEvents PanelForms As Panel
+    Friend WithEvents BtnSalir As Button
+    Friend WithEvents BtnFactura As Button
+    Friend WithEvents BtnCompra As Button
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents PictureFondo As PictureBox
     Friend WithEvents Label1 As Label
-    Friend WithEvents MenuStrip1 As MenuStrip
-    Friend WithEvents RealizarCompraToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents VOLVERToolStripMenuItem As ToolStripMenuItem
 End Class

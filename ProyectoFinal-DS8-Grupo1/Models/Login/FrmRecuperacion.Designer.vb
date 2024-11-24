@@ -24,13 +24,13 @@ Partial Class FrmRecuperacion
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmRecuperacion))
         Me.PanelSalida = New System.Windows.Forms.Panel()
-        Me.BtnSalir = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.BtnSalir = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.txtCorreo = New System.Windows.Forms.TextBox()
         Me.BtnEnviar = New System.Windows.Forms.Button()
+        Me.txtCorreo = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.PictureBoxFondo = New System.Windows.Forms.PictureBox()
         Me.PanelSalida.SuspendLayout()
         Me.Panel1.SuspendLayout()
@@ -48,18 +48,6 @@ Partial Class FrmRecuperacion
         Me.PanelSalida.Size = New System.Drawing.Size(1006, 37)
         Me.PanelSalida.TabIndex = 0
         '
-        'BtnSalir
-        '
-        Me.BtnSalir.BackgroundImage = CType(resources.GetObject("BtnSalir.BackgroundImage"), System.Drawing.Image)
-        Me.BtnSalir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.BtnSalir.Dock = System.Windows.Forms.DockStyle.Right
-        Me.BtnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnSalir.Location = New System.Drawing.Point(905, 0)
-        Me.BtnSalir.Name = "BtnSalir"
-        Me.BtnSalir.Size = New System.Drawing.Size(101, 37)
-        Me.BtnSalir.TabIndex = 0
-        Me.BtnSalir.UseVisualStyleBackColor = True
-        '
         'Label1
         '
         Me.Label1.AutoSize = True
@@ -72,6 +60,18 @@ Partial Class FrmRecuperacion
         Me.Label1.Text = "Smart Inventory"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
+        'BtnSalir
+        '
+        Me.BtnSalir.BackgroundImage = CType(resources.GetObject("BtnSalir.BackgroundImage"), System.Drawing.Image)
+        Me.BtnSalir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.BtnSalir.Dock = System.Windows.Forms.DockStyle.Right
+        Me.BtnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnSalir.Location = New System.Drawing.Point(905, 0)
+        Me.BtnSalir.Name = "BtnSalir"
+        Me.BtnSalir.Size = New System.Drawing.Size(101, 37)
+        Me.BtnSalir.TabIndex = 0
+        Me.BtnSalir.UseVisualStyleBackColor = True
+        '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(21, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(60, Byte), Integer))
@@ -83,35 +83,6 @@ Partial Class FrmRecuperacion
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(431, 332)
         Me.Panel1.TabIndex = 1
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Times New Roman", 10.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(79, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(106, 55)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(218, 20)
-        Me.Label2.TabIndex = 0
-        Me.Label2.Text = "Recuperación De Contraseña"
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(79, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(32, 123)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(273, 19)
-        Me.Label3.TabIndex = 1
-        Me.Label3.Text = "Ingrese El Correo De Recuperación"
-        '
-        'txtCorreo
-        '
-        Me.txtCorreo.Location = New System.Drawing.Point(40, 173)
-        Me.txtCorreo.Name = "txtCorreo"
-        Me.txtCorreo.Size = New System.Drawing.Size(351, 22)
-        Me.txtCorreo.TabIndex = 2
         '
         'BtnEnviar
         '
@@ -126,8 +97,38 @@ Partial Class FrmRecuperacion
         Me.BtnEnviar.Text = "Enviar Solicitud"
         Me.BtnEnviar.UseVisualStyleBackColor = True
         '
+        'txtCorreo
+        '
+        Me.txtCorreo.Location = New System.Drawing.Point(40, 173)
+        Me.txtCorreo.Name = "txtCorreo"
+        Me.txtCorreo.Size = New System.Drawing.Size(351, 22)
+        Me.txtCorreo.TabIndex = 2
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(79, Byte), Integer))
+        Me.Label3.Location = New System.Drawing.Point(32, 123)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(273, 19)
+        Me.Label3.TabIndex = 1
+        Me.Label3.Text = "Ingrese El Correo De Recuperación"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Times New Roman", 10.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(79, Byte), Integer))
+        Me.Label2.Location = New System.Drawing.Point(106, 55)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(218, 20)
+        Me.Label2.TabIndex = 0
+        Me.Label2.Text = "Recuperación De Contraseña"
+        '
         'PictureBoxFondo
         '
+        Me.PictureBoxFondo.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(153, Byte), Integer))
         Me.PictureBoxFondo.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PictureBoxFondo.Location = New System.Drawing.Point(0, 0)
         Me.PictureBoxFondo.Name = "PictureBoxFondo"

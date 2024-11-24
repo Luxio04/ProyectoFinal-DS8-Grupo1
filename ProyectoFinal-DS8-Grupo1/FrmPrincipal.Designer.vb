@@ -60,7 +60,7 @@ Partial Class FrmPrincipal
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.White
+        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(79, Byte), Integer))
         Me.Label1.Location = New System.Drawing.Point(12, 6)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(132, 23)
@@ -84,19 +84,23 @@ Partial Class FrmPrincipal
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(153, 28)
+        Me.Label2.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(79, Byte), Integer))
+        Me.Label2.Location = New System.Drawing.Point(137, 28)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(100, 20)
+        Me.Label2.Size = New System.Drawing.Size(103, 20)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Inicio Seccion"
         '
         'btnAcceder
         '
-        Me.btnAcceder.BackColor = System.Drawing.Color.Gray
+        Me.btnAcceder.BackColor = System.Drawing.Color.Transparent
         Me.btnAcceder.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.btnAcceder.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.btnAcceder.Location = New System.Drawing.Point(129, 252)
+        Me.btnAcceder.FlatAppearance.BorderSize = 0
+        Me.btnAcceder.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnAcceder.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAcceder.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(79, Byte), Integer))
+        Me.btnAcceder.Location = New System.Drawing.Point(113, 252)
         Me.btnAcceder.Name = "btnAcceder"
         Me.btnAcceder.Size = New System.Drawing.Size(138, 37)
         Me.btnAcceder.TabIndex = 2
@@ -105,7 +109,7 @@ Partial Class FrmPrincipal
         '
         'txtUser
         '
-        Me.txtUser.Location = New System.Drawing.Point(76, 93)
+        Me.txtUser.Location = New System.Drawing.Point(60, 93)
         Me.txtUser.Name = "txtUser"
         Me.txtUser.Size = New System.Drawing.Size(268, 27)
         Me.txtUser.TabIndex = 3
@@ -123,7 +127,7 @@ Partial Class FrmPrincipal
         Me.Panel2.Controls.Add(Me.btnAcceder)
         Me.Panel2.Controls.Add(Me.txtPassword)
         Me.Panel2.Controls.Add(Me.txtUser)
-        Me.Panel2.Location = New System.Drawing.Point(321, 112)
+        Me.Panel2.Location = New System.Drawing.Point(309, 112)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(389, 339)
         Me.Panel2.TabIndex = 4
@@ -133,7 +137,7 @@ Partial Class FrmPrincipal
         Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox2.BackgroundImage = CType(resources.GetObject("PictureBox2.BackgroundImage"), System.Drawing.Image)
         Me.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.PictureBox2.Location = New System.Drawing.Point(30, 158)
+        Me.PictureBox2.Location = New System.Drawing.Point(13, 158)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(40, 36)
         Me.PictureBox2.TabIndex = 5
@@ -144,7 +148,7 @@ Partial Class FrmPrincipal
         Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
         Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.PictureBox1.Location = New System.Drawing.Point(30, 84)
+        Me.PictureBox1.Location = New System.Drawing.Point(13, 84)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(40, 36)
         Me.PictureBox1.TabIndex = 5
@@ -154,7 +158,7 @@ Partial Class FrmPrincipal
         '
         Me.LinkPass.AutoSize = True
         Me.LinkPass.LinkColor = System.Drawing.Color.Brown
-        Me.LinkPass.Location = New System.Drawing.Point(138, 213)
+        Me.LinkPass.Location = New System.Drawing.Point(122, 213)
         Me.LinkPass.Name = "LinkPass"
         Me.LinkPass.Size = New System.Drawing.Size(163, 20)
         Me.LinkPass.TabIndex = 4
@@ -165,7 +169,7 @@ Partial Class FrmPrincipal
         '
         Me.LinkCrear.AutoSize = True
         Me.LinkCrear.LinkColor = System.Drawing.Color.Brown
-        Me.LinkCrear.Location = New System.Drawing.Point(138, 304)
+        Me.LinkCrear.Location = New System.Drawing.Point(122, 304)
         Me.LinkCrear.Name = "LinkCrear"
         Me.LinkCrear.Size = New System.Drawing.Size(145, 20)
         Me.LinkCrear.TabIndex = 4
@@ -175,26 +179,28 @@ Partial Class FrmPrincipal
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(81, 144)
+        Me.Label4.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(79, Byte), Integer))
+        Me.Label4.Location = New System.Drawing.Point(64, 144)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(83, 20)
+        Me.Label4.Size = New System.Drawing.Size(88, 20)
         Me.Label4.TabIndex = 1
         Me.Label4.Text = "Contraseña"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(81, 70)
+        Me.Label3.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(79, Byte), Integer))
+        Me.Label3.Location = New System.Drawing.Point(64, 70)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(59, 20)
+        Me.Label3.Size = New System.Drawing.Size(63, 20)
         Me.Label3.TabIndex = 1
         Me.Label3.Text = "Usuario"
         '
         'txtPassword
         '
-        Me.txtPassword.Location = New System.Drawing.Point(76, 167)
+        Me.txtPassword.Location = New System.Drawing.Point(60, 167)
         Me.txtPassword.Name = "txtPassword"
         Me.txtPassword.Size = New System.Drawing.Size(268, 27)
         Me.txtPassword.TabIndex = 3

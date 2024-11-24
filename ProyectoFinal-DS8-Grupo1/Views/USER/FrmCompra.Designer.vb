@@ -22,8 +22,7 @@ Partial Class FrmCompra
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
-        Me.VOLVERToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmCompra))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
@@ -31,31 +30,18 @@ Partial Class FrmCompra
         Me.BntQuitar = New System.Windows.Forms.Button()
         Me.BntCompra = New System.Windows.Forms.Button()
         Me.BntFactura = New System.Windows.Forms.Button()
-        Me.MenuStrip1.SuspendLayout()
+        Me.PanelSALIR = New System.Windows.Forms.Panel()
+        Me.BtnCerrar = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.PanelSALIR.SuspendLayout()
         Me.SuspendLayout()
-        '
-        'MenuStrip1
-        '
-        Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.VOLVERToolStripMenuItem})
-        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
-        Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(800, 28)
-        Me.MenuStrip1.TabIndex = 0
-        Me.MenuStrip1.Text = "MenuStrip1"
-        '
-        'VOLVERToolStripMenuItem
-        '
-        Me.VOLVERToolStripMenuItem.Name = "VOLVERToolStripMenuItem"
-        Me.VOLVERToolStripMenuItem.Size = New System.Drawing.Size(75, 24)
-        Me.VOLVERToolStripMenuItem.Text = "VOLVER"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Comic Sans MS", 22.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(234, 54)
+        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(79, Byte), Integer))
+        Me.Label1.Location = New System.Drawing.Point(377, 54)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(320, 52)
         Me.Label1.TabIndex = 3
@@ -64,63 +50,106 @@ Partial Class FrmCompra
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(13, 139)
+        Me.Label2.Font = New System.Drawing.Font("Times New Roman", 10.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(79, Byte), Integer))
+        Me.Label2.Location = New System.Drawing.Point(9, 160)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(224, 16)
+        Me.Label2.Size = New System.Drawing.Size(261, 20)
         Me.Label2.TabIndex = 4
         Me.Label2.Text = "Seleccione los productos y cantidad"
         '
         'DataGridView1
         '
+        Me.DataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(145, Byte), Integer), CType(CType(113, Byte), Integer), CType(CType(83, Byte), Integer))
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Location = New System.Drawing.Point(12, 198)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowHeadersWidth = 51
         Me.DataGridView1.RowTemplate.Height = 24
-        Me.DataGridView1.Size = New System.Drawing.Size(526, 210)
+        Me.DataGridView1.Size = New System.Drawing.Size(866, 412)
         Me.DataGridView1.TabIndex = 5
         '
         'BtnAgregar
         '
-        Me.BtnAgregar.Location = New System.Drawing.Point(604, 198)
+        Me.BtnAgregar.FlatAppearance.BorderSize = 0
+        Me.BtnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnAgregar.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnAgregar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(79, Byte), Integer))
+        Me.BtnAgregar.Location = New System.Drawing.Point(906, 198)
         Me.BtnAgregar.Name = "BtnAgregar"
-        Me.BtnAgregar.Size = New System.Drawing.Size(142, 39)
+        Me.BtnAgregar.Size = New System.Drawing.Size(142, 50)
         Me.BtnAgregar.TabIndex = 6
         Me.BtnAgregar.Text = "Agregar Producto"
         Me.BtnAgregar.UseVisualStyleBackColor = True
         '
         'BntQuitar
         '
-        Me.BntQuitar.Location = New System.Drawing.Point(604, 254)
+        Me.BntQuitar.FlatAppearance.BorderSize = 0
+        Me.BntQuitar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BntQuitar.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BntQuitar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(79, Byte), Integer))
+        Me.BntQuitar.Location = New System.Drawing.Point(906, 276)
         Me.BntQuitar.Name = "BntQuitar"
-        Me.BntQuitar.Size = New System.Drawing.Size(142, 36)
+        Me.BntQuitar.Size = New System.Drawing.Size(142, 50)
         Me.BntQuitar.TabIndex = 7
         Me.BntQuitar.Text = "Quitar Producto"
         Me.BntQuitar.UseVisualStyleBackColor = True
         '
         'BntCompra
         '
-        Me.BntCompra.Location = New System.Drawing.Point(604, 305)
+        Me.BntCompra.FlatAppearance.BorderSize = 0
+        Me.BntCompra.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BntCompra.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BntCompra.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(79, Byte), Integer))
+        Me.BntCompra.Location = New System.Drawing.Point(906, 355)
         Me.BntCompra.Name = "BntCompra"
-        Me.BntCompra.Size = New System.Drawing.Size(142, 41)
+        Me.BntCompra.Size = New System.Drawing.Size(142, 50)
         Me.BntCompra.TabIndex = 8
         Me.BntCompra.Text = "Compra"
         Me.BntCompra.UseVisualStyleBackColor = True
         '
         'BntFactura
         '
-        Me.BntFactura.Location = New System.Drawing.Point(604, 368)
+        Me.BntFactura.FlatAppearance.BorderSize = 0
+        Me.BntFactura.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BntFactura.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BntFactura.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(79, Byte), Integer))
+        Me.BntFactura.Location = New System.Drawing.Point(906, 433)
         Me.BntFactura.Name = "BntFactura"
-        Me.BntFactura.Size = New System.Drawing.Size(142, 40)
+        Me.BntFactura.Size = New System.Drawing.Size(142, 50)
         Me.BntFactura.TabIndex = 9
         Me.BntFactura.Text = "Ver Factura"
         Me.BntFactura.UseVisualStyleBackColor = True
+        '
+        'PanelSALIR
+        '
+        Me.PanelSALIR.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(153, Byte), Integer))
+        Me.PanelSALIR.Controls.Add(Me.BtnCerrar)
+        Me.PanelSALIR.Dock = System.Windows.Forms.DockStyle.Top
+        Me.PanelSALIR.Location = New System.Drawing.Point(0, 0)
+        Me.PanelSALIR.Name = "PanelSALIR"
+        Me.PanelSALIR.Size = New System.Drawing.Size(1093, 37)
+        Me.PanelSALIR.TabIndex = 10
+        '
+        'BtnCerrar
+        '
+        Me.BtnCerrar.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(153, Byte), Integer))
+        Me.BtnCerrar.BackgroundImage = CType(resources.GetObject("BtnCerrar.BackgroundImage"), System.Drawing.Image)
+        Me.BtnCerrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.BtnCerrar.Dock = System.Windows.Forms.DockStyle.Left
+        Me.BtnCerrar.Location = New System.Drawing.Point(0, 0)
+        Me.BtnCerrar.Name = "BtnCerrar"
+        Me.BtnCerrar.Size = New System.Drawing.Size(120, 37)
+        Me.BtnCerrar.TabIndex = 0
+        Me.BtnCerrar.UseVisualStyleBackColor = False
         '
         'FrmCompra
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(153, Byte), Integer))
+        Me.ClientSize = New System.Drawing.Size(1093, 669)
+        Me.Controls.Add(Me.PanelSALIR)
         Me.Controls.Add(Me.BntFactura)
         Me.Controls.Add(Me.BntCompra)
         Me.Controls.Add(Me.BntQuitar)
@@ -128,20 +157,15 @@ Partial Class FrmCompra
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.MenuStrip1)
-        Me.MainMenuStrip = Me.MenuStrip1
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "FrmCompra"
         Me.Text = "FrmCompra"
-        Me.MenuStrip1.ResumeLayout(False)
-        Me.MenuStrip1.PerformLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.PanelSALIR.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents MenuStrip1 As MenuStrip
-    Friend WithEvents VOLVERToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents DataGridView1 As DataGridView
@@ -149,4 +173,6 @@ Partial Class FrmCompra
     Friend WithEvents BntQuitar As Button
     Friend WithEvents BntCompra As Button
     Friend WithEvents BntFactura As Button
+    Friend WithEvents PanelSALIR As Panel
+    Friend WithEvents BtnCerrar As Button
 End Class

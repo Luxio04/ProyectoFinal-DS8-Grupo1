@@ -29,10 +29,12 @@ Partial Class FrmCreateUser
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.txtPass = New System.Windows.Forms.TextBox()
         Me.txtUserName = New System.Windows.Forms.TextBox()
+        Me.txtTelefono = New System.Windows.Forms.TextBox()
         Me.txtDireccion = New System.Windows.Forms.TextBox()
         Me.txtCorreo = New System.Windows.Forms.TextBox()
         Me.txtApellido = New System.Windows.Forms.TextBox()
         Me.txtNombre = New System.Windows.Forms.TextBox()
+        Me.Label9 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -42,8 +44,6 @@ Partial Class FrmCreateUser
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.txtTelefono = New System.Windows.Forms.TextBox()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -123,6 +123,13 @@ Partial Class FrmCreateUser
         Me.txtUserName.Size = New System.Drawing.Size(291, 22)
         Me.txtUserName.TabIndex = 2
         '
+        'txtTelefono
+        '
+        Me.txtTelefono.Location = New System.Drawing.Point(376, 181)
+        Me.txtTelefono.Name = "txtTelefono"
+        Me.txtTelefono.Size = New System.Drawing.Size(291, 22)
+        Me.txtTelefono.TabIndex = 2
+        '
         'txtDireccion
         '
         Me.txtDireccion.Location = New System.Drawing.Point(204, 242)
@@ -151,11 +158,22 @@ Partial Class FrmCreateUser
         Me.txtNombre.Size = New System.Drawing.Size(291, 22)
         Me.txtNombre.TabIndex = 2
         '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Times New Roman", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(79, Byte), Integer))
+        Me.Label9.Location = New System.Drawing.Point(372, 161)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(92, 17)
+        Me.Label9.TabIndex = 0
+        Me.Label9.Text = "TELEFONO"
+        '
         'Label7
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Times New Roman", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.ForeColor = System.Drawing.Color.White
+        Me.Label7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(79, Byte), Integer))
         Me.Label7.Location = New System.Drawing.Point(374, 300)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(114, 17)
@@ -166,7 +184,7 @@ Partial Class FrmCreateUser
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Times New Roman", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.ForeColor = System.Drawing.Color.White
+        Me.Label8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(79, Byte), Integer))
         Me.Label8.Location = New System.Drawing.Point(200, 222)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(97, 17)
@@ -177,7 +195,7 @@ Partial Class FrmCreateUser
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Times New Roman", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.ForeColor = System.Drawing.Color.White
+        Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(79, Byte), Integer))
         Me.Label6.Location = New System.Drawing.Point(26, 300)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(177, 17)
@@ -188,7 +206,7 @@ Partial Class FrmCreateUser
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Times New Roman", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.ForeColor = System.Drawing.Color.White
+        Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(79, Byte), Integer))
         Me.Label5.Location = New System.Drawing.Point(25, 161)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(75, 17)
@@ -199,7 +217,7 @@ Partial Class FrmCreateUser
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Times New Roman", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.ForeColor = System.Drawing.Color.White
+        Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(79, Byte), Integer))
         Me.Label4.Location = New System.Drawing.Point(374, 72)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(87, 17)
@@ -211,7 +229,7 @@ Partial Class FrmCreateUser
         Me.BntRegistrar.FlatAppearance.BorderSize = 0
         Me.BntRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BntRegistrar.Font = New System.Drawing.Font("Times New Roman", 10.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BntRegistrar.ForeColor = System.Drawing.Color.White
+        Me.BntRegistrar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(79, Byte), Integer))
         Me.BntRegistrar.Location = New System.Drawing.Point(287, 377)
         Me.BntRegistrar.Name = "BntRegistrar"
         Me.BntRegistrar.Size = New System.Drawing.Size(121, 43)
@@ -223,7 +241,7 @@ Partial Class FrmCreateUser
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Times New Roman", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.Color.White
+        Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(79, Byte), Integer))
         Me.Label3.Location = New System.Drawing.Point(25, 72)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(78, 17)
@@ -234,7 +252,7 @@ Partial Class FrmCreateUser
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.White
+        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(79, Byte), Integer))
         Me.Label2.Location = New System.Drawing.Point(259, 26)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(176, 19)
@@ -251,24 +269,6 @@ Partial Class FrmCreateUser
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 2
         Me.PictureBox1.TabStop = False
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Times New Roman", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.ForeColor = System.Drawing.Color.White
-        Me.Label9.Location = New System.Drawing.Point(372, 161)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(92, 17)
-        Me.Label9.TabIndex = 0
-        Me.Label9.Text = "TELEFONO"
-        '
-        'txtTelefono
-        '
-        Me.txtTelefono.Location = New System.Drawing.Point(376, 181)
-        Me.txtTelefono.Name = "txtTelefono"
-        Me.txtTelefono.Size = New System.Drawing.Size(291, 22)
-        Me.txtTelefono.TabIndex = 2
         '
         'FrmCreateUser
         '
