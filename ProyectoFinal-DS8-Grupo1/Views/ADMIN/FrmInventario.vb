@@ -1,35 +1,4 @@
 ﻿Public Class FrmInventario
-    Private Sub VolverToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles VolverToolStripMenuItem.Click
-        Me.Hide()
-        FrmAdmin.Show()
-    End Sub
-
-    Private Sub CategoriaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CategoriaToolStripMenuItem.Click
-        Me.Hide()
-        FrmCategoria.Show()
-    End Sub
-
-    Private Sub ColaboradorToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ColaboradorToolStripMenuItem.Click
-        Me.Hide()
-        FrmCategoria.Show()
-    End Sub
-
-    Private Sub PedidoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PedidoToolStripMenuItem.Click
-        Me.Hide()
-        FrmPedidos.Show()
-    End Sub
-
-    Private Sub ProveedorToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ProveedorToolStripMenuItem.Click
-        Me.Hide()
-        FrmProveedor.Show()
-    End Sub
-
-    Private Sub ReportesToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ReportesToolStripMenuItem.Click
-        Me.Hide()
-        FrmReportes.Show()
-    End Sub
-
-
     Private Sub btnAgregar_Click(sender As Object, e As EventArgs) Handles btnAgregar.Click
         Dim objConsulta As New clsInventario
         Dim mensaje As String
@@ -98,7 +67,7 @@
         MessageBox.Show(mensaje)
 
         ' Actualiza el DataGridView
-        leerinventario()
+        leerInventario()
 
         ' Limpiar los campos
         LimpiarCampos()
@@ -232,4 +201,7 @@
         End If
     End Sub
 
+    Private Sub btnLimpiar_Click(sender As Object, e As EventArgs) Handles btnLimpiar.Click
+        LimpiarCampos()
+    End Sub
 End Class

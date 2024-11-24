@@ -34,14 +34,6 @@ Partial Class FrmInventario
         Me.txtDescripcion = New System.Windows.Forms.TextBox()
         Me.txtPrecio = New System.Windows.Forms.TextBox()
         Me.txtStock = New System.Windows.Forms.TextBox()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
-        Me.MenuToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.CategoriaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ColaboradorToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.PedidoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ProveedorToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ReportesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.VolverToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.dtpIngreso = New System.Windows.Forms.DateTimePicker()
         Me.dgvInventario = New System.Windows.Forms.DataGridView()
         Me.cbxProveedor = New System.Windows.Forms.ComboBox()
@@ -51,7 +43,7 @@ Partial Class FrmInventario
         Me.btnEliminar = New System.Windows.Forms.Button()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.cbxCategoria = New System.Windows.Forms.ComboBox()
-        Me.MenuStrip1.SuspendLayout()
+        Me.btnLimpiar = New System.Windows.Forms.Button()
         CType(Me.dgvInventario, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -154,58 +146,6 @@ Partial Class FrmInventario
         Me.txtStock.Size = New System.Drawing.Size(100, 20)
         Me.txtStock.TabIndex = 12
         '
-        'MenuStrip1
-        '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MenuToolStripMenuItem, Me.VolverToolStripMenuItem})
-        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
-        Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(800, 24)
-        Me.MenuStrip1.TabIndex = 13
-        Me.MenuStrip1.Text = "Volver"
-        '
-        'MenuToolStripMenuItem
-        '
-        Me.MenuToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CategoriaToolStripMenuItem, Me.ColaboradorToolStripMenuItem, Me.PedidoToolStripMenuItem, Me.ProveedorToolStripMenuItem, Me.ReportesToolStripMenuItem})
-        Me.MenuToolStripMenuItem.Name = "MenuToolStripMenuItem"
-        Me.MenuToolStripMenuItem.Size = New System.Drawing.Size(50, 20)
-        Me.MenuToolStripMenuItem.Text = "Menu"
-        '
-        'CategoriaToolStripMenuItem
-        '
-        Me.CategoriaToolStripMenuItem.Name = "CategoriaToolStripMenuItem"
-        Me.CategoriaToolStripMenuItem.Size = New System.Drawing.Size(140, 22)
-        Me.CategoriaToolStripMenuItem.Text = "Categoria"
-        '
-        'ColaboradorToolStripMenuItem
-        '
-        Me.ColaboradorToolStripMenuItem.Name = "ColaboradorToolStripMenuItem"
-        Me.ColaboradorToolStripMenuItem.Size = New System.Drawing.Size(140, 22)
-        Me.ColaboradorToolStripMenuItem.Text = "Colaborador"
-        '
-        'PedidoToolStripMenuItem
-        '
-        Me.PedidoToolStripMenuItem.Name = "PedidoToolStripMenuItem"
-        Me.PedidoToolStripMenuItem.Size = New System.Drawing.Size(140, 22)
-        Me.PedidoToolStripMenuItem.Text = "Pedido"
-        '
-        'ProveedorToolStripMenuItem
-        '
-        Me.ProveedorToolStripMenuItem.Name = "ProveedorToolStripMenuItem"
-        Me.ProveedorToolStripMenuItem.Size = New System.Drawing.Size(140, 22)
-        Me.ProveedorToolStripMenuItem.Text = "Proveedor"
-        '
-        'ReportesToolStripMenuItem
-        '
-        Me.ReportesToolStripMenuItem.Name = "ReportesToolStripMenuItem"
-        Me.ReportesToolStripMenuItem.Size = New System.Drawing.Size(140, 22)
-        Me.ReportesToolStripMenuItem.Text = "Reportes"
-        '
-        'VolverToolStripMenuItem
-        '
-        Me.VolverToolStripMenuItem.Name = "VolverToolStripMenuItem"
-        Me.VolverToolStripMenuItem.Size = New System.Drawing.Size(51, 20)
-        Me.VolverToolStripMenuItem.Text = "Volver"
-        '
         'dtpIngreso
         '
         Me.dtpIngreso.Location = New System.Drawing.Point(40, 120)
@@ -243,7 +183,7 @@ Partial Class FrmInventario
         '
         'btnModificar
         '
-        Me.btnModificar.Location = New System.Drawing.Point(136, 177)
+        Me.btnModificar.Location = New System.Drawing.Point(116, 177)
         Me.btnModificar.Name = "btnModificar"
         Me.btnModificar.Size = New System.Drawing.Size(75, 23)
         Me.btnModificar.TabIndex = 19
@@ -252,7 +192,7 @@ Partial Class FrmInventario
         '
         'btnMostrar
         '
-        Me.btnMostrar.Location = New System.Drawing.Point(376, 177)
+        Me.btnMostrar.Location = New System.Drawing.Point(352, 177)
         Me.btnMostrar.Name = "btnMostrar"
         Me.btnMostrar.Size = New System.Drawing.Size(75, 23)
         Me.btnMostrar.TabIndex = 20
@@ -261,7 +201,7 @@ Partial Class FrmInventario
         '
         'btnEliminar
         '
-        Me.btnEliminar.Location = New System.Drawing.Point(270, 177)
+        Me.btnEliminar.Location = New System.Drawing.Point(236, 177)
         Me.btnEliminar.Name = "btnEliminar"
         Me.btnEliminar.Size = New System.Drawing.Size(75, 23)
         Me.btnEliminar.TabIndex = 21
@@ -285,11 +225,21 @@ Partial Class FrmInventario
         Me.cbxCategoria.Size = New System.Drawing.Size(121, 21)
         Me.cbxCategoria.TabIndex = 24
         '
+        'btnLimpiar
+        '
+        Me.btnLimpiar.Location = New System.Drawing.Point(462, 177)
+        Me.btnLimpiar.Name = "btnLimpiar"
+        Me.btnLimpiar.Size = New System.Drawing.Size(75, 23)
+        Me.btnLimpiar.TabIndex = 25
+        Me.btnLimpiar.Text = "Limpiar"
+        Me.btnLimpiar.UseVisualStyleBackColor = True
+        '
         'FrmInventario
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.btnLimpiar)
         Me.Controls.Add(Me.cbxCategoria)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.btnEliminar)
@@ -311,12 +261,8 @@ Partial Class FrmInventario
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.MenuStrip1)
-        Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "FrmInventario"
         Me.Text = "FrmInventario"
-        Me.MenuStrip1.ResumeLayout(False)
-        Me.MenuStrip1.PerformLayout()
         CType(Me.dgvInventario, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -335,14 +281,6 @@ Partial Class FrmInventario
     Friend WithEvents txtDescripcion As TextBox
     Friend WithEvents txtPrecio As TextBox
     Friend WithEvents txtStock As TextBox
-    Friend WithEvents MenuStrip1 As MenuStrip
-    Friend WithEvents MenuToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents CategoriaToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ColaboradorToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents PedidoToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ProveedorToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ReportesToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents VolverToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents dtpIngreso As DateTimePicker
     Friend WithEvents dgvInventario As DataGridView
     Friend WithEvents cbxProveedor As ComboBox
@@ -352,4 +290,5 @@ Partial Class FrmInventario
     Friend WithEvents btnEliminar As Button
     Friend WithEvents Label9 As Label
     Friend WithEvents cbxCategoria As ComboBox
+    Friend WithEvents btnLimpiar As Button
 End Class

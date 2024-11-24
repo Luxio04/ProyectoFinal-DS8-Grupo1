@@ -45,7 +45,7 @@ Public Class clsInventario
                 cmd.Parameters.AddWithValue("@ProductoID", CInt(productoID))
                 cmd.Parameters.AddWithValue("@NombreProducto", nombre)
                 cmd.Parameters.AddWithValue("@Descripcion", descripcion)
-                cmd.Parameters.AddWithValue("@PrecioUnitario", CDec(precio))
+                cmd.Parameters.AddWithValue("@Precio", CDec(precio))
                 cmd.Parameters.AddWithValue("@Stock", CInt(stock))
                 cmd.Parameters.AddWithValue("@FechaIngreso", fechaIngreso)
                 cmd.Parameters.AddWithValue("@CategoriaID", CInt(categoriaID))
