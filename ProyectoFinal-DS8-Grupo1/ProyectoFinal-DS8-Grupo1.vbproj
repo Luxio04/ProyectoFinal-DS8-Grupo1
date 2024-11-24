@@ -73,40 +73,40 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FrmAdmin.Designer.vb">
+    <Compile Include="Views\ADMIN\FrmAdmin.Designer.vb">
       <DependentUpon>FrmAdmin.vb</DependentUpon>
     </Compile>
-    <Compile Include="FrmAdmin.vb">
+    <Compile Include="Views\ADMIN\FrmAdmin.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmCompra.Designer.vb">
+    <Compile Include="Views\USER\FrmCompra.Designer.vb">
       <DependentUpon>FrmCompra.vb</DependentUpon>
     </Compile>
-    <Compile Include="FrmCompra.vb">
+    <Compile Include="Views\USER\FrmCompra.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmFactura.Designer.vb">
+    <Compile Include="Views\USER\FrmFactura.Designer.vb">
       <DependentUpon>FrmFactura.vb</DependentUpon>
     </Compile>
-    <Compile Include="FrmFactura.vb">
+    <Compile Include="Views\USER\FrmFactura.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmInventario.Designer.vb">
+    <Compile Include="Views\ADMIN\FrmInventario.Designer.vb">
       <DependentUpon>FrmInventario.vb</DependentUpon>
     </Compile>
-    <Compile Include="FrmInventario.vb">
+    <Compile Include="Views\ADMIN\FrmInventario.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmPedidos.Designer.vb">
+    <Compile Include="Views\ADMIN\FrmPedidos.Designer.vb">
       <DependentUpon>FrmPedidos.vb</DependentUpon>
     </Compile>
-    <Compile Include="FrmPedidos.vb">
+    <Compile Include="Views\ADMIN\FrmPedidos.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmUser.Designer.vb">
+    <Compile Include="Views\USER\FrmUser.Designer.vb">
       <DependentUpon>FrmUser.vb</DependentUpon>
     </Compile>
-    <Compile Include="FrmUser.vb">
+    <Compile Include="Views\USER\FrmUser.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmPrincipal.vb">
@@ -123,6 +123,12 @@
       <DependentUpon>FrmCreateUser.vb</DependentUpon>
     </Compile>
     <Compile Include="Models\Login\FrmCreateUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Models\Login\FrmRecuperacion.Designer.vb">
+      <DependentUpon>FrmRecuperacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Login\FrmRecuperacion.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -142,19 +148,19 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="FrmAdmin.resx">
+    <EmbeddedResource Include="Views\ADMIN\FrmAdmin.resx">
       <DependentUpon>FrmAdmin.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmCompra.resx">
+    <EmbeddedResource Include="Views\USER\FrmCompra.resx">
       <DependentUpon>FrmCompra.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmFactura.resx">
+    <EmbeddedResource Include="Views\USER\FrmFactura.resx">
       <DependentUpon>FrmFactura.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPrincipal.resx">
       <DependentUpon>FrmPrincipal.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmUser.resx">
+    <EmbeddedResource Include="Views\USER\FrmUser.resx">
       <DependentUpon>FrmUser.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Models\Login\FrmCreateUser.resx">
