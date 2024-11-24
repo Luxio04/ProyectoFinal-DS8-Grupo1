@@ -15,3 +15,4 @@ C:\Users\CESAR\Source\Repos\ProyectoFinal-DS8-Grupo1\ProyectoFinal-DS8-Grupo1\ob
 C:\Users\CESAR\Source\Repos\ProyectoFinal-DS8-Grupo1\ProyectoFinal-DS8-Grupo1\obj\Debug\ProyectoFinal_DS8_Grupo1.FrmFactura.resources
 C:\Users\CESAR\Source\Repos\ProyectoFinal-DS8-Grupo1\ProyectoFinal-DS8-Grupo1\obj\Debug\ProyectoFinal_DS8_Grupo1.FrmAdmin.resources
 C:\Users\CESAR\Source\Repos\ProyectoFinal-DS8-Grupo1\ProyectoFinal-DS8-Grupo1\obj\Debug\ProyectoFinal_DS8_Grupo1.FrmCreateUser.resources
+C:\Users\CESAR\Source\Repos\ProyectoFinal-DS8-Grupo1\ProyectoFinal-DS8-Grupo1\obj\Debug\ProyectoFinal_DS8_Grupo1.FrmRecuperacion.resources

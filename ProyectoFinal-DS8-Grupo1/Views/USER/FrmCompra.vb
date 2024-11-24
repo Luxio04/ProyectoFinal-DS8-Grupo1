@@ -1,10 +1,4 @@
 ﻿Public Class FrmCompra
-    Private Sub VOLVERToolStripMenuItem_Click(sender As Object, e As EventArgs)
-        FrmUser.Show()
-        Me.Close()
-
-    End Sub
-
     Private Sub BtnAgregar_Click(sender As Object, e As EventArgs) Handles BtnAgregar.Click
 
     End Sub
@@ -21,5 +15,9 @@
         FrmFactura.Show()
         Me.Hide()
 
+    End Sub
+
+    Private Sub BtnCerrar_Click(sender As Object, e As EventArgs) Handles BtnCerrar.Click
+        Me.Close()
     End Sub
 End Class
