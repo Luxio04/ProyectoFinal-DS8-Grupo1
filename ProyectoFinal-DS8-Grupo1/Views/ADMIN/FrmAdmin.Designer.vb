@@ -24,132 +24,223 @@ Partial Class FrmAdmin
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmAdmin))
         Me.PanelMenu = New System.Windows.Forms.Panel()
-        Me.BtnRegresar = New System.Windows.Forms.Button()
-        Me.PanelReportes = New System.Windows.Forms.Panel()
-        Me.BtnProcesadosNot = New System.Windows.Forms.Button()
-        Me.BtnMovimientoInv = New System.Windows.Forms.Button()
-        Me.BtnReporteRoles = New System.Windows.Forms.Button()
+        Me.BtnColab = New System.Windows.Forms.Button()
+        Me.PanelSubReportes = New System.Windows.Forms.Panel()
+        Me.BtnReportePedidos = New System.Windows.Forms.Button()
+        Me.BtnReporteVenta = New System.Windows.Forms.Button()
+        Me.BtnReporte1 = New System.Windows.Forms.Button()
         Me.BtnReportes = New System.Windows.Forms.Button()
         Me.BtnPedidos = New System.Windows.Forms.Button()
-        Me.BtnInvetario = New System.Windows.Forms.Button()
+        Me.PanelSubInvent = New System.Windows.Forms.Panel()
+        Me.BynProducto = New System.Windows.Forms.Button()
+        Me.BtnProveedor = New System.Windows.Forms.Button()
+        Me.BtnCategoria = New System.Windows.Forms.Button()
+        Me.BtnInventario = New System.Windows.Forms.Button()
+        Me.BtnRegresar = New System.Windows.Forms.Button()
         Me.PanelLogo = New System.Windows.Forms.Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.PanelFormsAdm = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PanelMenu.SuspendLayout()
-        Me.PanelReportes.SuspendLayout()
+        Me.PanelSubReportes.SuspendLayout()
+        Me.PanelSubInvent.SuspendLayout()
         Me.PanelLogo.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.PanelFormsAdm.SuspendLayout()
         Me.SuspendLayout()
         '
         'PanelMenu
         '
-        Me.PanelMenu.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.PanelMenu.Controls.Add(Me.BtnRegresar)
-        Me.PanelMenu.Controls.Add(Me.PanelReportes)
+        Me.PanelMenu.BackColor = System.Drawing.Color.FromArgb(CType(CType(21, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(60, Byte), Integer))
+        Me.PanelMenu.Controls.Add(Me.BtnColab)
+        Me.PanelMenu.Controls.Add(Me.PanelSubReportes)
         Me.PanelMenu.Controls.Add(Me.BtnReportes)
         Me.PanelMenu.Controls.Add(Me.BtnPedidos)
-        Me.PanelMenu.Controls.Add(Me.BtnInvetario)
+        Me.PanelMenu.Controls.Add(Me.PanelSubInvent)
+        Me.PanelMenu.Controls.Add(Me.BtnInventario)
+        Me.PanelMenu.Controls.Add(Me.BtnRegresar)
         Me.PanelMenu.Controls.Add(Me.PanelLogo)
         Me.PanelMenu.Dock = System.Windows.Forms.DockStyle.Left
         Me.PanelMenu.Location = New System.Drawing.Point(0, 0)
         Me.PanelMenu.Name = "PanelMenu"
-        Me.PanelMenu.Size = New System.Drawing.Size(250, 589)
+        Me.PanelMenu.Size = New System.Drawing.Size(260, 703)
         Me.PanelMenu.TabIndex = 0
         '
-        'BtnRegresar
+        'BtnColab
         '
-        Me.BtnRegresar.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.BtnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnRegresar.ForeColor = System.Drawing.Color.SaddleBrown
-        Me.BtnRegresar.Location = New System.Drawing.Point(0, 545)
-        Me.BtnRegresar.Name = "BtnRegresar"
-        Me.BtnRegresar.Size = New System.Drawing.Size(250, 44)
-        Me.BtnRegresar.TabIndex = 5
-        Me.BtnRegresar.Text = "Regresar"
-        Me.BtnRegresar.UseVisualStyleBackColor = True
+        Me.BtnColab.Dock = System.Windows.Forms.DockStyle.Top
+        Me.BtnColab.FlatAppearance.BorderSize = 0
+        Me.BtnColab.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnColab.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnColab.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(79, Byte), Integer))
+        Me.BtnColab.Location = New System.Drawing.Point(0, 557)
+        Me.BtnColab.Name = "BtnColab"
+        Me.BtnColab.Size = New System.Drawing.Size(260, 40)
+        Me.BtnColab.TabIndex = 8
+        Me.BtnColab.Text = "Administar Colaboradores"
+        Me.BtnColab.UseVisualStyleBackColor = True
         '
-        'PanelReportes
+        'PanelSubReportes
         '
-        Me.PanelReportes.Controls.Add(Me.BtnProcesadosNot)
-        Me.PanelReportes.Controls.Add(Me.BtnMovimientoInv)
-        Me.PanelReportes.Controls.Add(Me.BtnReporteRoles)
-        Me.PanelReportes.Dock = System.Windows.Forms.DockStyle.Top
-        Me.PanelReportes.Location = New System.Drawing.Point(0, 276)
-        Me.PanelReportes.Name = "PanelReportes"
-        Me.PanelReportes.Size = New System.Drawing.Size(250, 188)
-        Me.PanelReportes.TabIndex = 4
+        Me.PanelSubReportes.Controls.Add(Me.BtnReportePedidos)
+        Me.PanelSubReportes.Controls.Add(Me.BtnReporteVenta)
+        Me.PanelSubReportes.Controls.Add(Me.BtnReporte1)
+        Me.PanelSubReportes.Dock = System.Windows.Forms.DockStyle.Top
+        Me.PanelSubReportes.Location = New System.Drawing.Point(0, 393)
+        Me.PanelSubReportes.Name = "PanelSubReportes"
+        Me.PanelSubReportes.Size = New System.Drawing.Size(260, 164)
+        Me.PanelSubReportes.TabIndex = 4
         '
-        'BtnProcesadosNot
+        'BtnReportePedidos
         '
-        Me.BtnProcesadosNot.Dock = System.Windows.Forms.DockStyle.Top
-        Me.BtnProcesadosNot.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnProcesadosNot.ForeColor = System.Drawing.Color.SaddleBrown
-        Me.BtnProcesadosNot.Location = New System.Drawing.Point(0, 88)
-        Me.BtnProcesadosNot.Name = "BtnProcesadosNot"
-        Me.BtnProcesadosNot.Size = New System.Drawing.Size(250, 44)
-        Me.BtnProcesadosNot.TabIndex = 2
-        Me.BtnProcesadosNot.Text = "Pedidos Procesados y no procesados"
-        Me.BtnProcesadosNot.UseVisualStyleBackColor = True
+        Me.BtnReportePedidos.Dock = System.Windows.Forms.DockStyle.Top
+        Me.BtnReportePedidos.FlatAppearance.BorderSize = 0
+        Me.BtnReportePedidos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnReportePedidos.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnReportePedidos.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(79, Byte), Integer))
+        Me.BtnReportePedidos.Location = New System.Drawing.Point(0, 80)
+        Me.BtnReportePedidos.Name = "BtnReportePedidos"
+        Me.BtnReportePedidos.Size = New System.Drawing.Size(260, 58)
+        Me.BtnReportePedidos.TabIndex = 7
+        Me.BtnReportePedidos.Text = "Ped. Procesados y No Procesados"
+        Me.BtnReportePedidos.UseVisualStyleBackColor = True
         '
-        'BtnMovimientoInv
+        'BtnReporteVenta
         '
-        Me.BtnMovimientoInv.Dock = System.Windows.Forms.DockStyle.Top
-        Me.BtnMovimientoInv.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnMovimientoInv.ForeColor = System.Drawing.Color.SaddleBrown
-        Me.BtnMovimientoInv.Location = New System.Drawing.Point(0, 44)
-        Me.BtnMovimientoInv.Name = "BtnMovimientoInv"
-        Me.BtnMovimientoInv.Size = New System.Drawing.Size(250, 44)
-        Me.BtnMovimientoInv.TabIndex = 1
-        Me.BtnMovimientoInv.Text = "Movimiento De Inventario"
-        Me.BtnMovimientoInv.UseVisualStyleBackColor = True
+        Me.BtnReporteVenta.Dock = System.Windows.Forms.DockStyle.Top
+        Me.BtnReporteVenta.FlatAppearance.BorderSize = 0
+        Me.BtnReporteVenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnReporteVenta.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnReporteVenta.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(79, Byte), Integer))
+        Me.BtnReporteVenta.Location = New System.Drawing.Point(0, 40)
+        Me.BtnReporteVenta.Name = "BtnReporteVenta"
+        Me.BtnReporteVenta.Size = New System.Drawing.Size(260, 40)
+        Me.BtnReporteVenta.TabIndex = 6
+        Me.BtnReporteVenta.Text = "Ventas"
+        Me.BtnReporteVenta.UseVisualStyleBackColor = True
         '
-        'BtnReporteRoles
+        'BtnReporte1
         '
-        Me.BtnReporteRoles.Dock = System.Windows.Forms.DockStyle.Top
-        Me.BtnReporteRoles.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnReporteRoles.ForeColor = System.Drawing.Color.SaddleBrown
-        Me.BtnReporteRoles.Location = New System.Drawing.Point(0, 0)
-        Me.BtnReporteRoles.Name = "BtnReporteRoles"
-        Me.BtnReporteRoles.Size = New System.Drawing.Size(250, 44)
-        Me.BtnReporteRoles.TabIndex = 0
-        Me.BtnReporteRoles.Text = "Roles y Usuarios"
-        Me.BtnReporteRoles.UseVisualStyleBackColor = True
+        Me.BtnReporte1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.BtnReporte1.FlatAppearance.BorderSize = 0
+        Me.BtnReporte1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnReporte1.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnReporte1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(79, Byte), Integer))
+        Me.BtnReporte1.Location = New System.Drawing.Point(0, 0)
+        Me.BtnReporte1.Name = "BtnReporte1"
+        Me.BtnReporte1.Size = New System.Drawing.Size(260, 40)
+        Me.BtnReporte1.TabIndex = 5
+        Me.BtnReporte1.Text = "Roles y Usuarios"
+        Me.BtnReporte1.UseVisualStyleBackColor = True
         '
         'BtnReportes
         '
         Me.BtnReportes.Dock = System.Windows.Forms.DockStyle.Top
+        Me.BtnReportes.FlatAppearance.BorderSize = 0
         Me.BtnReportes.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnReportes.ForeColor = System.Drawing.Color.SaddleBrown
-        Me.BtnReportes.Location = New System.Drawing.Point(0, 226)
+        Me.BtnReportes.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnReportes.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(79, Byte), Integer))
+        Me.BtnReportes.Location = New System.Drawing.Point(0, 353)
         Me.BtnReportes.Name = "BtnReportes"
-        Me.BtnReportes.Size = New System.Drawing.Size(250, 50)
-        Me.BtnReportes.TabIndex = 3
+        Me.BtnReportes.Size = New System.Drawing.Size(260, 40)
+        Me.BtnReportes.TabIndex = 7
         Me.BtnReportes.Text = "Reportes"
         Me.BtnReportes.UseVisualStyleBackColor = True
         '
         'BtnPedidos
         '
         Me.BtnPedidos.Dock = System.Windows.Forms.DockStyle.Top
+        Me.BtnPedidos.FlatAppearance.BorderSize = 0
         Me.BtnPedidos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnPedidos.ForeColor = System.Drawing.Color.SaddleBrown
-        Me.BtnPedidos.Location = New System.Drawing.Point(0, 182)
+        Me.BtnPedidos.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnPedidos.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(79, Byte), Integer))
+        Me.BtnPedidos.Location = New System.Drawing.Point(0, 313)
         Me.BtnPedidos.Name = "BtnPedidos"
-        Me.BtnPedidos.Size = New System.Drawing.Size(250, 44)
-        Me.BtnPedidos.TabIndex = 2
-        Me.BtnPedidos.Text = "Pedidos"
+        Me.BtnPedidos.Size = New System.Drawing.Size(260, 40)
+        Me.BtnPedidos.TabIndex = 6
+        Me.BtnPedidos.Text = "PEDIDOS"
         Me.BtnPedidos.UseVisualStyleBackColor = True
         '
-        'BtnInvetario
+        'PanelSubInvent
         '
-        Me.BtnInvetario.Dock = System.Windows.Forms.DockStyle.Top
-        Me.BtnInvetario.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnInvetario.ForeColor = System.Drawing.Color.SaddleBrown
-        Me.BtnInvetario.Location = New System.Drawing.Point(0, 138)
-        Me.BtnInvetario.Name = "BtnInvetario"
-        Me.BtnInvetario.Size = New System.Drawing.Size(250, 44)
-        Me.BtnInvetario.TabIndex = 1
-        Me.BtnInvetario.Text = "Administracion Investario"
-        Me.BtnInvetario.UseVisualStyleBackColor = True
+        Me.PanelSubInvent.Controls.Add(Me.BynProducto)
+        Me.PanelSubInvent.Controls.Add(Me.BtnProveedor)
+        Me.PanelSubInvent.Controls.Add(Me.BtnCategoria)
+        Me.PanelSubInvent.Dock = System.Windows.Forms.DockStyle.Top
+        Me.PanelSubInvent.Location = New System.Drawing.Point(0, 178)
+        Me.PanelSubInvent.Name = "PanelSubInvent"
+        Me.PanelSubInvent.Size = New System.Drawing.Size(260, 135)
+        Me.PanelSubInvent.TabIndex = 4
+        '
+        'BynProducto
+        '
+        Me.BynProducto.Dock = System.Windows.Forms.DockStyle.Top
+        Me.BynProducto.FlatAppearance.BorderSize = 0
+        Me.BynProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BynProducto.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BynProducto.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(79, Byte), Integer))
+        Me.BynProducto.Location = New System.Drawing.Point(0, 80)
+        Me.BynProducto.Name = "BynProducto"
+        Me.BynProducto.Size = New System.Drawing.Size(260, 40)
+        Me.BynProducto.TabIndex = 6
+        Me.BynProducto.Text = "Agregar Producto"
+        Me.BynProducto.UseVisualStyleBackColor = True
+        '
+        'BtnProveedor
+        '
+        Me.BtnProveedor.Dock = System.Windows.Forms.DockStyle.Top
+        Me.BtnProveedor.FlatAppearance.BorderSize = 0
+        Me.BtnProveedor.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnProveedor.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnProveedor.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(79, Byte), Integer))
+        Me.BtnProveedor.Location = New System.Drawing.Point(0, 40)
+        Me.BtnProveedor.Name = "BtnProveedor"
+        Me.BtnProveedor.Size = New System.Drawing.Size(260, 40)
+        Me.BtnProveedor.TabIndex = 5
+        Me.BtnProveedor.Text = "Agregar Proveedor"
+        Me.BtnProveedor.UseVisualStyleBackColor = True
+        '
+        'BtnCategoria
+        '
+        Me.BtnCategoria.Dock = System.Windows.Forms.DockStyle.Top
+        Me.BtnCategoria.FlatAppearance.BorderSize = 0
+        Me.BtnCategoria.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnCategoria.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnCategoria.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(79, Byte), Integer))
+        Me.BtnCategoria.Location = New System.Drawing.Point(0, 0)
+        Me.BtnCategoria.Name = "BtnCategoria"
+        Me.BtnCategoria.Size = New System.Drawing.Size(260, 40)
+        Me.BtnCategoria.TabIndex = 4
+        Me.BtnCategoria.Text = "Agregar Categoria"
+        Me.BtnCategoria.UseVisualStyleBackColor = True
+        '
+        'BtnInventario
+        '
+        Me.BtnInventario.Dock = System.Windows.Forms.DockStyle.Top
+        Me.BtnInventario.FlatAppearance.BorderSize = 0
+        Me.BtnInventario.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnInventario.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnInventario.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(79, Byte), Integer))
+        Me.BtnInventario.Location = New System.Drawing.Point(0, 138)
+        Me.BtnInventario.Name = "BtnInventario"
+        Me.BtnInventario.Size = New System.Drawing.Size(260, 40)
+        Me.BtnInventario.TabIndex = 4
+        Me.BtnInventario.Text = "Administrar Inventario"
+        Me.BtnInventario.UseVisualStyleBackColor = True
+        '
+        'BtnRegresar
+        '
+        Me.BtnRegresar.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.BtnRegresar.FlatAppearance.BorderSize = 0
+        Me.BtnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnRegresar.Font = New System.Drawing.Font("Times New Roman", 10.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnRegresar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(79, Byte), Integer))
+        Me.BtnRegresar.Location = New System.Drawing.Point(0, 659)
+        Me.BtnRegresar.Name = "BtnRegresar"
+        Me.BtnRegresar.Size = New System.Drawing.Size(260, 44)
+        Me.BtnRegresar.TabIndex = 5
+        Me.BtnRegresar.Text = "Cerrar Seccion"
+        Me.BtnRegresar.UseVisualStyleBackColor = True
         '
         'PanelLogo
         '
@@ -157,57 +248,80 @@ Partial Class FrmAdmin
         Me.PanelLogo.Dock = System.Windows.Forms.DockStyle.Top
         Me.PanelLogo.Location = New System.Drawing.Point(0, 0)
         Me.PanelLogo.Name = "PanelLogo"
-        Me.PanelLogo.Size = New System.Drawing.Size(250, 138)
+        Me.PanelLogo.Size = New System.Drawing.Size(260, 138)
         Me.PanelLogo.TabIndex = 0
         '
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(63, 12)
+        Me.PictureBox1.Location = New System.Drawing.Point(75, 12)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(121, 119)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '
+        'PanelFormsAdm
+        '
+        Me.PanelFormsAdm.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(153, Byte), Integer))
+        Me.PanelFormsAdm.Controls.Add(Me.Label1)
+        Me.PanelFormsAdm.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelFormsAdm.Location = New System.Drawing.Point(260, 0)
+        Me.PanelFormsAdm.Name = "PanelFormsAdm"
+        Me.PanelFormsAdm.Size = New System.Drawing.Size(1131, 703)
+        Me.PanelFormsAdm.TabIndex = 1
+        '
         'Label1
         '
+        Me.Label1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Comic Sans MS", 22.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(594, 226)
+        Me.Label1.Font = New System.Drawing.Font("Times New Roman", 22.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(79, Byte), Integer))
+        Me.Label1.Location = New System.Drawing.Point(431, 330)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(320, 52)
+        Me.Label1.Size = New System.Drawing.Size(268, 43)
         Me.Label1.TabIndex = 3
         Me.Label1.Text = "Smart Inventory"
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'FrmAdmin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1255, 589)
-        Me.Controls.Add(Me.Label1)
+        Me.ClientSize = New System.Drawing.Size(1391, 703)
+        Me.Controls.Add(Me.PanelFormsAdm)
         Me.Controls.Add(Me.PanelMenu)
         Me.Name = "FrmAdmin"
         Me.Text = "FrmAdmin"
         Me.PanelMenu.ResumeLayout(False)
-        Me.PanelReportes.ResumeLayout(False)
+        Me.PanelSubReportes.ResumeLayout(False)
+        Me.PanelSubInvent.ResumeLayout(False)
         Me.PanelLogo.ResumeLayout(False)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.PanelFormsAdm.ResumeLayout(False)
+        Me.PanelFormsAdm.PerformLayout()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents PanelMenu As Panel
-    Friend WithEvents Label1 As Label
-    Friend WithEvents BtnInvetario As Button
     Friend WithEvents PanelLogo As Panel
-    Friend WithEvents PanelReportes As Panel
-    Friend WithEvents BtnReportes As Button
-    Friend WithEvents BtnPedidos As Button
-    Friend WithEvents BtnMovimientoInv As Button
-    Friend WithEvents BtnReporteRoles As Button
-    Friend WithEvents BtnProcesadosNot As Button
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents BtnRegresar As Button
+    Friend WithEvents PanelFormsAdm As Panel
+    Friend WithEvents Label1 As Label
+    Friend WithEvents BtnReportes As Button
+    Friend WithEvents BtnPedidos As Button
+    Friend WithEvents PanelSubInvent As Panel
+    Friend WithEvents BynProducto As Button
+    Friend WithEvents BtnProveedor As Button
+    Friend WithEvents BtnCategoria As Button
+    Friend WithEvents BtnInventario As Button
+    Friend WithEvents BtnColab As Button
+    Friend WithEvents PanelSubReportes As Panel
+    Friend WithEvents BtnReportePedidos As Button
+    Friend WithEvents BtnReporteVenta As Button
+    Friend WithEvents BtnReporte1 As Button
 End Class

@@ -85,6 +85,30 @@
     <Compile Include="Views\ADMIN\FrmAdmin.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Views\ADMIN\FrmCategoria.Designer.vb">
+      <DependentUpon>FrmCategoria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ADMIN\FrmCategoria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ADMIN\FrmColaborador.Designer.vb">
+      <DependentUpon>FrmColaborador.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ADMIN\FrmColaborador.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ADMIN\FrmProveedor.Designer.vb">
+      <DependentUpon>FrmProveedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ADMIN\FrmProveedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ADMIN\FrmReportes.Designer.vb">
+      <DependentUpon>FrmReportes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ADMIN\FrmReportes.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Views\USER\FrmCompra.Designer.vb">
       <DependentUpon>FrmCompra.vb</DependentUpon>
     </Compile>
@@ -162,6 +186,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\ADMIN\FrmAdmin.resx">
       <DependentUpon>FrmAdmin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ADMIN\FrmCategoria.resx">
+      <DependentUpon>FrmCategoria.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\USER\FrmCompra.resx">
       <DependentUpon>FrmCompra.vb</DependentUpon>
