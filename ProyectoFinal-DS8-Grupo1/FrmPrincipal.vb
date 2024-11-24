@@ -27,10 +27,15 @@
                 Dim formCliente As New FrmUser()
                 formCliente.Show()
                 Me.Hide()
+            Case "NoExiste"
+                MessageBox.Show("El usuario no existe. Por favor, regístrese.", "Usuario no registrado", MessageBoxButtons.OK, MessageBoxIcon.Information)
             Case Else
-                MessageBox.Show("Rol no reconocido. Contacta al administrador.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                MessageBox.Show("Contactar a la administración.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Select
+        'Limpiar Campos
+        LimpiarCampos()
     End Sub
+
 
     Private Function ValidarCampos() As Boolean
         ' Verificar si alguno de los TextBox está vacío
@@ -77,6 +82,11 @@
         ' Si todas las validaciones pasan
         Return True
     End Function
+
+    Private Sub LimpiarCampos()
+        txtUser.Clear()
+        txtPassword.Clear()
+    End Sub
 
     Private Sub LinkCrear_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkCrear.LinkClicked
         FrmCreateUser.Show()

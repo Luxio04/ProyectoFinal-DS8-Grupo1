@@ -10,7 +10,7 @@ Public Class clsLogin
                 connection.Open()
 
                 ' Validar en la tabla Usuarios
-                Using command As New SqlCommand("ValidarUsuario", connection)
+                Using command As New SqlCommand("ValidarColaborador", connection)
                     command.CommandType = CommandType.StoredProcedure
                     command.Parameters.AddWithValue("@UserName", userName)
                     command.Parameters.AddWithValue("@Password", password)
@@ -42,8 +42,7 @@ Public Class clsLogin
             If Not String.IsNullOrEmpty(rolNombre) Then
                 Return rolNombre
             Else
-                MessageBox.Show("Usuario o contraseña incorrectos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-                Return String.Empty
+                Return "NoExiste"
             End If
         Catch ex As Exception
             MessageBox.Show("Error al conectar con la base de datos: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
