@@ -10,3 +10,11 @@ C:\Users\CESAR\Source\Repos\ProyectoFinal-DS8-Grupo1\ProyectoFinal-DS8-Grupo1\ob
 C:\Users\CESAR\Source\Repos\ProyectoFinal-DS8-Grupo1\ProyectoFinal-DS8-Grupo1\obj\Debug\ProyectoFinal_DS8_Grupo1.Resources.resources
 C:\Users\CESAR\Source\Repos\ProyectoFinal-DS8-Grupo1\ProyectoFinal-DS8-Grupo1\obj\Debug\ProyectoFinal-DS8-Grupo1.vbproj.GenerateResource.cache
 C:\Users\CESAR\Source\Repos\ProyectoFinal-DS8-Grupo1\ProyectoFinal-DS8-Grupo1\obj\Debug\ProyectoFinal-DS8-Grupo1.vbproj.CoreCompileInputs.cache
+C:\Users\CESAR\Source\Repos\ProyectoFinal-DS8-Grupo1\ProyectoFinal-DS8-Grupo1\bin\Debug\ProyectoFinal-DS8-Grupo1.exe.config
+C:\Users\CESAR\Source\Repos\ProyectoFinal-DS8-Grupo1\ProyectoFinal-DS8-Grupo1\bin\Debug\ProyectoFinal-DS8-Grupo1.exe
+C:\Users\CESAR\Source\Repos\ProyectoFinal-DS8-Grupo1\ProyectoFinal-DS8-Grupo1\bin\Debug\ProyectoFinal-DS8-Grupo1.pdb
+C:\Users\CESAR\Source\Repos\ProyectoFinal-DS8-Grupo1\ProyectoFinal-DS8-Grupo1\bin\Debug\ProyectoFinal-DS8-Grupo1.xml
+C:\Users\CESAR\Source\Repos\ProyectoFinal-DS8-Grupo1\ProyectoFinal-DS8-Grupo1\obj\Debug\ProyectoFinal_DS8_Grupo1.FrmCategoria.resources
+C:\Users\CESAR\Source\Repos\ProyectoFinal-DS8-Grupo1\ProyectoFinal-DS8-Grupo1\obj\Debug\ProyectoFinal-DS8-Grupo1.exe
+C:\Users\CESAR\Source\Repos\ProyectoFinal-DS8-Grupo1\ProyectoFinal-DS8-Grupo1\obj\Debug\ProyectoFinal-DS8-Grupo1.xml
+C:\Users\CESAR\Source\Repos\ProyectoFinal-DS8-Grupo1\ProyectoFinal-DS8-Grupo1\obj\Debug\ProyectoFinal-DS8-Grupo1.pdb

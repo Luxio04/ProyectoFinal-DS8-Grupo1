@@ -10,7 +10,7 @@ Public Class clsCreateUser
             Try
                 conn.Open()
                 ' Llamada al procedimiento almacenado
-                Dim Command As New SqlCommand("InsertarCategoria", conn)
+                Dim Command As New SqlCommand("CrearCliente", conn)
                 Command.CommandType = CommandType.StoredProcedure
 
                 ' Agregar los parámetros
