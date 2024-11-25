@@ -39,3 +39,9 @@ C:\Users\lucia\OneDrive\Escritorio\ProyectoFinal-DS8-Grupo1\ProyectoFinal-DS8-Gr
 C:\Users\lucia\OneDrive\Escritorio\ProyectoFinal-DS8-Grupo1\ProyectoFinal-DS8-Grupo1\obj\Debug\ProyectoFinal-DS8-Grupo1.exe
 C:\Users\lucia\OneDrive\Escritorio\ProyectoFinal-DS8-Grupo1\ProyectoFinal-DS8-Grupo1\obj\Debug\ProyectoFinal-DS8-Grupo1.xml
 C:\Users\lucia\OneDrive\Escritorio\ProyectoFinal-DS8-Grupo1\ProyectoFinal-DS8-Grupo1\obj\Debug\ProyectoFinal-DS8-Grupo1.pdb
+C:\Users\CESAR\Source\Repos\ProyectoFinal-DS8-Grupo1\ProyectoFinal-DS8-Grupo1\obj\Debug\ProyectoFinal_DS8_Grupo1.FrmReportes.resources
+C:\Users\CESAR\Source\Repos\ProyectoFinal-DS8-Grupo1\ProyectoFinal-DS8-Grupo1\bin\Debug\BouncyCastle.Cryptography.dll
+C:\Users\CESAR\Source\Repos\ProyectoFinal-DS8-Grupo1\ProyectoFinal-DS8-Grupo1\bin\Debug\itextsharp.dll
+C:\Users\CESAR\Source\Repos\ProyectoFinal-DS8-Grupo1\ProyectoFinal-DS8-Grupo1\bin\Debug\BouncyCastle.Cryptography.xml
+C:\Users\CESAR\Source\Repos\ProyectoFinal-DS8-Grupo1\ProyectoFinal-DS8-Grupo1\bin\Debug\itextsharp.xml
+C:\Users\CESAR\Source\Repos\ProyectoFinal-DS8-Grupo1\ProyectoFinal-DS8-Grupo1\obj\Debug\Proyecto.E9843A38.Up2Date
