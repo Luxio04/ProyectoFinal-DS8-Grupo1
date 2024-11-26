@@ -3,7 +3,7 @@
 Public Class clsCategorias
     Dim connectionString As String = My.Settings.ConexionBD
 
-    Public Sub InsertarCategoria(nombreCategoria As String, ByRef mensaje As String)
+    Public Function InsertarCategoria(nombreCategoria As String, ByRef mensaje As String) As String
         Try
             Using conn As New SqlConnection(connectionString)
                 Using cmd As New SqlCommand("InsertarCategoria", conn)
@@ -27,7 +27,9 @@ Public Class clsCategorias
         Catch ex As Exception
             mensaje = "Error: " & ex.Message
         End Try
-    End Sub
+
+        Return mensaje
+    End Function
 
     Public Function ActualizarCategoria(categoriaID As Integer, nombreCategoria As String, ByRef mensaje As String) As Boolean
         Using connection As New SqlConnection(connectionString)
@@ -39,7 +41,7 @@ Public Class clsCategorias
                 ' Parámetro de salida
                 Dim outputParam As New SqlParameter("@Mensaje", SqlDbType.NVarChar, 50) With {
                 .Direction = ParameterDirection.Output
-            }
+                }
                 command.Parameters.Add(outputParam)
 
                 connection.Open()

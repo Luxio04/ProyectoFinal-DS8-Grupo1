@@ -45,3 +45,5 @@ C:\Users\CESAR\Source\Repos\ProyectoFinal-DS8-Grupo1\ProyectoFinal-DS8-Grupo1\bi
 C:\Users\CESAR\Source\Repos\ProyectoFinal-DS8-Grupo1\ProyectoFinal-DS8-Grupo1\bin\Debug\BouncyCastle.Cryptography.xml
 C:\Users\CESAR\Source\Repos\ProyectoFinal-DS8-Grupo1\ProyectoFinal-DS8-Grupo1\bin\Debug\itextsharp.xml
 C:\Users\CESAR\Source\Repos\ProyectoFinal-DS8-Grupo1\ProyectoFinal-DS8-Grupo1\obj\Debug\Proyecto.E9843A38.Up2Date
+C:\Users\CESAR\Source\Repos\ProyectoFinal-DS8-Grupo1\ProyectoFinal-DS8-Grupo1\obj\Debug\ProyectoFinal_DS8_Grupo1.FrmInventario.resources
+C:\Users\CESAR\Source\Repos\ProyectoFinal-DS8-Grupo1\ProyectoFinal-DS8-Grupo1\obj\Debug\ProyectoFinal_DS8_Grupo1.FrmProveedor.resources

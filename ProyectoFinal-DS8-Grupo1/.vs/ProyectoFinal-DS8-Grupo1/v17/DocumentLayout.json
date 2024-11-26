@@ -3,14 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\CESAR\\source\\repos\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6C2EF93E-392E-49DB-B9F7-B704F503A79C}|ProyectoFinal-DS8-Grupo1.vbproj|c:\\users\\cesar\\source\\repos\\proyectofinal-ds8-grupo1\\proyectofinal-ds8-grupo1\\views\\admin\\frminventario.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{6C2EF93E-392E-49DB-B9F7-B704F503A79C}|ProyectoFinal-DS8-Grupo1.vbproj|solutionrelative:views\\admin\\frminventario.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6C2EF93E-392E-49DB-B9F7-B704F503A79C}|ProyectoFinal-DS8-Grupo1.vbproj|c:\\users\\cesar\\source\\repos\\proyectofinal-ds8-grupo1\\proyectofinal-ds8-grupo1\\views\\admin\\frmreportes.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{6C2EF93E-392E-49DB-B9F7-B704F503A79C}|ProyectoFinal-DS8-Grupo1.vbproj|solutionrelative:views\\admin\\frmreportes.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6C2EF93E-392E-49DB-B9F7-B704F503A79C}|ProyectoFinal-DS8-Grupo1.vbproj|C:\\Users\\CESAR\\source\\repos\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\views\\admin\\frmproveedor.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{6C2EF93E-392E-49DB-B9F7-B704F503A79C}|ProyectoFinal-DS8-Grupo1.vbproj|solutionrelative:views\\admin\\frmproveedor.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
@@ -19,12 +11,20 @@
       "RelativeMoniker": "D:0:0:{6C2EF93E-392E-49DB-B9F7-B704F503A79C}|ProyectoFinal-DS8-Grupo1.vbproj|solutionrelative:views\\admin\\frmproveedor.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6C2EF93E-392E-49DB-B9F7-B704F503A79C}|ProyectoFinal-DS8-Grupo1.vbproj|C:\\Users\\CESAR\\source\\repos\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\Views\\ADMIN\\FrmCategoria.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{6C2EF93E-392E-49DB-B9F7-B704F503A79C}|ProyectoFinal-DS8-Grupo1.vbproj|solutionrelative:Views\\ADMIN\\FrmCategoria.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+      "AbsoluteMoniker": "D:0:0:{6C2EF93E-392E-49DB-B9F7-B704F503A79C}|ProyectoFinal-DS8-Grupo1.vbproj|c:\\users\\cesar\\source\\repos\\proyectofinal-ds8-grupo1\\proyectofinal-ds8-grupo1\\models\\classforms\\clsproveedores.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{6C2EF93E-392E-49DB-B9F7-B704F503A79C}|ProyectoFinal-DS8-Grupo1.vbproj|solutionrelative:models\\classforms\\clsproveedores.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6C2EF93E-392E-49DB-B9F7-B704F503A79C}|ProyectoFinal-DS8-Grupo1.vbproj|C:\\Users\\CESAR\\source\\repos\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\Views\\ADMIN\\FrmCategoria.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{6C2EF93E-392E-49DB-B9F7-B704F503A79C}|ProyectoFinal-DS8-Grupo1.vbproj|solutionrelative:Views\\ADMIN\\FrmCategoria.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{6C2EF93E-392E-49DB-B9F7-B704F503A79C}|ProyectoFinal-DS8-Grupo1.vbproj|c:\\users\\cesar\\source\\repos\\proyectofinal-ds8-grupo1\\proyectofinal-ds8-grupo1\\views\\admin\\frminventario.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{6C2EF93E-392E-49DB-B9F7-B704F503A79C}|ProyectoFinal-DS8-Grupo1.vbproj|solutionrelative:views\\admin\\frminventario.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C2EF93E-392E-49DB-B9F7-B704F503A79C}|ProyectoFinal-DS8-Grupo1.vbproj|c:\\users\\cesar\\source\\repos\\proyectofinal-ds8-grupo1\\proyectofinal-ds8-grupo1\\models\\classforms\\clsinventario.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{6C2EF93E-392E-49DB-B9F7-B704F503A79C}|ProyectoFinal-DS8-Grupo1.vbproj|solutionrelative:models\\classforms\\clsinventario.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C2EF93E-392E-49DB-B9F7-B704F503A79C}|ProyectoFinal-DS8-Grupo1.vbproj|c:\\users\\cesar\\source\\repos\\proyectofinal-ds8-grupo1\\proyectofinal-ds8-grupo1\\models\\classforms\\clscategorias.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{6C2EF93E-392E-49DB-B9F7-B704F503A79C}|ProyectoFinal-DS8-Grupo1.vbproj|solutionrelative:models\\classforms\\clscategorias.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,59 +34,88 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "FrmCategoria.vb [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\CESAR\\source\\repos\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\Views\\ADMIN\\FrmCategoria.vb",
-              "RelativeDocumentMoniker": "Views\\ADMIN\\FrmCategoria.vb",
-              "ToolTip": "C:\\Users\\CESAR\\source\\repos\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\Views\\ADMIN\\FrmCategoria.vb [Dise\u00F1o]",
-              "RelativeToolTip": "Views\\ADMIN\\FrmCategoria.vb [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-11-24T10:10:03.93Z",
-              "IsPinned": true,
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "FrmCategoria.vb",
-              "DocumentMoniker": "C:\\Users\\CESAR\\source\\repos\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\Views\\ADMIN\\FrmCategoria.vb",
-              "RelativeDocumentMoniker": "Views\\ADMIN\\FrmCategoria.vb",
-              "ToolTip": "C:\\Users\\CESAR\\source\\repos\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\Views\\ADMIN\\FrmCategoria.vb",
-              "RelativeToolTip": "Views\\ADMIN\\FrmCategoria.vb",
-              "ViewState": "AgIAACoAAAAAAAAAAAAowH0AAAAAAAAAAAAAAA==",
+              "Title": "clsCategorias.vb",
+              "DocumentMoniker": "C:\\Users\\CESAR\\source\\repos\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\Models\\ClassForms\\clsCategorias.vb",
+              "RelativeDocumentMoniker": "Models\\ClassForms\\clsCategorias.vb",
+              "ToolTip": "C:\\Users\\CESAR\\source\\repos\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\Models\\ClassForms\\clsCategorias.vb",
+              "RelativeToolTip": "Models\\ClassForms\\clsCategorias.vb",
+              "ViewState": "AgIAAE8AAAAAAAAAAAA5wB4AAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-11-24T18:45:03.307Z",
+              "WhenOpened": "2024-11-26T01:50:18.84Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FrmInventario.vb",
-              "DocumentMoniker": "C:\\Users\\CESAR\\source\\repos\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\Views\\ADMIN\\FrmInventario.vb",
-              "RelativeDocumentMoniker": "Views\\ADMIN\\FrmInventario.vb",
-              "ToolTip": "C:\\Users\\CESAR\\source\\repos\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\Views\\ADMIN\\FrmInventario.vb",
-              "RelativeToolTip": "Views\\ADMIN\\FrmInventario.vb",
-              "ViewState": "AgIAAHEAAAAAAAAAAAA7wHwAAAAgAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "clsProveedores.vb",
+              "DocumentMoniker": "C:\\Users\\CESAR\\source\\repos\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\Models\\ClassForms\\clsProveedores.vb",
+              "RelativeDocumentMoniker": "Models\\ClassForms\\clsProveedores.vb",
+              "ToolTip": "C:\\Users\\CESAR\\source\\repos\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\Models\\ClassForms\\clsProveedores.vb",
+              "RelativeToolTip": "Models\\ClassForms\\clsProveedores.vb",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAkwDgAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-11-25T21:01:29.528Z",
+              "WhenOpened": "2024-11-26T01:40:52.931Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "FrmReportes.vb [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\CESAR\\source\\repos\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\Views\\ADMIN\\FrmReportes.vb",
-              "RelativeDocumentMoniker": "Views\\ADMIN\\FrmReportes.vb",
-              "ToolTip": "C:\\Users\\CESAR\\source\\repos\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\Views\\ADMIN\\FrmReportes.vb [Dise\u00F1o]",
-              "RelativeToolTip": "Views\\ADMIN\\FrmReportes.vb [Dise\u00F1o]",
+              "Title": "FrmProveedor.vb [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\CESAR\\source\\repos\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\Views\\ADMIN\\FrmProveedor.vb",
+              "RelativeDocumentMoniker": "Views\\ADMIN\\FrmProveedor.vb",
+              "ToolTip": "C:\\Users\\CESAR\\source\\repos\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\Views\\ADMIN\\FrmProveedor.vb [Dise\u00F1o]*",
+              "RelativeToolTip": "Views\\ADMIN\\FrmProveedor.vb [Dise\u00F1o]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-11-25T21:00:28.757Z",
+              "WhenOpened": "2024-11-24T22:24:37.452Z",
+              "IsPinned": true,
               "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FrmProveedor.vb",
+              "DocumentMoniker": "C:\\Users\\CESAR\\source\\repos\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\Views\\ADMIN\\FrmProveedor.vb",
+              "RelativeDocumentMoniker": "Views\\ADMIN\\FrmProveedor.vb",
+              "ToolTip": "C:\\Users\\CESAR\\source\\repos\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\Views\\ADMIN\\FrmProveedor.vb*",
+              "RelativeToolTip": "Views\\ADMIN\\FrmProveedor.vb*",
+              "ViewState": "AgIAABIAAAAAAAAAAAAYwCEAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-11-25T03:04:18.238Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FrmInventario.vb",
+              "DocumentMoniker": "C:\\Users\\CESAR\\source\\repos\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\Views\\ADMIN\\FrmInventario.vb",
+              "RelativeDocumentMoniker": "Views\\ADMIN\\FrmInventario.vb",
+              "ToolTip": "C:\\Users\\CESAR\\source\\repos\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\Views\\ADMIN\\FrmInventario.vb",
+              "RelativeToolTip": "Views\\ADMIN\\FrmInventario.vb",
+              "ViewState": "AgIAAIgAAAAAAAAAAAAwwJgAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-11-26T03:54:26.437Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "clsInventario.vb",
+              "DocumentMoniker": "C:\\Users\\CESAR\\source\\repos\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\Models\\ClassForms\\clsInventario.vb",
+              "RelativeDocumentMoniker": "Models\\ClassForms\\clsInventario.vb",
+              "ToolTip": "C:\\Users\\CESAR\\source\\repos\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\Models\\ClassForms\\clsInventario.vb",
+              "RelativeToolTip": "Models\\ClassForms\\clsInventario.vb",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAowA8AAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-11-26T03:24:35.922Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -95,35 +124,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FrmProveedor.vb [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\CESAR\\source\\repos\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\Views\\ADMIN\\FrmProveedor.vb",
-              "RelativeDocumentMoniker": "Views\\ADMIN\\FrmProveedor.vb",
-              "ToolTip": "C:\\Users\\CESAR\\source\\repos\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\Views\\ADMIN\\FrmProveedor.vb [Dise\u00F1o]",
-              "RelativeToolTip": "Views\\ADMIN\\FrmProveedor.vb [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-11-24T22:24:37.452Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FrmProveedor.vb",
-              "DocumentMoniker": "C:\\Users\\CESAR\\source\\repos\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\Views\\ADMIN\\FrmProveedor.vb",
-              "RelativeDocumentMoniker": "Views\\ADMIN\\FrmProveedor.vb",
-              "ToolTip": "C:\\Users\\CESAR\\source\\repos\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\Views\\ADMIN\\FrmProveedor.vb",
-              "RelativeToolTip": "Views\\ADMIN\\FrmProveedor.vb",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-11-25T03:04:18.238Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             }
           ]
         }
