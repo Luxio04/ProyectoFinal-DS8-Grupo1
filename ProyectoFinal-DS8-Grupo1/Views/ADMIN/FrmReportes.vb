@@ -4,7 +4,7 @@ Imports iTextSharp.text.pdf
 Imports System.IO
 
 Public Class FrmReportes
-    Private Sub ButtonGenerarReporteRolesYUsuarios(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub ButtonGenerarReporteRolesYUsuarios(sender As Object, e As EventArgs)
         GenerarReporteRolesYUsuarios()
     End Sub
 
