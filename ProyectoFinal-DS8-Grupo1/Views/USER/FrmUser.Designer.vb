@@ -24,19 +24,18 @@ Partial Class FrmUser
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmUser))
         Me.PanelManuPrinc = New System.Windows.Forms.Panel()
-        Me.PanelLogo = New System.Windows.Forms.Panel()
-        Me.PanelForms = New System.Windows.Forms.Panel()
-        Me.BtnCatalogo = New System.Windows.Forms.Button()
-        Me.BtnCompra = New System.Windows.Forms.Button()
-        Me.BtnFactura = New System.Windows.Forms.Button()
         Me.BtnSalir = New System.Windows.Forms.Button()
+        Me.BtnFactura = New System.Windows.Forms.Button()
+        Me.BtnCompra = New System.Windows.Forms.Button()
+        Me.PanelLogo = New System.Windows.Forms.Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.PictureFondo = New System.Windows.Forms.PictureBox()
+        Me.PanelForms = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.PictureFondo = New System.Windows.Forms.PictureBox()
         Me.PanelManuPrinc.SuspendLayout()
         Me.PanelLogo.SuspendLayout()
-        Me.PanelForms.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.PanelForms.SuspendLayout()
         CType(Me.PictureFondo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -46,75 +45,12 @@ Partial Class FrmUser
         Me.PanelManuPrinc.Controls.Add(Me.BtnSalir)
         Me.PanelManuPrinc.Controls.Add(Me.BtnFactura)
         Me.PanelManuPrinc.Controls.Add(Me.BtnCompra)
-        Me.PanelManuPrinc.Controls.Add(Me.BtnCatalogo)
         Me.PanelManuPrinc.Controls.Add(Me.PanelLogo)
         Me.PanelManuPrinc.Dock = System.Windows.Forms.DockStyle.Left
         Me.PanelManuPrinc.Location = New System.Drawing.Point(0, 0)
         Me.PanelManuPrinc.Name = "PanelManuPrinc"
         Me.PanelManuPrinc.Size = New System.Drawing.Size(260, 669)
         Me.PanelManuPrinc.TabIndex = 0
-        '
-        'PanelLogo
-        '
-        Me.PanelLogo.Controls.Add(Me.PictureBox1)
-        Me.PanelLogo.Dock = System.Windows.Forms.DockStyle.Top
-        Me.PanelLogo.Location = New System.Drawing.Point(0, 0)
-        Me.PanelLogo.Name = "PanelLogo"
-        Me.PanelLogo.Size = New System.Drawing.Size(260, 143)
-        Me.PanelLogo.TabIndex = 1
-        '
-        'PanelForms
-        '
-        Me.PanelForms.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(153, Byte), Integer))
-        Me.PanelForms.Controls.Add(Me.Label1)
-        Me.PanelForms.Controls.Add(Me.PictureFondo)
-        Me.PanelForms.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PanelForms.Location = New System.Drawing.Point(260, 0)
-        Me.PanelForms.Name = "PanelForms"
-        Me.PanelForms.Size = New System.Drawing.Size(1093, 669)
-        Me.PanelForms.TabIndex = 1
-        '
-        'BtnCatalogo
-        '
-        Me.BtnCatalogo.Dock = System.Windows.Forms.DockStyle.Top
-        Me.BtnCatalogo.FlatAppearance.BorderSize = 0
-        Me.BtnCatalogo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnCatalogo.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnCatalogo.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(79, Byte), Integer))
-        Me.BtnCatalogo.Location = New System.Drawing.Point(0, 143)
-        Me.BtnCatalogo.Name = "BtnCatalogo"
-        Me.BtnCatalogo.Size = New System.Drawing.Size(260, 80)
-        Me.BtnCatalogo.TabIndex = 0
-        Me.BtnCatalogo.Text = "CATALOGO"
-        Me.BtnCatalogo.UseVisualStyleBackColor = True
-        '
-        'BtnCompra
-        '
-        Me.BtnCompra.Dock = System.Windows.Forms.DockStyle.Top
-        Me.BtnCompra.FlatAppearance.BorderSize = 0
-        Me.BtnCompra.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnCompra.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnCompra.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(79, Byte), Integer))
-        Me.BtnCompra.Location = New System.Drawing.Point(0, 223)
-        Me.BtnCompra.Name = "BtnCompra"
-        Me.BtnCompra.Size = New System.Drawing.Size(260, 80)
-        Me.BtnCompra.TabIndex = 0
-        Me.BtnCompra.Text = "COMPRAR"
-        Me.BtnCompra.UseVisualStyleBackColor = True
-        '
-        'BtnFactura
-        '
-        Me.BtnFactura.Dock = System.Windows.Forms.DockStyle.Top
-        Me.BtnFactura.FlatAppearance.BorderSize = 0
-        Me.BtnFactura.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnFactura.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnFactura.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(79, Byte), Integer))
-        Me.BtnFactura.Location = New System.Drawing.Point(0, 303)
-        Me.BtnFactura.Name = "BtnFactura"
-        Me.BtnFactura.Size = New System.Drawing.Size(260, 80)
-        Me.BtnFactura.TabIndex = 0
-        Me.BtnFactura.Text = "FACTURA"
-        Me.BtnFactura.UseVisualStyleBackColor = True
         '
         'BtnSalir
         '
@@ -130,6 +66,43 @@ Partial Class FrmUser
         Me.BtnSalir.Text = "Cerrar Session"
         Me.BtnSalir.UseVisualStyleBackColor = True
         '
+        'BtnFactura
+        '
+        Me.BtnFactura.Dock = System.Windows.Forms.DockStyle.Top
+        Me.BtnFactura.FlatAppearance.BorderSize = 0
+        Me.BtnFactura.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnFactura.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnFactura.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(79, Byte), Integer))
+        Me.BtnFactura.Location = New System.Drawing.Point(0, 223)
+        Me.BtnFactura.Name = "BtnFactura"
+        Me.BtnFactura.Size = New System.Drawing.Size(260, 80)
+        Me.BtnFactura.TabIndex = 0
+        Me.BtnFactura.Text = "FACTURA"
+        Me.BtnFactura.UseVisualStyleBackColor = True
+        '
+        'BtnCompra
+        '
+        Me.BtnCompra.Dock = System.Windows.Forms.DockStyle.Top
+        Me.BtnCompra.FlatAppearance.BorderSize = 0
+        Me.BtnCompra.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnCompra.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnCompra.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(79, Byte), Integer))
+        Me.BtnCompra.Location = New System.Drawing.Point(0, 143)
+        Me.BtnCompra.Name = "BtnCompra"
+        Me.BtnCompra.Size = New System.Drawing.Size(260, 80)
+        Me.BtnCompra.TabIndex = 0
+        Me.BtnCompra.Text = "COMPRAR"
+        Me.BtnCompra.UseVisualStyleBackColor = True
+        '
+        'PanelLogo
+        '
+        Me.PanelLogo.Controls.Add(Me.PictureBox1)
+        Me.PanelLogo.Dock = System.Windows.Forms.DockStyle.Top
+        Me.PanelLogo.Location = New System.Drawing.Point(0, 0)
+        Me.PanelLogo.Name = "PanelLogo"
+        Me.PanelLogo.Size = New System.Drawing.Size(260, 143)
+        Me.PanelLogo.TabIndex = 1
+        '
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
@@ -140,14 +113,16 @@ Partial Class FrmUser
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '
-        'PictureFondo
+        'PanelForms
         '
-        Me.PictureFondo.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PictureFondo.Location = New System.Drawing.Point(0, 0)
-        Me.PictureFondo.Name = "PictureFondo"
-        Me.PictureFondo.Size = New System.Drawing.Size(1093, 669)
-        Me.PictureFondo.TabIndex = 0
-        Me.PictureFondo.TabStop = False
+        Me.PanelForms.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(153, Byte), Integer))
+        Me.PanelForms.Controls.Add(Me.Label1)
+        Me.PanelForms.Controls.Add(Me.PictureFondo)
+        Me.PanelForms.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelForms.Location = New System.Drawing.Point(260, 0)
+        Me.PanelForms.Name = "PanelForms"
+        Me.PanelForms.Size = New System.Drawing.Size(1093, 669)
+        Me.PanelForms.TabIndex = 1
         '
         'Label1
         '
@@ -164,6 +139,15 @@ Partial Class FrmUser
         Me.Label1.Text = "Smart Inventory"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
+        'PictureFondo
+        '
+        Me.PictureFondo.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PictureFondo.Location = New System.Drawing.Point(0, 0)
+        Me.PictureFondo.Name = "PictureFondo"
+        Me.PictureFondo.Size = New System.Drawing.Size(1093, 669)
+        Me.PictureFondo.TabIndex = 0
+        Me.PictureFondo.TabStop = False
+        '
         'FrmUser
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -175,9 +159,9 @@ Partial Class FrmUser
         Me.Text = "USUARIO"
         Me.PanelManuPrinc.ResumeLayout(False)
         Me.PanelLogo.ResumeLayout(False)
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PanelForms.ResumeLayout(False)
         Me.PanelForms.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureFondo, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
@@ -185,7 +169,6 @@ Partial Class FrmUser
 
     Friend WithEvents PanelManuPrinc As Panel
     Friend WithEvents PanelLogo As Panel
-    Friend WithEvents BtnCatalogo As Button
     Friend WithEvents PanelForms As Panel
     Friend WithEvents BtnSalir As Button
     Friend WithEvents BtnFactura As Button
