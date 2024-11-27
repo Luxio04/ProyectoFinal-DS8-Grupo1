@@ -46,13 +46,8 @@ Public Class FrmReportes
             ' Conectar a la base de datos y ejecutar la consulta
             Using connection As New SqlConnection(connectionString)
                 connection.Open()
-                Dim query As String = "SELECT r.NombreRol AS Rol, " &
-                                      "c.Nombre + ' ' + c.Apellido AS Usuario, " &
-                                      "c.Correo AS Correo " &
-                                      "FROM Roles r " &
-                                      "INNER JOIN Colaboradores c ON r.RolID = c.RolID"
-
-                Using command As New SqlCommand(query, connection)
+                Dim storedProcedure As String = "ListarRolesYColaboradores"
+                Using command As New SqlCommand(storedProcedure, connection)
                     Using reader As SqlDataReader = command.ExecuteReader()
                         While reader.Read()
                             tabla.AddCell(reader("Rol").ToString())
@@ -113,10 +108,10 @@ Public Class FrmReportes
                 connection.Open()
 
                 ' Definir la consulta SQL
-                Dim query As String = "SELECT NombreProducto, Stock, FechaIngreso, PrecioUnitario FROM Productos"
+                Dim storedProcedure As String = "ObtenerProductos"
 
                 ' Ejecutar la consulta
-                Using command As New SqlCommand(query, connection)
+                Using command As New SqlCommand(storedProcedure, connection)
                     Using reader As SqlDataReader = command.ExecuteReader()
                         ' Agregar el título y la fecha al documento
                         doc.Add(New Paragraph("Reporte de Movimiento de Inventario"))
@@ -178,12 +173,10 @@ Public Class FrmReportes
                 connection.Open()
 
                 ' Definir la consulta SQL
-                Dim query As String = "SELECT p.PedidoID, pr.NombreProveedor, p.FechaPedido, p.EstadoPedido, p.TotalPedido " &
-                                  "FROM Pedidos p " &
-                                  "INNER JOIN Proveedores pr ON p.ProveedorID = pr.ProveedorID"
+                Dim storedProcedure As String = "ObtenerPedidosConProveedores"
 
                 ' Ejecutar la consulta
-                Using command As New SqlCommand(query, connection)
+                Using command As New SqlCommand(storedProcedure, connection)
                     Using reader As SqlDataReader = command.ExecuteReader()
                         ' Agregar el título y la fecha al documento
                         doc.Add(New Paragraph("Reporte de Pedidos Procesados y No Procesados"))
