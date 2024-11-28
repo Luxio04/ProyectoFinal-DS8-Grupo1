@@ -37,6 +37,17 @@ Partial Class FrmReportes
         Me.ColumnHeader2 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader3 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.Label4 = New System.Windows.Forms.Label()
+        Me.listProducto = New System.Windows.Forms.ListView()
+        Me.ColumnHeader4 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader5 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader6 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader7 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.listPedidos = New System.Windows.Forms.ListView()
+        Me.ColumnHeader8 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader9 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader10 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader11 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader12 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Button1 = New System.Windows.Forms.Button()
         Me.grupoUsuarios.SuspendLayout()
         Me.grupoInventario.SuspendLayout()
@@ -200,12 +211,89 @@ Partial Class FrmReportes
         Me.Label4.TabIndex = 10
         Me.Label4.Text = "Previsualizacion de Usuarios y sus roles"
         '
+        'listProducto
+        '
+        Me.listProducto.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader4, Me.ColumnHeader5, Me.ColumnHeader6, Me.ColumnHeader7})
+        Me.listProducto.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.listProducto.FullRowSelect = True
+        Me.listProducto.GridLines = True
+        Me.listProducto.HideSelection = False
+        Me.listProducto.Location = New System.Drawing.Point(267, 111)
+        Me.listProducto.Name = "listProducto"
+        Me.listProducto.Size = New System.Drawing.Size(650, 379)
+        Me.listProducto.TabIndex = 11
+        Me.listProducto.UseCompatibleStateImageBehavior = False
+        Me.listProducto.View = System.Windows.Forms.View.Details
+        '
+        'ColumnHeader4
+        '
+        Me.ColumnHeader4.Text = "Producto"
+        Me.ColumnHeader4.Width = 200
+        '
+        'ColumnHeader5
+        '
+        Me.ColumnHeader5.Text = "Stock"
+        Me.ColumnHeader5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'ColumnHeader6
+        '
+        Me.ColumnHeader6.Text = "Fecha Ingreso"
+        Me.ColumnHeader6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.ColumnHeader6.Width = 250
+        '
+        'ColumnHeader7
+        '
+        Me.ColumnHeader7.Text = "Precio Unitario"
+        Me.ColumnHeader7.Width = 150
+        '
+        'listPedidos
+        '
+        Me.listPedidos.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader8, Me.ColumnHeader9, Me.ColumnHeader10, Me.ColumnHeader11, Me.ColumnHeader12})
+        Me.listPedidos.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.listPedidos.FullRowSelect = True
+        Me.listPedidos.GridLines = True
+        Me.listPedidos.HideSelection = False
+        Me.listPedidos.Location = New System.Drawing.Point(267, 111)
+        Me.listPedidos.Name = "listPedidos"
+        Me.listPedidos.Size = New System.Drawing.Size(809, 379)
+        Me.listPedidos.TabIndex = 12
+        Me.listPedidos.UseCompatibleStateImageBehavior = False
+        Me.listPedidos.View = System.Windows.Forms.View.Details
+        '
+        'ColumnHeader8
+        '
+        Me.ColumnHeader8.Text = "PedidoId"
+        Me.ColumnHeader8.Width = 200
+        '
+        'ColumnHeader9
+        '
+        Me.ColumnHeader9.Text = "NombreProveedor"
+        Me.ColumnHeader9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'ColumnHeader10
+        '
+        Me.ColumnHeader10.Text = "Fecha Pedido"
+        Me.ColumnHeader10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.ColumnHeader10.Width = 250
+        '
+        'ColumnHeader11
+        '
+        Me.ColumnHeader11.Text = "Estado pedido"
+        Me.ColumnHeader11.Width = 150
+        '
+        'ColumnHeader12
+        '
+        Me.ColumnHeader12.Text = "Total Pedido"
+        Me.ColumnHeader12.Width = 100
+        '
         'FrmReportes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(115, Byte), Integer), CType(CType(101, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(1116, 540)
+        Me.Controls.Add(Me.listPedidos)
+        Me.Controls.Add(Me.listProducto)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.listDatos)
         Me.Controls.Add(Me.grupoPedidos)
@@ -238,4 +326,15 @@ Partial Class FrmReportes
     Friend WithEvents ColumnHeader2 As ColumnHeader
     Friend WithEvents ColumnHeader3 As ColumnHeader
     Friend WithEvents Label4 As Label
+    Friend WithEvents listProducto As ListView
+    Friend WithEvents ColumnHeader4 As ColumnHeader
+    Friend WithEvents ColumnHeader5 As ColumnHeader
+    Friend WithEvents ColumnHeader6 As ColumnHeader
+    Friend WithEvents ColumnHeader7 As ColumnHeader
+    Friend WithEvents listPedidos As ListView
+    Friend WithEvents ColumnHeader8 As ColumnHeader
+    Friend WithEvents ColumnHeader9 As ColumnHeader
+    Friend WithEvents ColumnHeader10 As ColumnHeader
+    Friend WithEvents ColumnHeader11 As ColumnHeader
+    Friend WithEvents ColumnHeader12 As ColumnHeader
 End Class
