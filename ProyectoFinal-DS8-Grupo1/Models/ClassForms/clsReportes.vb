@@ -1,5 +1,6 @@
 ﻿Imports iTextSharp.text
 Imports iTextSharp.text.pdf
+Imports ProyectoFinal_DS8_Grupo1.clsReportes
 Imports System.Data.SqlClient
 Imports System.IO
 
@@ -239,5 +240,74 @@ Public Class clsReportes
         Return listDatos
     End Function
 
+    Public Class Productos
+        Public Property Producto As String
+        Public Property Stock As String
+        Public Property FechaIngreso As String
+        Public Property PrecioUni As String
+    End Class
+
+    Public Shared Function FetchProducto() As List(Of Productos)
+        Dim listDatos As New List(Of Productos)()
+        Dim connectionString As String = My.Settings.ConexionBD
+
+        Using connection As New SqlConnection(connectionString)
+            connection.Open()
+            Dim storedProcedure As String = "ObtenerProductos"
+            Using command As New SqlCommand(storedProcedure, connection)
+                command.CommandType = CommandType.StoredProcedure
+
+                Using reader As SqlDataReader = command.ExecuteReader()
+                    While reader.Read()
+                        ' Llena la lista con los datos obtenidos
+                        listDatos.Add(New Productos() With {
+                            .Producto = reader("NombreProducto").ToString(),
+                            .Stock = reader("Stock").ToString(),
+                            .FechaIngreso = reader("FechaIngreso").ToString(),
+                            .PrecioUni = reader("PrecioUnitario").ToString()
+                        })
+                    End While
+                End Using
+            End Using
+        End Using
+
+        Return listDatos
+    End Function
+
+    Public Class PedidosProveedores
+        Public Property PedidoID As String
+        Public Property NombreProveedor As String
+        Public Property FechaPedido As String
+        Public Property EstadoPedido As String
+        Public Property TotalPedido As String
+    End Class
+
+    Public Shared Function FetchPedidosProveedor() As List(Of PedidosProveedores)
+        Dim listDatos As New List(Of PedidosProveedores)()
+        Dim connectionString As String = My.Settings.ConexionBD
+
+        Using connection As New SqlConnection(connectionString)
+            connection.Open()
+            Dim storedProcedure As String = "ObtenerPedidosConProveedores"
+            Using command As New SqlCommand(storedProcedure, connection)
+                command.CommandType = CommandType.StoredProcedure
+
+                Using reader As SqlDataReader = command.ExecuteReader()
+                    While reader.Read()
+                        ' Llena la lista con los datos obtenidos
+                        listDatos.Add(New PedidosProveedores() With {
+                            .PedidoID = reader("PedidoID").ToString(),
+                            .NombreProveedor = reader("NombreProveedor").ToString(),
+                            .FechaPedido = reader("FechaPedido").ToString(),
+                            .EstadoPedido = reader("EstadoPedido").ToString(),
+                            .TotalPedido = reader("TotalPedido").ToString()
+                        })
+                    End While
+                End Using
+            End Using
+        End Using
+
+        Return listDatos
+    End Function
 
 End Class

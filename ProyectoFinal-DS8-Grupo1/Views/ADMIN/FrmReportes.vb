@@ -24,8 +24,11 @@ Public Class FrmReportes
     Private Sub FrmReportes_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Select Case ReporteId
             Case 1
+                Label4.Text = "Reporte de Usuario"
                 grupoInventario.Visible = False
+                listProducto.Visible = False
                 grupoPedidos.Visible = False
+                listPedidos.Visible = False
                 listDatos.Items.Clear()
                 Dim datos As List(Of RolColaborador) = clsReportes.FetchRolesUsuarios()
                 For Each dato In datos
@@ -35,11 +38,36 @@ Public Class FrmReportes
                     End With
                 Next
             Case 2
+                Label4.Text = "Reporte de Producto"
                 grupoUsuarios.Visible = False
+                listDatos.Visible = False
                 grupoPedidos.Visible = False
+                listPedidos.Visible = False
+                listProducto.Items.Clear()
+                Dim datos As List(Of Productos) = clsReportes.FetchProducto()
+                For Each dato In datos
+                    With listProducto.Items.Add($"{dato.Producto}")
+                        .SubItems.Add($"{dato.Stock}")
+                        .SubItems.Add($"{dato.FechaIngreso}")
+                        .SubItems.Add($"{dato.PrecioUni}")
+                    End With
+                Next
             Case 3
+                Label4.Text = "Reporte de Pedidos Proveedor"
                 grupoUsuarios.Visible = False
                 grupoInventario.Visible = False
+                listDatos.Visible = False
+                listProducto.Visible = False
+                listProducto.Items.Clear()
+                Dim datos As List(Of PedidosProveedores) = clsReportes.FetchPedidosProveedor()
+                For Each dato In datos
+                    With listPedidos.Items.Add($"{dato.PedidoID}")
+                        .SubItems.Add($"{dato.NombreProveedor}")
+                        .SubItems.Add($"{dato.FechaPedido}")
+                        .SubItems.Add($"{dato.EstadoPedido}")
+                        .SubItems.Add($"{dato.TotalPedido}")
+                    End With
+                Next
         End Select
     End Sub
 
