@@ -39,23 +39,35 @@
         HideSubMenu()
     End Sub
 
+    '<----------------------------Reporte usuarios-------------------------->
     Private Sub BtnReporte1_Click(sender As Object, e As EventArgs) Handles BtnReporte1.Click
-        OpenForms(New FrmReportes)
+        Dim frm As New FrmReportes()
+        frm.ReporteId = 1
+        OpenForms(frm)
         HideSubMenu()
     End Sub
 
+    '<----------------------------Reporte inventario-------------------------->
     Private Sub BtnReporteVenta_Click(sender As Object, e As EventArgs) Handles BtnReporteVenta.Click
-        OpenForms(New FrmReportes)
+        Dim frm As New FrmReportes()
+        frm.ReporteId = 2
+        OpenForms(frm)
         HideSubMenu()
     End Sub
 
+    '<----------------------------Reporte pedidos-------------------------->
     Private Sub BtnReportePedidos_Click(sender As Object, e As EventArgs) Handles BtnReportePedidos.Click
-        OpenForms(New FrmReportes)
+        Dim frm As New FrmReportes()
+        frm.ReporteId = 3
+        OpenForms(frm)
         HideSubMenu()
+
+        'OpenForms(New FrmReportes)
+        'HideSubMenu()
     End Sub
 
     Private Sub BtnPedidos_Click(sender As Object, e As EventArgs) Handles BtnPedidos.Click
-        OpenForms(New FrmReportes)
+        'OpenForms(New FrmReportes)
         HideSubMenu()
     End Sub
 

@@ -88,6 +88,7 @@
     <Compile Include="Models\ClassForms\clsCategorias.vb" />
     <Compile Include="Models\ClassForms\clsInventario.vb" />
     <Compile Include="Models\ClassForms\clsProveedores.vb" />
+    <Compile Include="Models\ClassForms\clsReportes.vb" />
     <Compile Include="Views\ADMIN\FrmAdmin.Designer.vb">
       <DependentUpon>FrmAdmin.vb</DependentUpon>
     </Compile>
