@@ -72,6 +72,7 @@ Partial Class FrmCategoria
         Me.TabControlCategoria.Controls.Add(Me.TabPageUpdate)
         Me.TabControlCategoria.Controls.Add(Me.TabPageMostrar)
         Me.TabControlCategoria.Controls.Add(Me.TabPageEliminar)
+        Me.TabControlCategoria.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TabControlCategoria.Location = New System.Drawing.Point(178, 155)
         Me.TabControlCategoria.Name = "TabControlCategoria"
         Me.TabControlCategoria.SelectedIndex = 0
@@ -80,14 +81,14 @@ Partial Class FrmCategoria
         '
         'TabPageInsertar
         '
-        Me.TabPageInsertar.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(152, Byte), Integer))
+        Me.TabPageInsertar.BackColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(89, Byte), Integer))
         Me.TabPageInsertar.Controls.Add(Me.BtnAgregar)
         Me.TabPageInsertar.Controls.Add(Me.txtCategoriaNew)
         Me.TabPageInsertar.Controls.Add(Me.Label2)
-        Me.TabPageInsertar.Location = New System.Drawing.Point(4, 25)
+        Me.TabPageInsertar.Location = New System.Drawing.Point(4, 28)
         Me.TabPageInsertar.Name = "TabPageInsertar"
         Me.TabPageInsertar.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPageInsertar.Size = New System.Drawing.Size(767, 409)
+        Me.TabPageInsertar.Size = New System.Drawing.Size(767, 406)
         Me.TabPageInsertar.TabIndex = 0
         Me.TabPageInsertar.Text = "Insertar Categoria"
         '
@@ -99,9 +100,10 @@ Partial Class FrmCategoria
         Me.BtnAgregar.FlatAppearance.BorderSize = 0
         Me.BtnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnAgregar.Font = New System.Drawing.Font("Times New Roman", 19.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnAgregar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
         Me.BtnAgregar.Location = New System.Drawing.Point(192, 294)
         Me.BtnAgregar.Name = "BtnAgregar"
-        Me.BtnAgregar.Size = New System.Drawing.Size(382, 62)
+        Me.BtnAgregar.Size = New System.Drawing.Size(382, 59)
         Me.BtnAgregar.TabIndex = 2
         Me.BtnAgregar.Text = "Agregar Categoria"
         Me.BtnAgregar.UseVisualStyleBackColor = True
@@ -124,6 +126,7 @@ Partial Class FrmCategoria
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Times New Roman", 13.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
         Me.Label2.Location = New System.Drawing.Point(226, 117)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(281, 26)
@@ -132,7 +135,7 @@ Partial Class FrmCategoria
         '
         'TabPageUpdate
         '
-        Me.TabPageUpdate.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(152, Byte), Integer))
+        Me.TabPageUpdate.BackColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(89, Byte), Integer))
         Me.TabPageUpdate.Controls.Add(Me.BtnBusAct)
         Me.TabPageUpdate.Controls.Add(Me.txtCategoria)
         Me.TabPageUpdate.Controls.Add(Me.BtnActualizar)
@@ -141,10 +144,10 @@ Partial Class FrmCategoria
         Me.TabPageUpdate.Controls.Add(Me.Label5)
         Me.TabPageUpdate.Controls.Add(Me.Label4)
         Me.TabPageUpdate.Controls.Add(Me.Label3)
-        Me.TabPageUpdate.Location = New System.Drawing.Point(4, 25)
+        Me.TabPageUpdate.Location = New System.Drawing.Point(4, 28)
         Me.TabPageUpdate.Name = "TabPageUpdate"
         Me.TabPageUpdate.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPageUpdate.Size = New System.Drawing.Size(767, 409)
+        Me.TabPageUpdate.Size = New System.Drawing.Size(767, 406)
         Me.TabPageUpdate.TabIndex = 1
         Me.TabPageUpdate.Text = "Actualizar Categoria"
         '
@@ -153,6 +156,7 @@ Partial Class FrmCategoria
         Me.BtnBusAct.FlatAppearance.BorderSize = 0
         Me.BtnBusAct.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnBusAct.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnBusAct.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
         Me.BtnBusAct.Location = New System.Drawing.Point(461, 290)
         Me.BtnBusAct.Name = "BtnBusAct"
         Me.BtnBusAct.Size = New System.Drawing.Size(181, 45)
@@ -173,6 +177,7 @@ Partial Class FrmCategoria
         Me.BtnActualizar.FlatAppearance.BorderSize = 0
         Me.BtnActualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnActualizar.Font = New System.Drawing.Font("Times New Roman", 13.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnActualizar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
         Me.BtnActualizar.Location = New System.Drawing.Point(125, 290)
         Me.BtnActualizar.Name = "BtnActualizar"
         Me.BtnActualizar.Size = New System.Drawing.Size(237, 45)
@@ -200,6 +205,7 @@ Partial Class FrmCategoria
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
         Me.Label5.Location = New System.Drawing.Point(473, 158)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(147, 19)
@@ -210,6 +216,7 @@ Partial Class FrmCategoria
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
         Me.Label4.Location = New System.Drawing.Point(147, 158)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(27, 19)
@@ -220,6 +227,7 @@ Partial Class FrmCategoria
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Times New Roman", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
         Me.Label3.Location = New System.Drawing.Point(223, 37)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(320, 23)
@@ -228,17 +236,17 @@ Partial Class FrmCategoria
         '
         'TabPageMostrar
         '
-        Me.TabPageMostrar.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(152, Byte), Integer))
+        Me.TabPageMostrar.BackColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(89, Byte), Integer))
         Me.TabPageMostrar.Controls.Add(Me.BtnMostrar)
         Me.TabPageMostrar.Controls.Add(Me.BtnBusqueda)
         Me.TabPageMostrar.Controls.Add(Me.DgbCategoria)
         Me.TabPageMostrar.Controls.Add(Me.txtBusqueda)
         Me.TabPageMostrar.Controls.Add(Me.Label7)
         Me.TabPageMostrar.Controls.Add(Me.Label6)
-        Me.TabPageMostrar.Location = New System.Drawing.Point(4, 25)
+        Me.TabPageMostrar.Location = New System.Drawing.Point(4, 28)
         Me.TabPageMostrar.Name = "TabPageMostrar"
         Me.TabPageMostrar.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPageMostrar.Size = New System.Drawing.Size(767, 409)
+        Me.TabPageMostrar.Size = New System.Drawing.Size(767, 406)
         Me.TabPageMostrar.TabIndex = 2
         Me.TabPageMostrar.Text = "Buscar Categoria"
         '
@@ -247,6 +255,7 @@ Partial Class FrmCategoria
         Me.BtnMostrar.FlatAppearance.BorderSize = 0
         Me.BtnMostrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnMostrar.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnMostrar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
         Me.BtnMostrar.Location = New System.Drawing.Point(561, 296)
         Me.BtnMostrar.Name = "BtnMostrar"
         Me.BtnMostrar.Size = New System.Drawing.Size(187, 49)
@@ -259,6 +268,7 @@ Partial Class FrmCategoria
         Me.BtnBusqueda.FlatAppearance.BorderSize = 0
         Me.BtnBusqueda.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnBusqueda.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnBusqueda.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
         Me.BtnBusqueda.Location = New System.Drawing.Point(561, 206)
         Me.BtnBusqueda.Name = "BtnBusqueda"
         Me.BtnBusqueda.Size = New System.Drawing.Size(181, 50)
@@ -268,6 +278,7 @@ Partial Class FrmCategoria
         '
         'DgbCategoria
         '
+        Me.DgbCategoria.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(89, Byte), Integer))
         Me.DgbCategoria.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DgbCategoria.Location = New System.Drawing.Point(37, 179)
         Me.DgbCategoria.Name = "DgbCategoria"
@@ -288,6 +299,7 @@ Partial Class FrmCategoria
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
         Me.Label7.Location = New System.Drawing.Point(87, 105)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(256, 19)
@@ -298,6 +310,7 @@ Partial Class FrmCategoria
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Times New Roman", 16.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
         Me.Label6.Location = New System.Drawing.Point(261, 31)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(352, 32)
@@ -306,22 +319,25 @@ Partial Class FrmCategoria
         '
         'TabPageEliminar
         '
-        Me.TabPageEliminar.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(152, Byte), Integer))
+        Me.TabPageEliminar.BackColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(89, Byte), Integer))
         Me.TabPageEliminar.Controls.Add(Me.BtnEliminar)
         Me.TabPageEliminar.Controls.Add(Me.DgvCategorias)
         Me.TabPageEliminar.Controls.Add(Me.txtCateElimar)
         Me.TabPageEliminar.Controls.Add(Me.Label9)
         Me.TabPageEliminar.Controls.Add(Me.Label8)
-        Me.TabPageEliminar.Location = New System.Drawing.Point(4, 25)
+        Me.TabPageEliminar.Location = New System.Drawing.Point(4, 28)
         Me.TabPageEliminar.Name = "TabPageEliminar"
         Me.TabPageEliminar.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPageEliminar.Size = New System.Drawing.Size(767, 409)
+        Me.TabPageEliminar.Size = New System.Drawing.Size(767, 406)
         Me.TabPageEliminar.TabIndex = 3
         Me.TabPageEliminar.Text = "Eliminar Categoria"
         '
         'BtnEliminar
         '
+        Me.BtnEliminar.FlatAppearance.BorderSize = 0
+        Me.BtnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnEliminar.Font = New System.Drawing.Font("Times New Roman", 13.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnEliminar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
         Me.BtnEliminar.Location = New System.Drawing.Point(517, 256)
         Me.BtnEliminar.Name = "BtnEliminar"
         Me.BtnEliminar.Size = New System.Drawing.Size(244, 53)
@@ -331,6 +347,7 @@ Partial Class FrmCategoria
         '
         'DgvCategorias
         '
+        Me.DgvCategorias.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(89, Byte), Integer))
         Me.DgvCategorias.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DgvCategorias.Location = New System.Drawing.Point(36, 195)
         Me.DgvCategorias.Name = "DgvCategorias"
@@ -351,6 +368,7 @@ Partial Class FrmCategoria
         '
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
         Me.Label9.Location = New System.Drawing.Point(92, 131)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(237, 19)
@@ -361,6 +379,7 @@ Partial Class FrmCategoria
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Times New Roman", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
         Me.Label8.Location = New System.Drawing.Point(261, 39)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(244, 32)
@@ -369,7 +388,7 @@ Partial Class FrmCategoria
         '
         'PanelSALIR
         '
-        Me.PanelSALIR.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(153, Byte), Integer))
+        Me.PanelSALIR.BackColor = System.Drawing.Color.FromArgb(CType(CType(98, Byte), Integer), CType(CType(19, Byte), Integer), CType(CType(62, Byte), Integer))
         Me.PanelSALIR.Controls.Add(Me.BtnCerrar)
         Me.PanelSALIR.Dock = System.Windows.Forms.DockStyle.Top
         Me.PanelSALIR.Location = New System.Drawing.Point(0, 0)
@@ -379,7 +398,7 @@ Partial Class FrmCategoria
         '
         'BtnCerrar
         '
-        Me.BtnCerrar.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(153, Byte), Integer))
+        Me.BtnCerrar.BackColor = System.Drawing.Color.FromArgb(CType(CType(98, Byte), Integer), CType(CType(19, Byte), Integer), CType(CType(62, Byte), Integer))
         Me.BtnCerrar.BackgroundImage = CType(resources.GetObject("BtnCerrar.BackgroundImage"), System.Drawing.Image)
         Me.BtnCerrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.BtnCerrar.Dock = System.Windows.Forms.DockStyle.Left
@@ -393,7 +412,7 @@ Partial Class FrmCategoria
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Times New Roman", 22.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(79, Byte), Integer))
+        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
         Me.Label1.Location = New System.Drawing.Point(438, 75)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(254, 43)
@@ -404,7 +423,7 @@ Partial Class FrmCategoria
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(115, Byte), Integer), CType(CType(101, Byte), Integer))
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(89, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1131, 703)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PanelSALIR)

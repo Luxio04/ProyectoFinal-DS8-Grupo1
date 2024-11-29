@@ -41,8 +41,8 @@ Partial Class FrmAdmin
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PanelFormsAdm = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.PanelSubColab = New System.Windows.Forms.Panel()
         Me.BtnCrearColab = New System.Windows.Forms.Button()
+        Me.PanelSubColab = New System.Windows.Forms.Panel()
         Me.BtnRol = New System.Windows.Forms.Button()
         Me.PanelMenu.SuspendLayout()
         Me.PanelSubReportes.SuspendLayout()
@@ -55,7 +55,7 @@ Partial Class FrmAdmin
         '
         'PanelMenu
         '
-        Me.PanelMenu.BackColor = System.Drawing.Color.FromArgb(CType(CType(21, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(60, Byte), Integer))
+        Me.PanelMenu.BackColor = System.Drawing.Color.FromArgb(CType(CType(98, Byte), Integer), CType(CType(19, Byte), Integer), CType(CType(62, Byte), Integer))
         Me.PanelMenu.Controls.Add(Me.PanelSubColab)
         Me.PanelMenu.Controls.Add(Me.BtnColab)
         Me.PanelMenu.Controls.Add(Me.PanelSubReportes)
@@ -78,7 +78,7 @@ Partial Class FrmAdmin
         Me.BtnColab.FlatAppearance.BorderSize = 0
         Me.BtnColab.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnColab.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnColab.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(79, Byte), Integer))
+        Me.BtnColab.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
         Me.BtnColab.Location = New System.Drawing.Point(0, 556)
         Me.BtnColab.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BtnColab.Name = "BtnColab"
@@ -105,7 +105,7 @@ Partial Class FrmAdmin
         Me.BtnReportePedidos.FlatAppearance.BorderSize = 0
         Me.BtnReportePedidos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnReportePedidos.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnReportePedidos.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(79, Byte), Integer))
+        Me.BtnReportePedidos.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
         Me.BtnReportePedidos.Location = New System.Drawing.Point(0, 78)
         Me.BtnReportePedidos.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BtnReportePedidos.Name = "BtnReportePedidos"
@@ -120,7 +120,7 @@ Partial Class FrmAdmin
         Me.BtnReporteVenta.FlatAppearance.BorderSize = 0
         Me.BtnReporteVenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnReporteVenta.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnReporteVenta.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(79, Byte), Integer))
+        Me.BtnReporteVenta.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
         Me.BtnReporteVenta.Location = New System.Drawing.Point(0, 39)
         Me.BtnReporteVenta.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BtnReporteVenta.Name = "BtnReporteVenta"
@@ -135,7 +135,7 @@ Partial Class FrmAdmin
         Me.BtnReporte1.FlatAppearance.BorderSize = 0
         Me.BtnReporte1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnReporte1.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnReporte1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(79, Byte), Integer))
+        Me.BtnReporte1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
         Me.BtnReporte1.Location = New System.Drawing.Point(0, 0)
         Me.BtnReporte1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BtnReporte1.Name = "BtnReporte1"
@@ -150,7 +150,7 @@ Partial Class FrmAdmin
         Me.BtnReportes.FlatAppearance.BorderSize = 0
         Me.BtnReportes.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnReportes.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnReportes.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(79, Byte), Integer))
+        Me.BtnReportes.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
         Me.BtnReportes.Location = New System.Drawing.Point(0, 353)
         Me.BtnReportes.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BtnReportes.Name = "BtnReportes"
@@ -165,7 +165,7 @@ Partial Class FrmAdmin
         Me.BtnPedidos.FlatAppearance.BorderSize = 0
         Me.BtnPedidos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnPedidos.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnPedidos.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(79, Byte), Integer))
+        Me.BtnPedidos.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
         Me.BtnPedidos.Location = New System.Drawing.Point(0, 313)
         Me.BtnPedidos.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BtnPedidos.Name = "BtnPedidos"
@@ -192,7 +192,7 @@ Partial Class FrmAdmin
         Me.BynProducto.FlatAppearance.BorderSize = 0
         Me.BynProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BynProducto.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BynProducto.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(79, Byte), Integer))
+        Me.BynProducto.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
         Me.BynProducto.Location = New System.Drawing.Point(0, 78)
         Me.BynProducto.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BynProducto.Name = "BynProducto"
@@ -207,7 +207,7 @@ Partial Class FrmAdmin
         Me.BtnProveedor.FlatAppearance.BorderSize = 0
         Me.BtnProveedor.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnProveedor.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnProveedor.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(79, Byte), Integer))
+        Me.BtnProveedor.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
         Me.BtnProveedor.Location = New System.Drawing.Point(0, 39)
         Me.BtnProveedor.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BtnProveedor.Name = "BtnProveedor"
@@ -222,7 +222,7 @@ Partial Class FrmAdmin
         Me.BtnCategoria.FlatAppearance.BorderSize = 0
         Me.BtnCategoria.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnCategoria.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnCategoria.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(79, Byte), Integer))
+        Me.BtnCategoria.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
         Me.BtnCategoria.Location = New System.Drawing.Point(0, 0)
         Me.BtnCategoria.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BtnCategoria.Name = "BtnCategoria"
@@ -237,7 +237,7 @@ Partial Class FrmAdmin
         Me.BtnInventario.FlatAppearance.BorderSize = 0
         Me.BtnInventario.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnInventario.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnInventario.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(79, Byte), Integer))
+        Me.BtnInventario.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
         Me.BtnInventario.Location = New System.Drawing.Point(0, 138)
         Me.BtnInventario.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BtnInventario.Name = "BtnInventario"
@@ -252,7 +252,7 @@ Partial Class FrmAdmin
         Me.BtnRegresar.FlatAppearance.BorderSize = 0
         Me.BtnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnRegresar.Font = New System.Drawing.Font("Times New Roman", 10.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnRegresar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(79, Byte), Integer))
+        Me.BtnRegresar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
         Me.BtnRegresar.Location = New System.Drawing.Point(0, 659)
         Me.BtnRegresar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BtnRegresar.Name = "BtnRegresar"
@@ -284,7 +284,7 @@ Partial Class FrmAdmin
         '
         'PanelFormsAdm
         '
-        Me.PanelFormsAdm.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(153, Byte), Integer))
+        Me.PanelFormsAdm.BackColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(89, Byte), Integer))
         Me.PanelFormsAdm.Controls.Add(Me.Label1)
         Me.PanelFormsAdm.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelFormsAdm.Location = New System.Drawing.Point(260, 0)
@@ -300,13 +300,27 @@ Partial Class FrmAdmin
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Times New Roman", 22.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(79, Byte), Integer))
+        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
         Me.Label1.Location = New System.Drawing.Point(431, 330)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(268, 43)
         Me.Label1.TabIndex = 3
         Me.Label1.Text = "Smart Inventory"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'BtnCrearColab
+        '
+        Me.BtnCrearColab.Dock = System.Windows.Forms.DockStyle.Top
+        Me.BtnCrearColab.FlatAppearance.BorderSize = 0
+        Me.BtnCrearColab.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnCrearColab.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnCrearColab.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
+        Me.BtnCrearColab.Location = New System.Drawing.Point(0, 0)
+        Me.BtnCrearColab.Name = "BtnCrearColab"
+        Me.BtnCrearColab.Size = New System.Drawing.Size(260, 40)
+        Me.BtnCrearColab.TabIndex = 4
+        Me.BtnCrearColab.Text = "Agregar Colaborador"
+        Me.BtnCrearColab.UseVisualStyleBackColor = True
         '
         'PanelSubColab
         '
@@ -318,23 +332,13 @@ Partial Class FrmAdmin
         Me.PanelSubColab.Size = New System.Drawing.Size(260, 100)
         Me.PanelSubColab.TabIndex = 4
         '
-        'BtnCrearColab
-        '
-        Me.BtnCrearColab.Dock = System.Windows.Forms.DockStyle.Top
-        Me.BtnCrearColab.FlatAppearance.BorderSize = 0
-        Me.BtnCrearColab.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnCrearColab.Location = New System.Drawing.Point(0, 0)
-        Me.BtnCrearColab.Name = "BtnCrearColab"
-        Me.BtnCrearColab.Size = New System.Drawing.Size(260, 40)
-        Me.BtnCrearColab.TabIndex = 4
-        Me.BtnCrearColab.Text = "Agregar Colaborador"
-        Me.BtnCrearColab.UseVisualStyleBackColor = True
-        '
         'BtnRol
         '
         Me.BtnRol.Dock = System.Windows.Forms.DockStyle.Top
         Me.BtnRol.FlatAppearance.BorderSize = 0
         Me.BtnRol.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnRol.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnRol.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
         Me.BtnRol.Location = New System.Drawing.Point(0, 40)
         Me.BtnRol.Name = "BtnRol"
         Me.BtnRol.Size = New System.Drawing.Size(260, 40)
@@ -383,6 +387,6 @@ Partial Class FrmAdmin
     Friend WithEvents BtnReporteVenta As Button
     Friend WithEvents BtnReporte1 As Button
     Friend WithEvents PanelSubColab As Panel
-    Friend WithEvents BtnCrearColab As Button
     Friend WithEvents BtnRol As Button
+    Friend WithEvents BtnCrearColab As Button
 End Class
