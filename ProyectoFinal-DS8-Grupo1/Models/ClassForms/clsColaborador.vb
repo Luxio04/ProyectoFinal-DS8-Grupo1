@@ -2,7 +2,7 @@
 
 Public Class clsColaborador
     Dim connectionString As String = My.Settings.ConexionBD
-    Public Function CrearColaborador(colabName As String, passwordColab As String, nombre As String, apellido As String, correo As String, direccionColab As String, rolID As Integer, ByRef mensaje As String) As Boolean
+    Public Function CrearColaborador(colabName As String, passwordColab As String, nombre As String, apellido As String, correo As String, direccionColab As String, telefonoColab As String, rolID As Integer, ByRef mensaje As String) As Boolean
         Try
             Using con As New SqlConnection(connectionString)
                 Dim cmd As New SqlCommand("CrearColaborador", con)
@@ -14,6 +14,7 @@ Public Class clsColaborador
                 cmd.Parameters.AddWithValue("@Apellido", apellido)
                 cmd.Parameters.AddWithValue("@Correo", correo)
                 cmd.Parameters.AddWithValue("@DireccionColab", direccionColab)
+                cmd.Parameters.AddWithValue("@TelefonoColab", telefonoColab)
                 cmd.Parameters.AddWithValue("@RolID", rolID)
 
                 con.Open()
@@ -30,7 +31,8 @@ Public Class clsColaborador
             Return False
         End Try
     End Function
-    Public Function ActualizarColaborador(colabID As Integer, colabName As String, passwordColab As String, nombre As String, apellido As String, correo As String, direccionColab As String, rolID As Integer, ByRef mensaje As String) As Boolean
+
+    Public Function ActualizarColaborador(colabID As Integer, colabName As String, passwordColab As String, nombre As String, apellido As String, correo As String, direccionColab As String, telefonoColab As String, rolID As Integer, ByRef mensaje As String) As Boolean
         Try
             Using con As New SqlConnection(connectionString)
                 Dim cmd As New SqlCommand("ActualizarColaborador", con)
@@ -43,6 +45,7 @@ Public Class clsColaborador
                 cmd.Parameters.AddWithValue("@Apellido", apellido)
                 cmd.Parameters.AddWithValue("@Correo", correo)
                 cmd.Parameters.AddWithValue("@DireccionColab", direccionColab)
+                cmd.Parameters.AddWithValue("@TelefonoColab", telefonoColab)
                 cmd.Parameters.AddWithValue("@RolID", rolID)
 
                 con.Open()
@@ -59,6 +62,7 @@ Public Class clsColaborador
             Return False
         End Try
     End Function
+
 
     Public Function EliminarColaborador(colabID As Integer, ByRef mensaje As String) As Boolean
         Try

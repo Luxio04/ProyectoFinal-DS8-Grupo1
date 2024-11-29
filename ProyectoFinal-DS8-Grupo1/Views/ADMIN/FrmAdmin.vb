@@ -5,6 +5,7 @@
     Private Sub HideSubMenu()
         PanelSubInvent.Visible = False
         PanelSubReportes.Visible = False
+        PanelSubColab.Visible = False
     End Sub
 
     Private Sub ShowSubMenu(subMenu As Panel)

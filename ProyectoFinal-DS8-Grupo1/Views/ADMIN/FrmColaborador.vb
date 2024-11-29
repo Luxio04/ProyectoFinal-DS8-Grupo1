@@ -19,7 +19,7 @@ Public Class FrmColaborador
 
         ' Llamar a la función para crear el colaborador
         Dim mensaje As String = String.Empty
-        If objColab.CrearColaborador(username, password, nombre, apellido, email, direccion, rolID, mensaje) Then
+        If objColab.CrearColaborador(username, password, nombre, apellido, email, direccion, telefono, rolID, mensaje) Then
             MessageBox.Show("Colaborador registrado exitosamente. " & mensaje, "Registro", MessageBoxButtons.OK, MessageBoxIcon.Information)
         Else
             MessageBox.Show(mensaje, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
@@ -152,6 +152,7 @@ Public Class FrmColaborador
         txtApellidoColab.Clear()
         txtCorreoColab.Clear()
         txtDireccionColab.Clear()
+        txtTelefonoColab.Clear()
     End Sub
 
     Private Sub BtnModificar_Click(sender As Object, e As EventArgs) Handles BtnModificar.Click
@@ -175,7 +176,7 @@ Public Class FrmColaborador
 
         ' Llamar a la función para actualizar el colaborador
         Dim mensaje As String = String.Empty
-        If objColab.ActualizarColaborador(colabID, username, password, nombre, apellido, email, direccion, rolID, mensaje) Then
+        If objColab.ActualizarColaborador(colabID, username, password, nombre, apellido, email, direccion, telefono, rolID, mensaje) Then
             MessageBox.Show("Colaborador actualizado exitosamente. " & mensaje, "Actualización", MessageBoxButtons.OK, MessageBoxIcon.Information)
         Else
             MessageBox.Show(mensaje, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
@@ -205,6 +206,8 @@ Public Class FrmColaborador
 
             ' Limpiar los campos
             LimpiarCampos()
+
+
         Else
             ' Cancelar la operación de eliminación
             MessageBox.Show("Operación cancelada.", "Eliminación", MessageBoxButtons.OK, MessageBoxIcon.Information)
@@ -243,7 +246,7 @@ Public Class FrmColaborador
     Private Function GenerarPassword(apellido As String) As String
         Dim random As New Random()
         Dim characters As String = "_*-.abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
-        Dim password As String = New String(Enumerable.Repeat(characters, 6).Select(Function(s) s(random.Next(s.Length))).ToArray())
+        Dim password As String = New String(Enumerable.Repeat(characters, 8).Select(Function(s) s(random.Next(s.Length))).ToArray())
 
         ' Asegurarse de que tiene al menos una letra mayúscula y un número
         If Not password.Any(AddressOf Char.IsUpper) Then
@@ -253,8 +256,15 @@ Public Class FrmColaborador
             password = ReplaceCharAt(password, random.Next(0, password.Length), "0123456789"(random.Next(10)))
         End If
 
-        ' Añadir el apellido al final
-        password &= apellido
+        ' Añadir el apellido
+        password &= apellido.Substring(0, Math.Min(5, apellido.Length)).ToLower()
+
+        ' Asegurar la longitud entre 8 y 13 caracteres
+        If password.Length < 8 Then
+            password &= New String(Enumerable.Repeat(characters, 8 - password.Length).Select(Function(s) s(random.Next(s.Length))).ToArray())
+        ElseIf password.Length > 13 Then
+            password = password.Substring(0, 13)
+        End If
 
         Return password
     End Function
@@ -278,11 +288,11 @@ Public Class FrmColaborador
             txtID.Text = selectedRow.Cells("ColabID").Value.ToString()
             txtNombreColab.Text = selectedRow.Cells("Nombre").Value.ToString()
             txtApellidoColab.Text = selectedRow.Cells("Apellido").Value.ToString()
-            txtTelefonoColab.Text = selectedRow.Cells("Telefono").Value.ToString()
+            txtTelefonoColab.Text = selectedRow.Cells("TelefonoColab").Value.ToString()
             txtDireccionColab.Text = selectedRow.Cells("DireccionColab").Value.ToString()
             txtUserName.Text = selectedRow.Cells("ColabName").Value.ToString()
             txtPassColab.Text = selectedRow.Cells("PasswordColab").Value.ToString()
-            txtID.Text = selectedRow.Cells("Correo").Value.ToString()
+            txtCorreoColab.Text = selectedRow.Cells("Correo").Value.ToString()
             txtRolID.Text = selectedRow.Cells("RolID").Value
         End If
     End Sub
