@@ -44,12 +44,14 @@ Partial Class FrmColaborador
         Me.Label9 = New System.Windows.Forms.Label()
         Me.txtDireccionColab = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.BtnModificar = New System.Windows.Forms.Button()
+        Me.BtnEliminar = New System.Windows.Forms.Button()
         Me.PanelSALIR.SuspendLayout()
         Me.PanelRegColab.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'PanelSALIR
@@ -97,7 +99,7 @@ Partial Class FrmColaborador
         Me.PanelRegColab.Controls.Add(Me.Label8)
         Me.PanelRegColab.Location = New System.Drawing.Point(40, 60)
         Me.PanelRegColab.Name = "PanelRegColab"
-        Me.PanelRegColab.Size = New System.Drawing.Size(1051, 580)
+        Me.PanelRegColab.Size = New System.Drawing.Size(1051, 573)
         Me.PanelRegColab.TabIndex = 13
         '
         'BtnEmail
@@ -106,11 +108,14 @@ Partial Class FrmColaborador
         Me.BtnEmail.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnEmail.Font = New System.Drawing.Font("Times New Roman", 9.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnEmail.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
-        Me.BtnEmail.Location = New System.Drawing.Point(782, 410)
+        Me.BtnEmail.Image = CType(resources.GetObject("BtnEmail.Image"), System.Drawing.Image)
+        Me.BtnEmail.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnEmail.Location = New System.Drawing.Point(758, 410)
         Me.BtnEmail.Name = "BtnEmail"
-        Me.BtnEmail.Size = New System.Drawing.Size(193, 52)
+        Me.BtnEmail.Size = New System.Drawing.Size(217, 52)
         Me.BtnEmail.TabIndex = 30
         Me.BtnEmail.Text = "Generar Correo"
+        Me.BtnEmail.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.BtnEmail.UseVisualStyleBackColor = True
         '
         'BtnPassword
@@ -119,11 +124,14 @@ Partial Class FrmColaborador
         Me.BtnPassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnPassword.Font = New System.Drawing.Font("Times New Roman", 9.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnPassword.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
-        Me.BtnPassword.Location = New System.Drawing.Point(782, 294)
+        Me.BtnPassword.Image = CType(resources.GetObject("BtnPassword.Image"), System.Drawing.Image)
+        Me.BtnPassword.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnPassword.Location = New System.Drawing.Point(758, 294)
         Me.BtnPassword.Name = "BtnPassword"
-        Me.BtnPassword.Size = New System.Drawing.Size(193, 52)
+        Me.BtnPassword.Size = New System.Drawing.Size(217, 52)
         Me.BtnPassword.TabIndex = 29
         Me.BtnPassword.Text = "Generar Contraseña"
+        Me.BtnPassword.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.BtnPassword.UseVisualStyleBackColor = True
         '
         'BtnRegistrarColab
@@ -132,11 +140,14 @@ Partial Class FrmColaborador
         Me.BtnRegistrarColab.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnRegistrarColab.Font = New System.Drawing.Font("Times New Roman", 10.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnRegistrarColab.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
-        Me.BtnRegistrarColab.Location = New System.Drawing.Point(227, 647)
+        Me.BtnRegistrarColab.Image = CType(resources.GetObject("BtnRegistrarColab.Image"), System.Drawing.Image)
+        Me.BtnRegistrarColab.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnRegistrarColab.Location = New System.Drawing.Point(222, 639)
         Me.BtnRegistrarColab.Name = "BtnRegistrarColab"
         Me.BtnRegistrarColab.Size = New System.Drawing.Size(193, 52)
         Me.BtnRegistrarColab.TabIndex = 28
         Me.BtnRegistrarColab.Text = "Registrar"
+        Me.BtnRegistrarColab.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.BtnRegistrarColab.UseVisualStyleBackColor = True
         '
         'txtPassColab
@@ -284,41 +295,58 @@ Partial Class FrmColaborador
         Me.Label8.TabIndex = 15
         Me.Label8.Text = "DIRECCION"
         '
-        'Button1
-        '
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("Times New Roman", 10.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
-        Me.Button1.Location = New System.Drawing.Point(462, 644)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(193, 52)
-        Me.Button1.TabIndex = 28
-        Me.Button1.Text = "Modificar"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'Button2
-        '
-        Me.Button2.FlatAppearance.BorderSize = 0
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Font = New System.Drawing.Font("Times New Roman", 10.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
-        Me.Button2.Location = New System.Drawing.Point(711, 644)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(193, 52)
-        Me.Button2.TabIndex = 28
-        Me.Button2.Text = "Eliminar"
-        Me.Button2.UseVisualStyleBackColor = True
-        '
         'DataGridView1
         '
+        Me.DataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(89, Byte), Integer))
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(57, 349)
+        Me.DataGridView1.Location = New System.Drawing.Point(38, 332)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowHeadersWidth = 51
         Me.DataGridView1.RowTemplate.Height = 24
-        Me.DataGridView1.Size = New System.Drawing.Size(629, 173)
+        Me.DataGridView1.Size = New System.Drawing.Size(648, 201)
         Me.DataGridView1.TabIndex = 28
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(1131, 703)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 29
+        Me.PictureBox1.TabStop = False
+        '
+        'BtnModificar
+        '
+        Me.BtnModificar.FlatAppearance.BorderSize = 0
+        Me.BtnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnModificar.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnModificar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
+        Me.BtnModificar.Image = CType(resources.GetObject("BtnModificar.Image"), System.Drawing.Image)
+        Me.BtnModificar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnModificar.Location = New System.Drawing.Point(530, 639)
+        Me.BtnModificar.Name = "BtnModificar"
+        Me.BtnModificar.Size = New System.Drawing.Size(171, 52)
+        Me.BtnModificar.TabIndex = 30
+        Me.BtnModificar.Text = "Modificar"
+        Me.BtnModificar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.BtnModificar.UseVisualStyleBackColor = True
+        '
+        'BtnEliminar
+        '
+        Me.BtnEliminar.FlatAppearance.BorderSize = 0
+        Me.BtnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnEliminar.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnEliminar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
+        Me.BtnEliminar.Image = CType(resources.GetObject("BtnEliminar.Image"), System.Drawing.Image)
+        Me.BtnEliminar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnEliminar.Location = New System.Drawing.Point(798, 639)
+        Me.BtnEliminar.Name = "BtnEliminar"
+        Me.BtnEliminar.Size = New System.Drawing.Size(183, 52)
+        Me.BtnEliminar.TabIndex = 31
+        Me.BtnEliminar.Text = "Eliminar"
+        Me.BtnEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.BtnEliminar.UseVisualStyleBackColor = True
         '
         'FrmColaborador
         '
@@ -326,11 +354,12 @@ Partial Class FrmColaborador
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(89, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1131, 703)
+        Me.Controls.Add(Me.BtnEliminar)
+        Me.Controls.Add(Me.BtnModificar)
         Me.Controls.Add(Me.PanelRegColab)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.BtnRegistrarColab)
         Me.Controls.Add(Me.PanelSALIR)
+        Me.Controls.Add(Me.PictureBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "FrmColaborador"
         Me.Text = "FrmColaborador"
@@ -338,6 +367,7 @@ Partial Class FrmColaborador
         Me.PanelRegColab.ResumeLayout(False)
         Me.PanelRegColab.PerformLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -364,6 +394,7 @@ Partial Class FrmColaborador
     Friend WithEvents Label7 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents BtnModificar As Button
+    Friend WithEvents BtnEliminar As Button
 End Class

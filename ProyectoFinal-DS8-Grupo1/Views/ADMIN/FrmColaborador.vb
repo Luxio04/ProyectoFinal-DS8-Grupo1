@@ -2,7 +2,7 @@
 
 Public Class FrmColaborador
     Dim objColab As New clsColaborador
-    Private Sub BtnRegistrarColab_Click(sender As Object, e As EventArgs) Handles BtnRegistrarColab.Click, Button2.Click, Button1.Click
+    Private Sub BtnRegistrarColab_Click(sender As Object, e As EventArgs) Handles BtnRegistrarColab.Click
 
     End Sub
 
@@ -95,4 +95,7 @@ Public Class FrmColaborador
         txtDireccionColab.Clear()
     End Sub
 
+    Private Sub BtnModificar_Click(sender As Object, e As EventArgs) Handles BtnModificar.Click
+
+    End Sub
 End Class
