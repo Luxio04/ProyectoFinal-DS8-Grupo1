@@ -43,7 +43,7 @@ Partial Class FrmCompra
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Comic Sans MS", 22.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(79, Byte), Integer))
+        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
         Me.Label1.Location = New System.Drawing.Point(377, 54)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(320, 52)
@@ -57,7 +57,7 @@ Partial Class FrmCompra
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Times New Roman", 10.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(79, Byte), Integer))
+        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
         Me.Label2.Location = New System.Drawing.Point(9, 160)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(261, 20)
@@ -69,7 +69,7 @@ Partial Class FrmCompra
         Me.DataGridView1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.DataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(145, Byte), Integer), CType(CType(113, Byte), Integer), CType(CType(83, Byte), Integer))
+        Me.DataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(89, Byte), Integer))
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Location = New System.Drawing.Point(12, 198)
         Me.DataGridView1.Name = "DataGridView1"
@@ -84,7 +84,7 @@ Partial Class FrmCompra
         Me.BtnAgregar.FlatAppearance.BorderSize = 0
         Me.BtnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnAgregar.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnAgregar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(79, Byte), Integer))
+        Me.BtnAgregar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
         Me.BtnAgregar.Location = New System.Drawing.Point(906, 198)
         Me.BtnAgregar.Name = "BtnAgregar"
         Me.BtnAgregar.Size = New System.Drawing.Size(142, 50)
@@ -98,7 +98,7 @@ Partial Class FrmCompra
         Me.BntQuitar.FlatAppearance.BorderSize = 0
         Me.BntQuitar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BntQuitar.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BntQuitar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(79, Byte), Integer))
+        Me.BntQuitar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
         Me.BntQuitar.Location = New System.Drawing.Point(906, 276)
         Me.BntQuitar.Name = "BntQuitar"
         Me.BntQuitar.Size = New System.Drawing.Size(142, 50)
@@ -112,7 +112,7 @@ Partial Class FrmCompra
         Me.BntCompra.FlatAppearance.BorderSize = 0
         Me.BntCompra.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BntCompra.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BntCompra.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(79, Byte), Integer))
+        Me.BntCompra.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
         Me.BntCompra.Location = New System.Drawing.Point(906, 355)
         Me.BntCompra.Name = "BntCompra"
         Me.BntCompra.Size = New System.Drawing.Size(142, 50)
@@ -126,7 +126,7 @@ Partial Class FrmCompra
         Me.BntFactura.FlatAppearance.BorderSize = 0
         Me.BntFactura.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BntFactura.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BntFactura.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(79, Byte), Integer))
+        Me.BntFactura.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
         Me.BntFactura.Location = New System.Drawing.Point(906, 433)
         Me.BntFactura.Name = "BntFactura"
         Me.BntFactura.Size = New System.Drawing.Size(142, 50)
@@ -136,7 +136,7 @@ Partial Class FrmCompra
         '
         'PanelSALIR
         '
-        Me.PanelSALIR.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(153, Byte), Integer))
+        Me.PanelSALIR.BackColor = System.Drawing.Color.FromArgb(CType(CType(98, Byte), Integer), CType(CType(19, Byte), Integer), CType(CType(62, Byte), Integer))
         Me.PanelSALIR.Controls.Add(Me.BtnCerrar)
         Me.PanelSALIR.Dock = System.Windows.Forms.DockStyle.Top
         Me.PanelSALIR.Location = New System.Drawing.Point(0, 0)
@@ -160,7 +160,7 @@ Partial Class FrmCompra
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(153, Byte), Integer))
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(89, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1093, 669)
         Me.Controls.Add(Me.PanelSALIR)
         Me.Controls.Add(Me.BntFactura)

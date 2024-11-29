@@ -41,7 +41,7 @@ Partial Class FrmUser
         '
         'PanelManuPrinc
         '
-        Me.PanelManuPrinc.BackColor = System.Drawing.Color.FromArgb(CType(CType(21, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(60, Byte), Integer))
+        Me.PanelManuPrinc.BackColor = System.Drawing.Color.FromArgb(CType(CType(98, Byte), Integer), CType(CType(19, Byte), Integer), CType(CType(62, Byte), Integer))
         Me.PanelManuPrinc.Controls.Add(Me.BtnSalir)
         Me.PanelManuPrinc.Controls.Add(Me.BtnFactura)
         Me.PanelManuPrinc.Controls.Add(Me.BtnCompra)
@@ -58,7 +58,7 @@ Partial Class FrmUser
         Me.BtnSalir.FlatAppearance.BorderSize = 0
         Me.BtnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnSalir.Font = New System.Drawing.Font("Times New Roman", 10.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnSalir.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(79, Byte), Integer))
+        Me.BtnSalir.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
         Me.BtnSalir.Location = New System.Drawing.Point(0, 619)
         Me.BtnSalir.Name = "BtnSalir"
         Me.BtnSalir.Size = New System.Drawing.Size(260, 50)
@@ -72,7 +72,7 @@ Partial Class FrmUser
         Me.BtnFactura.FlatAppearance.BorderSize = 0
         Me.BtnFactura.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnFactura.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnFactura.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(79, Byte), Integer))
+        Me.BtnFactura.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
         Me.BtnFactura.Location = New System.Drawing.Point(0, 223)
         Me.BtnFactura.Name = "BtnFactura"
         Me.BtnFactura.Size = New System.Drawing.Size(260, 80)
@@ -86,7 +86,7 @@ Partial Class FrmUser
         Me.BtnCompra.FlatAppearance.BorderSize = 0
         Me.BtnCompra.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnCompra.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnCompra.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(79, Byte), Integer))
+        Me.BtnCompra.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
         Me.BtnCompra.Location = New System.Drawing.Point(0, 143)
         Me.BtnCompra.Name = "BtnCompra"
         Me.BtnCompra.Size = New System.Drawing.Size(260, 80)
@@ -130,8 +130,9 @@ Partial Class FrmUser
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(89, Byte), Integer))
         Me.Label1.Font = New System.Drawing.Font("Times New Roman", 22.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(79, Byte), Integer))
+        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
         Me.Label1.Location = New System.Drawing.Point(412, 301)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(268, 43)
@@ -141,6 +142,7 @@ Partial Class FrmUser
         '
         'PictureFondo
         '
+        Me.PictureFondo.BackColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(89, Byte), Integer))
         Me.PictureFondo.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PictureFondo.Location = New System.Drawing.Point(0, 0)
         Me.PictureFondo.Name = "PictureFondo"
