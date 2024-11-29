@@ -24,6 +24,9 @@ Partial Class FrmAdmin
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmAdmin))
         Me.PanelMenu = New System.Windows.Forms.Panel()
+        Me.PanelSubColab = New System.Windows.Forms.Panel()
+        Me.BtnRol = New System.Windows.Forms.Button()
+        Me.BtnCrearColab = New System.Windows.Forms.Button()
         Me.BtnColab = New System.Windows.Forms.Button()
         Me.PanelSubReportes = New System.Windows.Forms.Panel()
         Me.BtnReportePedidos = New System.Windows.Forms.Button()
@@ -41,16 +44,13 @@ Partial Class FrmAdmin
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PanelFormsAdm = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.BtnCrearColab = New System.Windows.Forms.Button()
-        Me.PanelSubColab = New System.Windows.Forms.Panel()
-        Me.BtnRol = New System.Windows.Forms.Button()
         Me.PanelMenu.SuspendLayout()
+        Me.PanelSubColab.SuspendLayout()
         Me.PanelSubReportes.SuspendLayout()
         Me.PanelSubInvent.SuspendLayout()
         Me.PanelLogo.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelFormsAdm.SuspendLayout()
-        Me.PanelSubColab.SuspendLayout()
         Me.SuspendLayout()
         '
         'PanelMenu
@@ -71,6 +71,44 @@ Partial Class FrmAdmin
         Me.PanelMenu.Name = "PanelMenu"
         Me.PanelMenu.Size = New System.Drawing.Size(260, 703)
         Me.PanelMenu.TabIndex = 0
+        '
+        'PanelSubColab
+        '
+        Me.PanelSubColab.Controls.Add(Me.BtnRol)
+        Me.PanelSubColab.Controls.Add(Me.BtnCrearColab)
+        Me.PanelSubColab.Dock = System.Windows.Forms.DockStyle.Top
+        Me.PanelSubColab.Location = New System.Drawing.Point(0, 596)
+        Me.PanelSubColab.Name = "PanelSubColab"
+        Me.PanelSubColab.Size = New System.Drawing.Size(260, 100)
+        Me.PanelSubColab.TabIndex = 4
+        '
+        'BtnRol
+        '
+        Me.BtnRol.Dock = System.Windows.Forms.DockStyle.Top
+        Me.BtnRol.FlatAppearance.BorderSize = 0
+        Me.BtnRol.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnRol.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnRol.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
+        Me.BtnRol.Location = New System.Drawing.Point(0, 40)
+        Me.BtnRol.Name = "BtnRol"
+        Me.BtnRol.Size = New System.Drawing.Size(260, 40)
+        Me.BtnRol.TabIndex = 4
+        Me.BtnRol.Text = "Agregar Rol"
+        Me.BtnRol.UseVisualStyleBackColor = True
+        '
+        'BtnCrearColab
+        '
+        Me.BtnCrearColab.Dock = System.Windows.Forms.DockStyle.Top
+        Me.BtnCrearColab.FlatAppearance.BorderSize = 0
+        Me.BtnCrearColab.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnCrearColab.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnCrearColab.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
+        Me.BtnCrearColab.Location = New System.Drawing.Point(0, 0)
+        Me.BtnCrearColab.Name = "BtnCrearColab"
+        Me.BtnCrearColab.Size = New System.Drawing.Size(260, 40)
+        Me.BtnCrearColab.TabIndex = 4
+        Me.BtnCrearColab.Text = "Agregar Colaborador"
+        Me.BtnCrearColab.UseVisualStyleBackColor = True
         '
         'BtnColab
         '
@@ -308,44 +346,6 @@ Partial Class FrmAdmin
         Me.Label1.Text = "Smart Inventory"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
-        'BtnCrearColab
-        '
-        Me.BtnCrearColab.Dock = System.Windows.Forms.DockStyle.Top
-        Me.BtnCrearColab.FlatAppearance.BorderSize = 0
-        Me.BtnCrearColab.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnCrearColab.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnCrearColab.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
-        Me.BtnCrearColab.Location = New System.Drawing.Point(0, 0)
-        Me.BtnCrearColab.Name = "BtnCrearColab"
-        Me.BtnCrearColab.Size = New System.Drawing.Size(260, 40)
-        Me.BtnCrearColab.TabIndex = 4
-        Me.BtnCrearColab.Text = "Agregar Colaborador"
-        Me.BtnCrearColab.UseVisualStyleBackColor = True
-        '
-        'PanelSubColab
-        '
-        Me.PanelSubColab.Controls.Add(Me.BtnRol)
-        Me.PanelSubColab.Controls.Add(Me.BtnCrearColab)
-        Me.PanelSubColab.Dock = System.Windows.Forms.DockStyle.Top
-        Me.PanelSubColab.Location = New System.Drawing.Point(0, 596)
-        Me.PanelSubColab.Name = "PanelSubColab"
-        Me.PanelSubColab.Size = New System.Drawing.Size(260, 100)
-        Me.PanelSubColab.TabIndex = 4
-        '
-        'BtnRol
-        '
-        Me.BtnRol.Dock = System.Windows.Forms.DockStyle.Top
-        Me.BtnRol.FlatAppearance.BorderSize = 0
-        Me.BtnRol.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnRol.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnRol.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
-        Me.BtnRol.Location = New System.Drawing.Point(0, 40)
-        Me.BtnRol.Name = "BtnRol"
-        Me.BtnRol.Size = New System.Drawing.Size(260, 40)
-        Me.BtnRol.TabIndex = 4
-        Me.BtnRol.Text = "Agregar Rol"
-        Me.BtnRol.UseVisualStyleBackColor = True
-        '
         'FrmAdmin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -357,13 +357,13 @@ Partial Class FrmAdmin
         Me.Name = "FrmAdmin"
         Me.Text = "FrmAdmin"
         Me.PanelMenu.ResumeLayout(False)
+        Me.PanelSubColab.ResumeLayout(False)
         Me.PanelSubReportes.ResumeLayout(False)
         Me.PanelSubInvent.ResumeLayout(False)
         Me.PanelLogo.ResumeLayout(False)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PanelFormsAdm.ResumeLayout(False)
         Me.PanelFormsAdm.PerformLayout()
-        Me.PanelSubColab.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub

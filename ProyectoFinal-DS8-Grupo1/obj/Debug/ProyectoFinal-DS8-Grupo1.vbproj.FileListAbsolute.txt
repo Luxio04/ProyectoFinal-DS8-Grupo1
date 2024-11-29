@@ -75,3 +75,4 @@ C:\Users\hhern\source\repos\ProyectoFinal-DS8-Grupo1\ProyectoFinal-DS8-Grupo1\Pr
 C:\Users\hhern\source\repos\ProyectoFinal-DS8-Grupo1\ProyectoFinal-DS8-Grupo1\ProyectoFinal-DS8-Grupo1\ProyectoFinal-DS8-Grupo1\obj\Debug\ProyectoFinal-DS8-Grupo1.xml
 C:\Users\hhern\source\repos\ProyectoFinal-DS8-Grupo1\ProyectoFinal-DS8-Grupo1\ProyectoFinal-DS8-Grupo1\ProyectoFinal-DS8-Grupo1\obj\Debug\ProyectoFinal-DS8-Grupo1.pdb
 C:\Users\CESAR\Source\Repos\ProyectoFinal-DS8-Grupo1\ProyectoFinal-DS8-Grupo1\obj\Debug\ProyectoFinal_DS8_Grupo1.FrmPedidos.resources
+C:\Users\CESAR\Source\Repos\ProyectoFinal-DS8-Grupo1\ProyectoFinal-DS8-Grupo1\obj\Debug\ProyectoFinal_DS8_Grupo1.FrmColaborador.resources

@@ -72,8 +72,7 @@
     End Sub
 
     Private Sub BtnColab_Click(sender As Object, e As EventArgs) Handles BtnColab.Click
-        OpenForms(New FrmColaborador)
-        HideSubMenu()
+        ShowSubMenu(PanelSubColab)
     End Sub
 
     Private Sub BtnRegresar_Click(sender As Object, e As EventArgs) Handles BtnRegresar.Click
@@ -92,5 +91,14 @@
         PanelFormsAdm.Tag = formsDerivado
         formsDerivado.BringToFront()
         formsDerivado.Show()
+    End Sub
+
+    Private Sub BtnCrearColab_Click(sender As Object, e As EventArgs) Handles BtnCrearColab.Click
+        OpenForms(New FrmColaborador)
+        HideSubMenu()
+    End Sub
+
+    Private Sub BtnRol_Click(sender As Object, e As EventArgs) Handles BtnRol.Click
+
     End Sub
 End Class

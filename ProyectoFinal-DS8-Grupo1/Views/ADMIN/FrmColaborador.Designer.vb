@@ -26,9 +26,11 @@ Partial Class FrmColaborador
         Me.PanelSALIR = New System.Windows.Forms.Panel()
         Me.BtnCerrar = New System.Windows.Forms.Button()
         Me.PanelRegColab = New System.Windows.Forms.Panel()
+        Me.BtnMostrar = New System.Windows.Forms.Button()
         Me.BtnEmail = New System.Windows.Forms.Button()
+        Me.DgvColaboradores = New System.Windows.Forms.DataGridView()
         Me.BtnPassword = New System.Windows.Forms.Button()
-        Me.BtnRegistrarColab = New System.Windows.Forms.Button()
+        Me.txtID = New System.Windows.Forms.TextBox()
         Me.txtPassColab = New System.Windows.Forms.TextBox()
         Me.txtUserName = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
@@ -44,13 +46,16 @@ Partial Class FrmColaborador
         Me.Label9 = New System.Windows.Forms.Label()
         Me.txtDireccionColab = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.BtnRegistrarColab = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.BtnModificar = New System.Windows.Forms.Button()
         Me.BtnEliminar = New System.Windows.Forms.Button()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.txtRolID = New System.Windows.Forms.TextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
         Me.PanelSALIR.SuspendLayout()
         Me.PanelRegColab.SuspendLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DgvColaboradores, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -79,10 +84,15 @@ Partial Class FrmColaborador
         'PanelRegColab
         '
         Me.PanelRegColab.BackColor = System.Drawing.Color.FromArgb(CType(CType(98, Byte), Integer), CType(CType(19, Byte), Integer), CType(CType(62, Byte), Integer))
+        Me.PanelRegColab.Controls.Add(Me.Label5)
+        Me.PanelRegColab.Controls.Add(Me.BtnMostrar)
         Me.PanelRegColab.Controls.Add(Me.BtnEmail)
-        Me.PanelRegColab.Controls.Add(Me.DataGridView1)
+        Me.PanelRegColab.Controls.Add(Me.DgvColaboradores)
         Me.PanelRegColab.Controls.Add(Me.BtnPassword)
+        Me.PanelRegColab.Controls.Add(Me.txtID)
+        Me.PanelRegColab.Controls.Add(Me.txtRolID)
         Me.PanelRegColab.Controls.Add(Me.txtPassColab)
+        Me.PanelRegColab.Controls.Add(Me.Label10)
         Me.PanelRegColab.Controls.Add(Me.txtUserName)
         Me.PanelRegColab.Controls.Add(Me.Label7)
         Me.PanelRegColab.Controls.Add(Me.Label6)
@@ -102,6 +112,22 @@ Partial Class FrmColaborador
         Me.PanelRegColab.Size = New System.Drawing.Size(1051, 573)
         Me.PanelRegColab.TabIndex = 13
         '
+        'BtnMostrar
+        '
+        Me.BtnMostrar.FlatAppearance.BorderSize = 0
+        Me.BtnMostrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnMostrar.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnMostrar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
+        Me.BtnMostrar.Image = CType(resources.GetObject("BtnMostrar.Image"), System.Drawing.Image)
+        Me.BtnMostrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnMostrar.Location = New System.Drawing.Point(809, 477)
+        Me.BtnMostrar.Name = "BtnMostrar"
+        Me.BtnMostrar.Size = New System.Drawing.Size(166, 56)
+        Me.BtnMostrar.TabIndex = 31
+        Me.BtnMostrar.Text = "Mostrar"
+        Me.BtnMostrar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.BtnMostrar.UseVisualStyleBackColor = True
+        '
         'BtnEmail
         '
         Me.BtnEmail.FlatAppearance.BorderSize = 0
@@ -110,13 +136,24 @@ Partial Class FrmColaborador
         Me.BtnEmail.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
         Me.BtnEmail.Image = CType(resources.GetObject("BtnEmail.Image"), System.Drawing.Image)
         Me.BtnEmail.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnEmail.Location = New System.Drawing.Point(758, 410)
+        Me.BtnEmail.Location = New System.Drawing.Point(758, 419)
         Me.BtnEmail.Name = "BtnEmail"
         Me.BtnEmail.Size = New System.Drawing.Size(217, 52)
         Me.BtnEmail.TabIndex = 30
         Me.BtnEmail.Text = "Generar Correo"
         Me.BtnEmail.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.BtnEmail.UseVisualStyleBackColor = True
+        '
+        'DgvColaboradores
+        '
+        Me.DgvColaboradores.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(89, Byte), Integer))
+        Me.DgvColaboradores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DgvColaboradores.Location = New System.Drawing.Point(38, 332)
+        Me.DgvColaboradores.Name = "DgvColaboradores"
+        Me.DgvColaboradores.RowHeadersWidth = 51
+        Me.DgvColaboradores.RowTemplate.Height = 24
+        Me.DgvColaboradores.Size = New System.Drawing.Size(648, 201)
+        Me.DgvColaboradores.TabIndex = 28
         '
         'BtnPassword
         '
@@ -126,33 +163,27 @@ Partial Class FrmColaborador
         Me.BtnPassword.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
         Me.BtnPassword.Image = CType(resources.GetObject("BtnPassword.Image"), System.Drawing.Image)
         Me.BtnPassword.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnPassword.Location = New System.Drawing.Point(758, 294)
+        Me.BtnPassword.Location = New System.Drawing.Point(726, 332)
         Me.BtnPassword.Name = "BtnPassword"
-        Me.BtnPassword.Size = New System.Drawing.Size(217, 52)
+        Me.BtnPassword.Size = New System.Drawing.Size(290, 52)
         Me.BtnPassword.TabIndex = 29
-        Me.BtnPassword.Text = "Generar Contraseña"
+        Me.BtnPassword.Text = "Generar Contraseña y UserName"
         Me.BtnPassword.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.BtnPassword.UseVisualStyleBackColor = True
         '
-        'BtnRegistrarColab
+        'txtID
         '
-        Me.BtnRegistrarColab.FlatAppearance.BorderSize = 0
-        Me.BtnRegistrarColab.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnRegistrarColab.Font = New System.Drawing.Font("Times New Roman", 10.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnRegistrarColab.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
-        Me.BtnRegistrarColab.Image = CType(resources.GetObject("BtnRegistrarColab.Image"), System.Drawing.Image)
-        Me.BtnRegistrarColab.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnRegistrarColab.Location = New System.Drawing.Point(222, 639)
-        Me.BtnRegistrarColab.Name = "BtnRegistrarColab"
-        Me.BtnRegistrarColab.Size = New System.Drawing.Size(193, 52)
-        Me.BtnRegistrarColab.TabIndex = 28
-        Me.BtnRegistrarColab.Text = "Registrar"
-        Me.BtnRegistrarColab.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.BtnRegistrarColab.UseVisualStyleBackColor = True
+        Me.txtID.Enabled = False
+        Me.txtID.Location = New System.Drawing.Point(726, 279)
+        Me.txtID.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtID.Name = "txtID"
+        Me.txtID.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.txtID.Size = New System.Drawing.Size(291, 22)
+        Me.txtID.TabIndex = 26
         '
         'txtPassColab
         '
-        Me.txtPassColab.Location = New System.Drawing.Point(394, 279)
+        Me.txtPassColab.Location = New System.Drawing.Point(38, 279)
         Me.txtPassColab.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtPassColab.Name = "txtPassColab"
         Me.txtPassColab.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
@@ -161,6 +192,7 @@ Partial Class FrmColaborador
         '
         'txtUserName
         '
+        Me.txtUserName.Enabled = False
         Me.txtUserName.Location = New System.Drawing.Point(725, 204)
         Me.txtUserName.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtUserName.Name = "txtUserName"
@@ -172,7 +204,7 @@ Partial Class FrmColaborador
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Times New Roman", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
-        Me.Label7.Location = New System.Drawing.Point(391, 260)
+        Me.Label7.Location = New System.Drawing.Point(35, 260)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(114, 17)
         Me.Label7.TabIndex = 24
@@ -295,20 +327,26 @@ Partial Class FrmColaborador
         Me.Label8.TabIndex = 15
         Me.Label8.Text = "DIRECCION"
         '
-        'DataGridView1
+        'BtnRegistrarColab
         '
-        Me.DataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(89, Byte), Integer))
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(38, 332)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.RowHeadersWidth = 51
-        Me.DataGridView1.RowTemplate.Height = 24
-        Me.DataGridView1.Size = New System.Drawing.Size(648, 201)
-        Me.DataGridView1.TabIndex = 28
+        Me.BtnRegistrarColab.FlatAppearance.BorderSize = 0
+        Me.BtnRegistrarColab.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnRegistrarColab.Font = New System.Drawing.Font("Times New Roman", 10.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnRegistrarColab.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
+        Me.BtnRegistrarColab.Image = CType(resources.GetObject("BtnRegistrarColab.Image"), System.Drawing.Image)
+        Me.BtnRegistrarColab.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnRegistrarColab.Location = New System.Drawing.Point(222, 639)
+        Me.BtnRegistrarColab.Name = "BtnRegistrarColab"
+        Me.BtnRegistrarColab.Size = New System.Drawing.Size(193, 52)
+        Me.BtnRegistrarColab.TabIndex = 28
+        Me.BtnRegistrarColab.Text = "Registrar"
+        Me.BtnRegistrarColab.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.BtnRegistrarColab.UseVisualStyleBackColor = True
         '
         'PictureBox1
         '
         Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
         Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(1131, 703)
@@ -348,6 +386,39 @@ Partial Class FrmColaborador
         Me.BtnEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.BtnEliminar.UseVisualStyleBackColor = True
         '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Font = New System.Drawing.Font("Times New Roman", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
+        Me.Label10.Location = New System.Drawing.Point(391, 260)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(52, 17)
+        Me.Label10.TabIndex = 24
+        Me.Label10.Text = "Rol ID"
+        '
+        'txtRolID
+        '
+        Me.txtRolID.Enabled = False
+        Me.txtRolID.Location = New System.Drawing.Point(394, 279)
+        Me.txtRolID.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtRolID.Name = "txtRolID"
+        Me.txtRolID.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.txtRolID.Size = New System.Drawing.Size(291, 22)
+        Me.txtRolID.TabIndex = 26
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Enabled = False
+        Me.Label5.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
+        Me.Label5.Location = New System.Drawing.Point(722, 258)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(27, 19)
+        Me.Label5.TabIndex = 32
+        Me.Label5.Text = "ID"
+        '
         'FrmColaborador
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -366,7 +437,7 @@ Partial Class FrmColaborador
         Me.PanelSALIR.ResumeLayout(False)
         Me.PanelRegColab.ResumeLayout(False)
         Me.PanelRegColab.PerformLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DgvColaboradores, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
@@ -393,8 +464,13 @@ Partial Class FrmColaborador
     Friend WithEvents txtUserName As TextBox
     Friend WithEvents Label7 As Label
     Friend WithEvents Label6 As Label
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents DgvColaboradores As DataGridView
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents BtnModificar As Button
     Friend WithEvents BtnEliminar As Button
+    Friend WithEvents BtnMostrar As Button
+    Friend WithEvents txtID As TextBox
+    Friend WithEvents txtRolID As TextBox
+    Friend WithEvents Label10 As Label
+    Friend WithEvents Label5 As Label
 End Class
