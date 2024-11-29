@@ -24,7 +24,7 @@
                 formAdmin.Show()
                 Me.Hide()
             Case "Cliente"
-                Dim formCliente As New FrmUser()
+                Dim formCliente As New FrmUser(userName)
                 formCliente.Show()
                 Me.Hide()
             Case "NoExiste"
