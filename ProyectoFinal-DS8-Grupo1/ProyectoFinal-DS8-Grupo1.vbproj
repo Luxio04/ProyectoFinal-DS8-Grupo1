@@ -80,6 +80,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Models\ClassForms\clsCategorias.vb" />
+    <Compile Include="Models\ClassForms\clsColaborador.vb" />
     <Compile Include="Models\ClassForms\clsInventario.vb" />
     <Compile Include="Models\ClassForms\clsProveedores.vb" />
     <Compile Include="Models\ClassForms\clsReportes.vb" />
@@ -191,6 +192,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\ADMIN\FrmCategoria.resx">
       <DependentUpon>FrmCategoria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ADMIN\FrmColaborador.resx">
+      <DependentUpon>FrmColaborador.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\ADMIN\FrmInventario.resx">
       <DependentUpon>FrmInventario.vb</DependentUpon>

@@ -22,9 +22,348 @@ Partial Class FrmColaborador
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmColaborador))
+        Me.PanelSALIR = New System.Windows.Forms.Panel()
+        Me.BtnCerrar = New System.Windows.Forms.Button()
+        Me.PanelRegColab = New System.Windows.Forms.Panel()
+        Me.BtnEmail = New System.Windows.Forms.Button()
+        Me.BtnPassword = New System.Windows.Forms.Button()
+        Me.BtnRegistrarColab = New System.Windows.Forms.Button()
+        Me.txtPassColab = New System.Windows.Forms.TextBox()
+        Me.txtUserName = New System.Windows.Forms.TextBox()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.txtCorreoColab = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.txtTelefonoColab = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.txtNombreColab = New System.Windows.Forms.TextBox()
+        Me.txtApellidoColab = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.txtDireccionColab = New System.Windows.Forms.TextBox()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.PanelSALIR.SuspendLayout()
+        Me.PanelRegColab.SuspendLayout()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SuspendLayout()
+        '
+        'PanelSALIR
+        '
+        Me.PanelSALIR.BackColor = System.Drawing.Color.FromArgb(CType(CType(98, Byte), Integer), CType(CType(19, Byte), Integer), CType(CType(62, Byte), Integer))
+        Me.PanelSALIR.Controls.Add(Me.BtnCerrar)
+        Me.PanelSALIR.Dock = System.Windows.Forms.DockStyle.Top
+        Me.PanelSALIR.Location = New System.Drawing.Point(0, 0)
+        Me.PanelSALIR.Name = "PanelSALIR"
+        Me.PanelSALIR.Size = New System.Drawing.Size(1131, 37)
+        Me.PanelSALIR.TabIndex = 12
+        '
+        'BtnCerrar
+        '
+        Me.BtnCerrar.BackColor = System.Drawing.Color.FromArgb(CType(CType(98, Byte), Integer), CType(CType(19, Byte), Integer), CType(CType(62, Byte), Integer))
+        Me.BtnCerrar.BackgroundImage = CType(resources.GetObject("BtnCerrar.BackgroundImage"), System.Drawing.Image)
+        Me.BtnCerrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.BtnCerrar.Dock = System.Windows.Forms.DockStyle.Left
+        Me.BtnCerrar.Location = New System.Drawing.Point(0, 0)
+        Me.BtnCerrar.Name = "BtnCerrar"
+        Me.BtnCerrar.Size = New System.Drawing.Size(120, 37)
+        Me.BtnCerrar.TabIndex = 0
+        Me.BtnCerrar.UseVisualStyleBackColor = False
+        '
+        'PanelRegColab
+        '
+        Me.PanelRegColab.BackColor = System.Drawing.Color.FromArgb(CType(CType(98, Byte), Integer), CType(CType(19, Byte), Integer), CType(CType(62, Byte), Integer))
+        Me.PanelRegColab.Controls.Add(Me.BtnEmail)
+        Me.PanelRegColab.Controls.Add(Me.DataGridView1)
+        Me.PanelRegColab.Controls.Add(Me.BtnPassword)
+        Me.PanelRegColab.Controls.Add(Me.txtPassColab)
+        Me.PanelRegColab.Controls.Add(Me.txtUserName)
+        Me.PanelRegColab.Controls.Add(Me.Label7)
+        Me.PanelRegColab.Controls.Add(Me.Label6)
+        Me.PanelRegColab.Controls.Add(Me.txtCorreoColab)
+        Me.PanelRegColab.Controls.Add(Me.Label2)
+        Me.PanelRegColab.Controls.Add(Me.txtTelefonoColab)
+        Me.PanelRegColab.Controls.Add(Me.Label1)
+        Me.PanelRegColab.Controls.Add(Me.Label3)
+        Me.PanelRegColab.Controls.Add(Me.txtNombreColab)
+        Me.PanelRegColab.Controls.Add(Me.txtApellidoColab)
+        Me.PanelRegColab.Controls.Add(Me.Label4)
+        Me.PanelRegColab.Controls.Add(Me.Label9)
+        Me.PanelRegColab.Controls.Add(Me.txtDireccionColab)
+        Me.PanelRegColab.Controls.Add(Me.Label8)
+        Me.PanelRegColab.Location = New System.Drawing.Point(40, 60)
+        Me.PanelRegColab.Name = "PanelRegColab"
+        Me.PanelRegColab.Size = New System.Drawing.Size(1051, 580)
+        Me.PanelRegColab.TabIndex = 13
+        '
+        'BtnEmail
+        '
+        Me.BtnEmail.FlatAppearance.BorderSize = 0
+        Me.BtnEmail.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnEmail.Font = New System.Drawing.Font("Times New Roman", 9.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnEmail.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
+        Me.BtnEmail.Location = New System.Drawing.Point(782, 410)
+        Me.BtnEmail.Name = "BtnEmail"
+        Me.BtnEmail.Size = New System.Drawing.Size(193, 52)
+        Me.BtnEmail.TabIndex = 30
+        Me.BtnEmail.Text = "Generar Correo"
+        Me.BtnEmail.UseVisualStyleBackColor = True
+        '
+        'BtnPassword
+        '
+        Me.BtnPassword.FlatAppearance.BorderSize = 0
+        Me.BtnPassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnPassword.Font = New System.Drawing.Font("Times New Roman", 9.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnPassword.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
+        Me.BtnPassword.Location = New System.Drawing.Point(782, 294)
+        Me.BtnPassword.Name = "BtnPassword"
+        Me.BtnPassword.Size = New System.Drawing.Size(193, 52)
+        Me.BtnPassword.TabIndex = 29
+        Me.BtnPassword.Text = "Generar Contraseña"
+        Me.BtnPassword.UseVisualStyleBackColor = True
+        '
+        'BtnRegistrarColab
+        '
+        Me.BtnRegistrarColab.FlatAppearance.BorderSize = 0
+        Me.BtnRegistrarColab.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnRegistrarColab.Font = New System.Drawing.Font("Times New Roman", 10.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnRegistrarColab.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
+        Me.BtnRegistrarColab.Location = New System.Drawing.Point(227, 647)
+        Me.BtnRegistrarColab.Name = "BtnRegistrarColab"
+        Me.BtnRegistrarColab.Size = New System.Drawing.Size(193, 52)
+        Me.BtnRegistrarColab.TabIndex = 28
+        Me.BtnRegistrarColab.Text = "Registrar"
+        Me.BtnRegistrarColab.UseVisualStyleBackColor = True
+        '
+        'txtPassColab
+        '
+        Me.txtPassColab.Location = New System.Drawing.Point(394, 279)
+        Me.txtPassColab.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtPassColab.Name = "txtPassColab"
+        Me.txtPassColab.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.txtPassColab.Size = New System.Drawing.Size(291, 22)
+        Me.txtPassColab.TabIndex = 26
+        '
+        'txtUserName
+        '
+        Me.txtUserName.Location = New System.Drawing.Point(725, 204)
+        Me.txtUserName.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtUserName.Name = "txtUserName"
+        Me.txtUserName.Size = New System.Drawing.Size(291, 22)
+        Me.txtUserName.TabIndex = 27
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Times New Roman", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
+        Me.Label7.Location = New System.Drawing.Point(391, 260)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(114, 17)
+        Me.Label7.TabIndex = 24
+        Me.Label7.Text = "CONTRASEÑA"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Times New Roman", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
+        Me.Label6.Location = New System.Drawing.Point(723, 184)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(177, 17)
+        Me.Label6.TabIndex = 25
+        Me.Label6.Text = "NOMBRE DE USUARIO"
+        '
+        'txtCorreoColab
+        '
+        Me.txtCorreoColab.Location = New System.Drawing.Point(395, 204)
+        Me.txtCorreoColab.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtCorreoColab.Name = "txtCorreoColab"
+        Me.txtCorreoColab.Size = New System.Drawing.Size(291, 22)
+        Me.txtCorreoColab.TabIndex = 23
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Times New Roman", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
+        Me.Label2.Location = New System.Drawing.Point(391, 184)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(75, 17)
+        Me.Label2.TabIndex = 22
+        Me.Label2.Text = "CORREO"
+        '
+        'txtTelefonoColab
+        '
+        Me.txtTelefonoColab.Location = New System.Drawing.Point(38, 204)
+        Me.txtTelefonoColab.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtTelefonoColab.Name = "txtTelefonoColab"
+        Me.txtTelefonoColab.Size = New System.Drawing.Size(291, 22)
+        Me.txtTelefonoColab.TabIndex = 18
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Times New Roman", 18.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
+        Me.Label1.Location = New System.Drawing.Point(352, 35)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(346, 34)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "Crear Cuenta Colabotador"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Times New Roman", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
+        Me.Label3.Location = New System.Drawing.Point(35, 111)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(78, 17)
+        Me.Label3.TabIndex = 17
+        Me.Label3.Text = "NOMBRE"
+        '
+        'txtNombreColab
+        '
+        Me.txtNombreColab.Location = New System.Drawing.Point(38, 132)
+        Me.txtNombreColab.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtNombreColab.Name = "txtNombreColab"
+        Me.txtNombreColab.Size = New System.Drawing.Size(291, 22)
+        Me.txtNombreColab.TabIndex = 21
+        '
+        'txtApellidoColab
+        '
+        Me.txtApellidoColab.Location = New System.Drawing.Point(395, 132)
+        Me.txtApellidoColab.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtApellidoColab.Name = "txtApellidoColab"
+        Me.txtApellidoColab.Size = New System.Drawing.Size(291, 22)
+        Me.txtApellidoColab.TabIndex = 20
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Times New Roman", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
+        Me.Label4.Location = New System.Drawing.Point(392, 111)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(87, 17)
+        Me.Label4.TabIndex = 16
+        Me.Label4.Text = "APELLIDO"
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Times New Roman", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
+        Me.Label9.Location = New System.Drawing.Point(35, 184)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(92, 17)
+        Me.Label9.TabIndex = 14
+        Me.Label9.Text = "TELEFONO"
+        '
+        'txtDireccionColab
+        '
+        Me.txtDireccionColab.Location = New System.Drawing.Point(725, 132)
+        Me.txtDireccionColab.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtDireccionColab.Name = "txtDireccionColab"
+        Me.txtDireccionColab.Size = New System.Drawing.Size(291, 22)
+        Me.txtDireccionColab.TabIndex = 19
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Times New Roman", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
+        Me.Label8.Location = New System.Drawing.Point(721, 112)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(97, 17)
+        Me.Label8.TabIndex = 15
+        Me.Label8.Text = "DIRECCION"
+        '
+        'Button1
+        '
+        Me.Button1.FlatAppearance.BorderSize = 0
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Font = New System.Drawing.Font("Times New Roman", 10.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
+        Me.Button1.Location = New System.Drawing.Point(462, 644)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(193, 52)
+        Me.Button1.TabIndex = 28
+        Me.Button1.Text = "Modificar"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.FlatAppearance.BorderSize = 0
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Font = New System.Drawing.Font("Times New Roman", 10.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
+        Me.Button2.Location = New System.Drawing.Point(711, 644)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(193, 52)
+        Me.Button2.TabIndex = 28
+        Me.Button2.Text = "Eliminar"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'DataGridView1
+        '
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Location = New System.Drawing.Point(57, 349)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.RowHeadersWidth = 51
+        Me.DataGridView1.RowTemplate.Height = 24
+        Me.DataGridView1.Size = New System.Drawing.Size(629, 173)
+        Me.DataGridView1.TabIndex = 28
+        '
+        'FrmColaborador
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(89, Byte), Integer))
+        Me.ClientSize = New System.Drawing.Size(1131, 703)
+        Me.Controls.Add(Me.PanelRegColab)
+        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.BtnRegistrarColab)
+        Me.Controls.Add(Me.PanelSALIR)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Name = "FrmColaborador"
         Me.Text = "FrmColaborador"
+        Me.PanelSALIR.ResumeLayout(False)
+        Me.PanelRegColab.ResumeLayout(False)
+        Me.PanelRegColab.PerformLayout()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ResumeLayout(False)
+
     End Sub
+
+    Friend WithEvents PanelSALIR As Panel
+    Friend WithEvents BtnCerrar As Button
+    Friend WithEvents PanelRegColab As Panel
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents txtNombreColab As TextBox
+    Friend WithEvents txtApellidoColab As TextBox
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Label9 As Label
+    Friend WithEvents txtDireccionColab As TextBox
+    Friend WithEvents Label8 As Label
+    Friend WithEvents txtTelefonoColab As TextBox
+    Friend WithEvents txtCorreoColab As TextBox
+    Friend WithEvents Label2 As Label
+    Friend WithEvents BtnEmail As Button
+    Friend WithEvents BtnPassword As Button
+    Friend WithEvents BtnRegistrarColab As Button
+    Friend WithEvents txtPassColab As TextBox
+    Friend WithEvents txtUserName As TextBox
+    Friend WithEvents Label7 As Label
+    Friend WithEvents Label6 As Label
+    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents Button1 As Button
+    Friend WithEvents Button2 As Button
 End Class
