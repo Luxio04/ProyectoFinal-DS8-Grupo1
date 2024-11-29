@@ -592,3 +592,114 @@ BEGIN
 
     SET @Mensaje = 'Rol eliminado correctamente.'
 END;
+GO
+--Procedimientos de la tabla de Ventas
+CREATE PROCEDURE InsertarVenta
+    @FechaVenta DATE,
+    @TotalVenta DECIMAL(10, 2),
+    @ClienteID INT,
+    @Mensaje NVARCHAR(50) OUTPUT
+AS
+BEGIN
+    -- Verificar que la FechaVenta no sea futura
+    IF @FechaVenta > GETDATE()
+    BEGIN
+        SET @Mensaje = 'La fecha de la venta no puede ser una fecha futura.'
+        RETURN
+    END
+
+    -- Verificar que el TotalVenta sea mayor que 0
+    IF @TotalVenta <= 0
+    BEGIN
+        SET @Mensaje = 'El total de la venta debe ser mayor que cero.'
+        RETURN
+    END
+
+    -- Verificar que el ClienteID existe en la tabla Clientes
+    IF NOT EXISTS (SELECT 1 FROM Clientes WHERE ClienteID = @ClienteID)
+    BEGIN
+        SET @Mensaje = 'El ClienteID no existe.'
+        RETURN
+    END
+
+    -- Insertar una nueva venta en la tabla Ventas
+    INSERT INTO Ventas (FechaVenta, TotalVenta, ClienteID)
+    VALUES (@FechaVenta, @TotalVenta, @ClienteID);
+
+    SET @Mensaje = 'Venta insertada correctamente.'
+END;
+GO
+--
+CREATE PROCEDURE ActualizarVenta
+    @VentaID INT,
+    @FechaVenta DATE,
+    @TotalVenta DECIMAL(10, 2),
+    @ClienteID INT,
+    @Mensaje NVARCHAR(50) OUTPUT
+AS
+BEGIN
+    -- Verificar que el VentaID existe en la tabla Ventas
+    IF NOT EXISTS (SELECT 1 FROM Ventas WHERE VentaID = @VentaID)
+    BEGIN
+        SET @Mensaje = 'El VentaID no existe.'
+        RETURN
+    END
+
+    -- Verificar que la FechaVenta no sea futura
+    IF @FechaVenta > GETDATE()
+    BEGIN
+        SET @Mensaje = 'La fecha de la venta no puede ser una fecha futura.'
+        RETURN
+    END
+
+    -- Verificar que el TotalVenta sea mayor que 0
+    IF @TotalVenta <= 0
+    BEGIN
+        SET @Mensaje = 'El total de la venta debe ser mayor que cero.'
+        RETURN
+    END
+
+    -- Verificar que el ClienteID existe en la tabla Clientes
+    IF NOT EXISTS (SELECT 1 FROM Clientes WHERE ClienteID = @ClienteID)
+    BEGIN
+        SET @Mensaje = 'El ClienteID no existe.'
+        RETURN
+    END
+
+    -- Actualizar la venta en la tabla Ventas
+    UPDATE Ventas
+    SET FechaVenta = @FechaVenta, TotalVenta = @TotalVenta, ClienteID = @ClienteID
+    WHERE VentaID = @VentaID;
+
+    SET @Mensaje = 'Venta actualizada correctamente.'
+END;
+GO
+--
+CREATE PROCEDURE EliminarVenta
+    @VentaID INT,
+    @Mensaje NVARCHAR(50) OUTPUT
+AS
+BEGIN
+    -- Verificar que el VentaID existe en la tabla Ventas
+    IF NOT EXISTS (SELECT 1 FROM Ventas WHERE VentaID = @VentaID)
+    BEGIN
+        SET @Mensaje = 'El VentaID no existe.'
+        RETURN
+    END
+
+    -- Eliminar una venta por su ID
+    DELETE FROM Ventas
+    WHERE VentaID = @VentaID;
+
+    SET @Mensaje = 'Venta eliminada correctamente.'
+END;
+
+GO
+--
+CREATE PROCEDURE MostrarVentas
+AS
+BEGIN
+    -- Seleccionar todas las ventas
+    SELECT *
+    FROM Ventas;
+END;
