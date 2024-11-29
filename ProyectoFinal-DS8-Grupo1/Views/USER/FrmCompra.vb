@@ -15,6 +15,7 @@ Public Class FrmCompra
     End Sub
 
     Dim objFactura As New clsCompra
+    Dim objVenta As New clsVentas
     Private Sub FrmCompra_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ' Configurar el DataGridView con un ComboBox para seleccionar productos
         Dim comboCol As New DataGridViewComboBoxColumn
@@ -107,7 +108,9 @@ Public Class FrmCompra
                     End If
                 Next
 
-                MessageBox.Show("Detalles de factura insertados correctamente.")
+                ' Insertar la venta en la tabla Ventas
+                Dim mensajeVenta As String = objVenta.InsertarVenta(DateTime.Now, totalFactura, Usuario)
+                MessageBox.Show($"Detalles de factura insertados correctamente. {mensajeVenta}")
             Else
                 MessageBox.Show("No se puede continuar con la compra debido a falta de stock.")
             End If
@@ -131,12 +134,6 @@ Public Class FrmCompra
         End If
     End Sub
 
-
-    Private Sub BntCompra_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-
     Private Sub BtnCerrar_Click(sender As Object, e As EventArgs) Handles BtnCerrar.Click
         Me.Close()
     End Sub
@@ -157,9 +154,6 @@ Public Class FrmCompra
         Next
         Return total
     End Function
-
-
-
     Private Sub dgvCompra_EditingControlShowing(sender As Object, e As DataGridViewEditingControlShowingEventArgs) Handles DgvProveedores.EditingControlShowing
         If DgvProveedores.CurrentCell.ColumnIndex = DgvProveedores.Columns("Producto").Index Then
             Dim combo As ComboBox = CType(e.Control, ComboBox)
@@ -169,7 +163,6 @@ Public Class FrmCompra
             AddHandler combo.SelectedIndexChanged, AddressOf ComboBox_SelectedIndexChanged
         End If
     End Sub
-
     Private Sub ComboBox_SelectedIndexChanged(sender As Object, e As EventArgs)
         Dim combo As ComboBox = CType(sender, ComboBox)
         Dim rowIndex As Integer = DgvProveedores.CurrentCell.RowIndex
