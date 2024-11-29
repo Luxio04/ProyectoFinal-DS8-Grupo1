@@ -63,7 +63,7 @@ Partial Class FrmPrincipal
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(79, Byte), Integer))
         Me.Label1.Location = New System.Drawing.Point(12, 6)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(108, 19)
+        Me.Label1.Size = New System.Drawing.Size(132, 23)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Smart Inventory"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -88,7 +88,7 @@ Partial Class FrmPrincipal
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(79, Byte), Integer))
         Me.Label2.Location = New System.Drawing.Point(137, 28)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(83, 15)
+        Me.Label2.Size = New System.Drawing.Size(103, 20)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Inicio Seccion"
         '
@@ -100,18 +100,21 @@ Partial Class FrmPrincipal
         Me.btnAcceder.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnAcceder.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAcceder.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(79, Byte), Integer))
+        Me.btnAcceder.Image = CType(resources.GetObject("btnAcceder.Image"), System.Drawing.Image)
+        Me.btnAcceder.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnAcceder.Location = New System.Drawing.Point(113, 252)
         Me.btnAcceder.Name = "btnAcceder"
         Me.btnAcceder.Size = New System.Drawing.Size(138, 37)
         Me.btnAcceder.TabIndex = 2
         Me.btnAcceder.Text = "Acceder"
+        Me.btnAcceder.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.btnAcceder.UseVisualStyleBackColor = False
         '
         'txtUser
         '
         Me.txtUser.Location = New System.Drawing.Point(60, 93)
         Me.txtUser.Name = "txtUser"
-        Me.txtUser.Size = New System.Drawing.Size(268, 23)
+        Me.txtUser.Size = New System.Drawing.Size(268, 27)
         Me.txtUser.TabIndex = 3
         '
         'Panel2
@@ -160,7 +163,7 @@ Partial Class FrmPrincipal
         Me.LinkPass.LinkColor = System.Drawing.Color.Brown
         Me.LinkPass.Location = New System.Drawing.Point(122, 213)
         Me.LinkPass.Name = "LinkPass"
-        Me.LinkPass.Size = New System.Drawing.Size(129, 15)
+        Me.LinkPass.Size = New System.Drawing.Size(163, 20)
         Me.LinkPass.TabIndex = 4
         Me.LinkPass.TabStop = True
         Me.LinkPass.Text = "¿Restaurar Contraseña?"
@@ -171,7 +174,7 @@ Partial Class FrmPrincipal
         Me.LinkCrear.LinkColor = System.Drawing.Color.Brown
         Me.LinkCrear.Location = New System.Drawing.Point(122, 304)
         Me.LinkCrear.Name = "LinkCrear"
-        Me.LinkCrear.Size = New System.Drawing.Size(116, 15)
+        Me.LinkCrear.Size = New System.Drawing.Size(145, 20)
         Me.LinkCrear.TabIndex = 4
         Me.LinkCrear.TabStop = True
         Me.LinkCrear.Text = "Crear Nuevo Usuario"
@@ -183,7 +186,7 @@ Partial Class FrmPrincipal
         Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(79, Byte), Integer))
         Me.Label4.Location = New System.Drawing.Point(64, 144)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(69, 15)
+        Me.Label4.Size = New System.Drawing.Size(88, 20)
         Me.Label4.TabIndex = 1
         Me.Label4.Text = "Contraseña"
         '
@@ -194,7 +197,7 @@ Partial Class FrmPrincipal
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(79, Byte), Integer))
         Me.Label3.Location = New System.Drawing.Point(64, 70)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(49, 15)
+        Me.Label3.Size = New System.Drawing.Size(63, 20)
         Me.Label3.TabIndex = 1
         Me.Label3.Text = "Usuario"
         '
@@ -203,7 +206,7 @@ Partial Class FrmPrincipal
         Me.txtPassword.Location = New System.Drawing.Point(60, 167)
         Me.txtPassword.Name = "txtPassword"
         Me.txtPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.txtPassword.Size = New System.Drawing.Size(268, 23)
+        Me.txtPassword.Size = New System.Drawing.Size(268, 27)
         Me.txtPassword.TabIndex = 3
         '
         'PictureBox3
@@ -219,7 +222,7 @@ Partial Class FrmPrincipal
         '
         'FrmPrincipal
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1006, 531)
         Me.Controls.Add(Me.Panel2)
