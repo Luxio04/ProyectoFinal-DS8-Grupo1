@@ -9,10 +9,6 @@
         Me.Close()
     End Sub
 
-    Private Sub BtnCatalogo_Click(sender As Object, e As EventArgs) 
-        OpenForms(New FrmCatalogo())
-    End Sub
-
     Private Sub BtnCompra_Click(sender As Object, e As EventArgs) Handles BtnCompra.Click
         OpenForms(New FrmCompra())
     End Sub

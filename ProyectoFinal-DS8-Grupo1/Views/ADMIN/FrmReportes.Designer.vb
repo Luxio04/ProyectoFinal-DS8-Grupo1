@@ -26,12 +26,6 @@ Partial Class FrmReportes
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.lblTitulo = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.grupoUsuarios = New System.Windows.Forms.GroupBox()
-        Me.grupoInventario = New System.Windows.Forms.GroupBox()
-        Me.grupoPedidos = New System.Windows.Forms.GroupBox()
         Me.listDatos = New System.Windows.Forms.ListView()
         Me.ColumnHeader1 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader2 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
@@ -48,6 +42,12 @@ Partial Class FrmReportes
         Me.ColumnHeader10 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader11 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader12 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.grupoUsuarios = New System.Windows.Forms.GroupBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.grupoInventario = New System.Windows.Forms.GroupBox()
+        Me.grupoPedidos = New System.Windows.Forms.GroupBox()
+        Me.Label3 = New System.Windows.Forms.Label()
         Button1 = New System.Windows.Forms.Button()
         Me.grupoUsuarios.SuspendLayout()
         Me.grupoInventario.SuspendLayout()
@@ -57,9 +57,10 @@ Partial Class FrmReportes
         'Button1
         '
         Button1.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Button1.Location = New System.Drawing.Point(47, 189)
+        Button1.Location = New System.Drawing.Point(63, 233)
+        Button1.Margin = New System.Windows.Forms.Padding(4)
         Button1.Name = "Button1"
-        Button1.Size = New System.Drawing.Size(142, 39)
+        Button1.Size = New System.Drawing.Size(189, 48)
         Button1.TabIndex = 0
         Button1.Text = "Generar reporte"
         Button1.UseVisualStyleBackColor = True
@@ -68,9 +69,10 @@ Partial Class FrmReportes
         'Button2
         '
         Me.Button2.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(50, 189)
+        Me.Button2.Location = New System.Drawing.Point(67, 233)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(4)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(142, 39)
+        Me.Button2.Size = New System.Drawing.Size(189, 48)
         Me.Button2.TabIndex = 1
         Me.Button2.Text = "Generar reporte"
         Me.Button2.UseVisualStyleBackColor = True
@@ -78,9 +80,10 @@ Partial Class FrmReportes
         'Button3
         '
         Me.Button3.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.Location = New System.Drawing.Point(53, 189)
+        Me.Button3.Location = New System.Drawing.Point(67, 177)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(4)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(142, 39)
+        Me.Button3.Size = New System.Drawing.Size(189, 48)
         Me.Button3.TabIndex = 2
         Me.Button3.Text = "Generar reporte"
         Me.Button3.UseVisualStyleBackColor = True
@@ -90,84 +93,13 @@ Partial Class FrmReportes
         Me.lblTitulo.AutoSize = True
         Me.lblTitulo.Font = New System.Drawing.Font("Times New Roman", 26.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTitulo.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(79, Byte), Integer))
-        Me.lblTitulo.Location = New System.Drawing.Point(57, 22)
+        Me.lblTitulo.Location = New System.Drawing.Point(76, 27)
+        Me.lblTitulo.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblTitulo.Name = "lblTitulo"
-        Me.lblTitulo.Size = New System.Drawing.Size(147, 41)
+        Me.lblTitulo.Size = New System.Drawing.Size(181, 51)
         Me.lblTitulo.TabIndex = 3
         Me.lblTitulo.Text = "Reportes"
         Me.lblTitulo.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Arial Narrow", 19.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(21, 41)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(209, 31)
-        Me.Label1.TabIndex = 4
-        Me.Label1.Text = "Reportes usuarios"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Arial Narrow", 19.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(23, 41)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(210, 31)
-        Me.Label2.TabIndex = 5
-        Me.Label2.Text = "Reporte inventario"
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Arial Narrow", 19.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(37, 41)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(190, 31)
-        Me.Label3.TabIndex = 6
-        Me.Label3.Text = "Reporte pedidos"
-        '
-        'grupoUsuarios
-        '
-        Me.grupoUsuarios.Controls.Add(Me.Label1)
-        Me.grupoUsuarios.Controls.Add(Button1)
-        Me.grupoUsuarios.Location = New System.Drawing.Point(11, 143)
-        Me.grupoUsuarios.Margin = New System.Windows.Forms.Padding(2)
-        Me.grupoUsuarios.Name = "grupoUsuarios"
-        Me.grupoUsuarios.Padding = New System.Windows.Forms.Padding(2)
-        Me.grupoUsuarios.Size = New System.Drawing.Size(244, 242)
-        Me.grupoUsuarios.TabIndex = 7
-        Me.grupoUsuarios.TabStop = False
-        Me.grupoUsuarios.Text = "USUARIOS"
-        '
-        'grupoInventario
-        '
-        Me.grupoInventario.Controls.Add(Me.Label2)
-        Me.grupoInventario.Controls.Add(Me.Button2)
-        Me.grupoInventario.Location = New System.Drawing.Point(11, 143)
-        Me.grupoInventario.Margin = New System.Windows.Forms.Padding(2)
-        Me.grupoInventario.Name = "grupoInventario"
-        Me.grupoInventario.Padding = New System.Windows.Forms.Padding(2)
-        Me.grupoInventario.Size = New System.Drawing.Size(244, 242)
-        Me.grupoInventario.TabIndex = 0
-        Me.grupoInventario.TabStop = False
-        Me.grupoInventario.Text = "INVENTARIO"
-        '
-        'grupoPedidos
-        '
-        Me.grupoPedidos.Controls.Add(Me.Label3)
-        Me.grupoPedidos.Controls.Add(Me.Button3)
-        Me.grupoPedidos.Location = New System.Drawing.Point(11, 143)
-        Me.grupoPedidos.Margin = New System.Windows.Forms.Padding(2)
-        Me.grupoPedidos.Name = "grupoPedidos"
-        Me.grupoPedidos.Padding = New System.Windows.Forms.Padding(2)
-        Me.grupoPedidos.Size = New System.Drawing.Size(244, 242)
-        Me.grupoPedidos.TabIndex = 8
-        Me.grupoPedidos.TabStop = False
-        Me.grupoPedidos.Text = "PEDIDOS"
         '
         'listDatos
         '
@@ -176,9 +108,10 @@ Partial Class FrmReportes
         Me.listDatos.FullRowSelect = True
         Me.listDatos.GridLines = True
         Me.listDatos.HideSelection = False
-        Me.listDatos.Location = New System.Drawing.Point(267, 111)
+        Me.listDatos.Location = New System.Drawing.Point(356, 137)
+        Me.listDatos.Margin = New System.Windows.Forms.Padding(4)
         Me.listDatos.Name = "listDatos"
-        Me.listDatos.Size = New System.Drawing.Size(554, 379)
+        Me.listDatos.Size = New System.Drawing.Size(737, 466)
         Me.listDatos.TabIndex = 9
         Me.listDatos.UseCompatibleStateImageBehavior = False
         Me.listDatos.View = System.Windows.Forms.View.Details
@@ -204,10 +137,9 @@ Partial Class FrmReportes
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Arial Narrow", 19.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(339, 65)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label4.Location = New System.Drawing.Point(452, 80)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(441, 31)
+        Me.Label4.Size = New System.Drawing.Size(551, 40)
         Me.Label4.TabIndex = 10
         Me.Label4.Text = "Previsualizacion de Usuarios y sus roles"
         '
@@ -218,9 +150,10 @@ Partial Class FrmReportes
         Me.listProducto.FullRowSelect = True
         Me.listProducto.GridLines = True
         Me.listProducto.HideSelection = False
-        Me.listProducto.Location = New System.Drawing.Point(267, 111)
+        Me.listProducto.Location = New System.Drawing.Point(356, 137)
+        Me.listProducto.Margin = New System.Windows.Forms.Padding(4)
         Me.listProducto.Name = "listProducto"
-        Me.listProducto.Size = New System.Drawing.Size(650, 379)
+        Me.listProducto.Size = New System.Drawing.Size(865, 466)
         Me.listProducto.TabIndex = 11
         Me.listProducto.UseCompatibleStateImageBehavior = False
         Me.listProducto.View = System.Windows.Forms.View.Details
@@ -253,9 +186,10 @@ Partial Class FrmReportes
         Me.listPedidos.FullRowSelect = True
         Me.listPedidos.GridLines = True
         Me.listPedidos.HideSelection = False
-        Me.listPedidos.Location = New System.Drawing.Point(267, 111)
+        Me.listPedidos.Location = New System.Drawing.Point(356, 137)
+        Me.listPedidos.Margin = New System.Windows.Forms.Padding(4)
         Me.listPedidos.Name = "listPedidos"
-        Me.listPedidos.Size = New System.Drawing.Size(809, 379)
+        Me.listPedidos.Size = New System.Drawing.Size(1077, 466)
         Me.listPedidos.TabIndex = 12
         Me.listPedidos.UseCompatibleStateImageBehavior = False
         Me.listPedidos.View = System.Windows.Forms.View.Details
@@ -286,12 +220,81 @@ Partial Class FrmReportes
         Me.ColumnHeader12.Text = "Total Pedido"
         Me.ColumnHeader12.Width = 100
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Arial Narrow", 19.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(28, 50)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(259, 40)
+        Me.Label1.TabIndex = 4
+        Me.Label1.Text = "Reportes usuarios"
+        '
+        'grupoUsuarios
+        '
+        Me.grupoUsuarios.Controls.Add(Me.Label1)
+        Me.grupoUsuarios.Controls.Add(Button1)
+        Me.grupoUsuarios.Location = New System.Drawing.Point(15, 176)
+        Me.grupoUsuarios.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.grupoUsuarios.Name = "grupoUsuarios"
+        Me.grupoUsuarios.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.grupoUsuarios.Size = New System.Drawing.Size(325, 298)
+        Me.grupoUsuarios.TabIndex = 7
+        Me.grupoUsuarios.TabStop = False
+        Me.grupoUsuarios.Text = "USUARIOS"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Arial Narrow", 19.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(31, 50)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(261, 40)
+        Me.Label2.TabIndex = 5
+        Me.Label2.Text = "Reporte inventario"
+        '
+        'grupoInventario
+        '
+        Me.grupoInventario.Controls.Add(Me.Label2)
+        Me.grupoInventario.Controls.Add(Me.Button2)
+        Me.grupoInventario.Location = New System.Drawing.Point(15, 176)
+        Me.grupoInventario.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.grupoInventario.Name = "grupoInventario"
+        Me.grupoInventario.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.grupoInventario.Size = New System.Drawing.Size(325, 298)
+        Me.grupoInventario.TabIndex = 0
+        Me.grupoInventario.TabStop = False
+        Me.grupoInventario.Text = "INVENTARIO"
+        '
+        'grupoPedidos
+        '
+        Me.grupoPedidos.Controls.Add(Me.Label3)
+        Me.grupoPedidos.Controls.Add(Me.Button3)
+        Me.grupoPedidos.Location = New System.Drawing.Point(15, 176)
+        Me.grupoPedidos.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.grupoPedidos.Name = "grupoPedidos"
+        Me.grupoPedidos.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.grupoPedidos.Size = New System.Drawing.Size(325, 298)
+        Me.grupoPedidos.TabIndex = 8
+        Me.grupoPedidos.TabStop = False
+        Me.grupoPedidos.Text = "PEDIDOS"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Arial Narrow", 19.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(49, 50)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(235, 40)
+        Me.Label3.TabIndex = 6
+        Me.Label3.Text = "Reporte pedidos"
+        '
         'FrmReportes
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(115, Byte), Integer), CType(CType(101, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1116, 540)
+        Me.ClientSize = New System.Drawing.Size(1488, 665)
         Me.Controls.Add(Me.listPedidos)
         Me.Controls.Add(Me.listProducto)
         Me.Controls.Add(Me.Label4)
@@ -300,6 +303,8 @@ Partial Class FrmReportes
         Me.Controls.Add(Me.grupoInventario)
         Me.Controls.Add(Me.grupoUsuarios)
         Me.Controls.Add(Me.lblTitulo)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "FrmReportes"
         Me.Text = "FrmReportes"
         Me.grupoUsuarios.ResumeLayout(False)
@@ -315,12 +320,6 @@ Partial Class FrmReportes
     Friend WithEvents Button2 As Button
     Friend WithEvents Button3 As Button
     Friend WithEvents lblTitulo As Label
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label3 As Label
-    Friend WithEvents grupoUsuarios As GroupBox
-    Friend WithEvents grupoInventario As GroupBox
-    Friend WithEvents grupoPedidos As GroupBox
     Friend WithEvents listDatos As ListView
     Friend WithEvents ColumnHeader1 As ColumnHeader
     Friend WithEvents ColumnHeader2 As ColumnHeader
@@ -337,4 +336,10 @@ Partial Class FrmReportes
     Friend WithEvents ColumnHeader10 As ColumnHeader
     Friend WithEvents ColumnHeader11 As ColumnHeader
     Friend WithEvents ColumnHeader12 As ColumnHeader
+    Friend WithEvents Label1 As Label
+    Friend WithEvents grupoUsuarios As GroupBox
+    Friend WithEvents Label2 As Label
+    Friend WithEvents grupoInventario As GroupBox
+    Friend WithEvents grupoPedidos As GroupBox
+    Friend WithEvents Label3 As Label
 End Class

@@ -1,6 +1,5 @@
 C:\Users\CESAR\Source\Repos\ProyectoFinal-DS8-Grupo1\ProyectoFinal-DS8-Grupo1\obj\Debug\ProyectoFinal_DS8_Grupo1.FrmCreateUser.resources
 C:\Users\CESAR\Source\Repos\ProyectoFinal-DS8-Grupo1\ProyectoFinal-DS8-Grupo1\obj\Debug\ProyectoFinal-DS8-Grupo1.vbproj.AssemblyReference.cache
-C:\Users\CESAR\Source\Repos\ProyectoFinal-DS8-Grupo1\ProyectoFinal-DS8-Grupo1\obj\Debug\ProyectoFinal_DS8_Grupo1.FrmCatalogo.resources
 C:\Users\CESAR\Source\Repos\ProyectoFinal-DS8-Grupo1\ProyectoFinal-DS8-Grupo1\obj\Debug\ProyectoFinal_DS8_Grupo1.FrmRecuperacion.resources
 C:\Users\CESAR\Source\Repos\ProyectoFinal-DS8-Grupo1\ProyectoFinal-DS8-Grupo1\obj\Debug\ProyectoFinal_DS8_Grupo1.FrmAdmin.resources
 C:\Users\CESAR\Source\Repos\ProyectoFinal-DS8-Grupo1\ProyectoFinal-DS8-Grupo1\obj\Debug\ProyectoFinal_DS8_Grupo1.FrmCompra.resources
@@ -75,3 +74,4 @@ C:\Users\hhern\source\repos\ProyectoFinal-DS8-Grupo1\ProyectoFinal-DS8-Grupo1\Pr
 C:\Users\hhern\source\repos\ProyectoFinal-DS8-Grupo1\ProyectoFinal-DS8-Grupo1\ProyectoFinal-DS8-Grupo1\ProyectoFinal-DS8-Grupo1\obj\Debug\ProyectoFinal-DS8-Grupo1.exe
 C:\Users\hhern\source\repos\ProyectoFinal-DS8-Grupo1\ProyectoFinal-DS8-Grupo1\ProyectoFinal-DS8-Grupo1\ProyectoFinal-DS8-Grupo1\obj\Debug\ProyectoFinal-DS8-Grupo1.xml
 C:\Users\hhern\source\repos\ProyectoFinal-DS8-Grupo1\ProyectoFinal-DS8-Grupo1\ProyectoFinal-DS8-Grupo1\ProyectoFinal-DS8-Grupo1\obj\Debug\ProyectoFinal-DS8-Grupo1.pdb
+C:\Users\CESAR\Source\Repos\ProyectoFinal-DS8-Grupo1\ProyectoFinal-DS8-Grupo1\obj\Debug\ProyectoFinal_DS8_Grupo1.FrmPedidos.resources

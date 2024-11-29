@@ -41,17 +41,22 @@ Partial Class FrmAdmin
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PanelFormsAdm = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.PanelSubColab = New System.Windows.Forms.Panel()
+        Me.BtnCrearColab = New System.Windows.Forms.Button()
+        Me.BtnRol = New System.Windows.Forms.Button()
         Me.PanelMenu.SuspendLayout()
         Me.PanelSubReportes.SuspendLayout()
         Me.PanelSubInvent.SuspendLayout()
         Me.PanelLogo.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelFormsAdm.SuspendLayout()
+        Me.PanelSubColab.SuspendLayout()
         Me.SuspendLayout()
         '
         'PanelMenu
         '
         Me.PanelMenu.BackColor = System.Drawing.Color.FromArgb(CType(CType(21, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(60, Byte), Integer))
+        Me.PanelMenu.Controls.Add(Me.PanelSubColab)
         Me.PanelMenu.Controls.Add(Me.BtnColab)
         Me.PanelMenu.Controls.Add(Me.PanelSubReportes)
         Me.PanelMenu.Controls.Add(Me.BtnReportes)
@@ -62,9 +67,9 @@ Partial Class FrmAdmin
         Me.PanelMenu.Controls.Add(Me.PanelLogo)
         Me.PanelMenu.Dock = System.Windows.Forms.DockStyle.Left
         Me.PanelMenu.Location = New System.Drawing.Point(0, 0)
-        Me.PanelMenu.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PanelMenu.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PanelMenu.Name = "PanelMenu"
-        Me.PanelMenu.Size = New System.Drawing.Size(195, 571)
+        Me.PanelMenu.Size = New System.Drawing.Size(260, 703)
         Me.PanelMenu.TabIndex = 0
         '
         'BtnColab
@@ -74,10 +79,10 @@ Partial Class FrmAdmin
         Me.BtnColab.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnColab.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnColab.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(79, Byte), Integer))
-        Me.BtnColab.Location = New System.Drawing.Point(0, 451)
-        Me.BtnColab.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.BtnColab.Location = New System.Drawing.Point(0, 556)
+        Me.BtnColab.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BtnColab.Name = "BtnColab"
-        Me.BtnColab.Size = New System.Drawing.Size(195, 32)
+        Me.BtnColab.Size = New System.Drawing.Size(260, 40)
         Me.BtnColab.TabIndex = 8
         Me.BtnColab.Text = "Administar Colaboradores"
         Me.BtnColab.UseVisualStyleBackColor = True
@@ -88,10 +93,10 @@ Partial Class FrmAdmin
         Me.PanelSubReportes.Controls.Add(Me.BtnReporteVenta)
         Me.PanelSubReportes.Controls.Add(Me.BtnReporte1)
         Me.PanelSubReportes.Dock = System.Windows.Forms.DockStyle.Top
-        Me.PanelSubReportes.Location = New System.Drawing.Point(0, 318)
-        Me.PanelSubReportes.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PanelSubReportes.Location = New System.Drawing.Point(0, 392)
+        Me.PanelSubReportes.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PanelSubReportes.Name = "PanelSubReportes"
-        Me.PanelSubReportes.Size = New System.Drawing.Size(195, 133)
+        Me.PanelSubReportes.Size = New System.Drawing.Size(260, 164)
         Me.PanelSubReportes.TabIndex = 4
         '
         'BtnReportePedidos
@@ -101,10 +106,10 @@ Partial Class FrmAdmin
         Me.BtnReportePedidos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnReportePedidos.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnReportePedidos.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(79, Byte), Integer))
-        Me.BtnReportePedidos.Location = New System.Drawing.Point(0, 64)
-        Me.BtnReportePedidos.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.BtnReportePedidos.Location = New System.Drawing.Point(0, 78)
+        Me.BtnReportePedidos.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BtnReportePedidos.Name = "BtnReportePedidos"
-        Me.BtnReportePedidos.Size = New System.Drawing.Size(195, 47)
+        Me.BtnReportePedidos.Size = New System.Drawing.Size(260, 58)
         Me.BtnReportePedidos.TabIndex = 7
         Me.BtnReportePedidos.Text = "Ped. Procesados y No Procesados"
         Me.BtnReportePedidos.UseVisualStyleBackColor = True
@@ -116,10 +121,10 @@ Partial Class FrmAdmin
         Me.BtnReporteVenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnReporteVenta.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnReporteVenta.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(79, Byte), Integer))
-        Me.BtnReporteVenta.Location = New System.Drawing.Point(0, 32)
-        Me.BtnReporteVenta.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.BtnReporteVenta.Location = New System.Drawing.Point(0, 39)
+        Me.BtnReporteVenta.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BtnReporteVenta.Name = "BtnReporteVenta"
-        Me.BtnReporteVenta.Size = New System.Drawing.Size(195, 32)
+        Me.BtnReporteVenta.Size = New System.Drawing.Size(260, 39)
         Me.BtnReporteVenta.TabIndex = 6
         Me.BtnReporteVenta.Text = "Productos"
         Me.BtnReporteVenta.UseVisualStyleBackColor = True
@@ -132,9 +137,9 @@ Partial Class FrmAdmin
         Me.BtnReporte1.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnReporte1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(79, Byte), Integer))
         Me.BtnReporte1.Location = New System.Drawing.Point(0, 0)
-        Me.BtnReporte1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.BtnReporte1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BtnReporte1.Name = "BtnReporte1"
-        Me.BtnReporte1.Size = New System.Drawing.Size(195, 32)
+        Me.BtnReporte1.Size = New System.Drawing.Size(260, 39)
         Me.BtnReporte1.TabIndex = 5
         Me.BtnReporte1.Text = "Roles y Usuarios"
         Me.BtnReporte1.UseVisualStyleBackColor = True
@@ -146,10 +151,10 @@ Partial Class FrmAdmin
         Me.BtnReportes.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnReportes.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnReportes.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(79, Byte), Integer))
-        Me.BtnReportes.Location = New System.Drawing.Point(0, 286)
-        Me.BtnReportes.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.BtnReportes.Location = New System.Drawing.Point(0, 353)
+        Me.BtnReportes.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BtnReportes.Name = "BtnReportes"
-        Me.BtnReportes.Size = New System.Drawing.Size(195, 32)
+        Me.BtnReportes.Size = New System.Drawing.Size(260, 39)
         Me.BtnReportes.TabIndex = 7
         Me.BtnReportes.Text = "Reportes"
         Me.BtnReportes.UseVisualStyleBackColor = True
@@ -161,10 +166,10 @@ Partial Class FrmAdmin
         Me.BtnPedidos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnPedidos.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnPedidos.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(79, Byte), Integer))
-        Me.BtnPedidos.Location = New System.Drawing.Point(0, 254)
-        Me.BtnPedidos.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.BtnPedidos.Location = New System.Drawing.Point(0, 313)
+        Me.BtnPedidos.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BtnPedidos.Name = "BtnPedidos"
-        Me.BtnPedidos.Size = New System.Drawing.Size(195, 32)
+        Me.BtnPedidos.Size = New System.Drawing.Size(260, 40)
         Me.BtnPedidos.TabIndex = 6
         Me.BtnPedidos.Text = "PEDIDOS"
         Me.BtnPedidos.UseVisualStyleBackColor = True
@@ -175,10 +180,10 @@ Partial Class FrmAdmin
         Me.PanelSubInvent.Controls.Add(Me.BtnProveedor)
         Me.PanelSubInvent.Controls.Add(Me.BtnCategoria)
         Me.PanelSubInvent.Dock = System.Windows.Forms.DockStyle.Top
-        Me.PanelSubInvent.Location = New System.Drawing.Point(0, 144)
-        Me.PanelSubInvent.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PanelSubInvent.Location = New System.Drawing.Point(0, 178)
+        Me.PanelSubInvent.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PanelSubInvent.Name = "PanelSubInvent"
-        Me.PanelSubInvent.Size = New System.Drawing.Size(195, 110)
+        Me.PanelSubInvent.Size = New System.Drawing.Size(260, 135)
         Me.PanelSubInvent.TabIndex = 4
         '
         'BynProducto
@@ -188,10 +193,10 @@ Partial Class FrmAdmin
         Me.BynProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BynProducto.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BynProducto.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(79, Byte), Integer))
-        Me.BynProducto.Location = New System.Drawing.Point(0, 64)
-        Me.BynProducto.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.BynProducto.Location = New System.Drawing.Point(0, 78)
+        Me.BynProducto.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BynProducto.Name = "BynProducto"
-        Me.BynProducto.Size = New System.Drawing.Size(195, 32)
+        Me.BynProducto.Size = New System.Drawing.Size(260, 39)
         Me.BynProducto.TabIndex = 6
         Me.BynProducto.Text = "Agregar Producto"
         Me.BynProducto.UseVisualStyleBackColor = True
@@ -203,10 +208,10 @@ Partial Class FrmAdmin
         Me.BtnProveedor.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnProveedor.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnProveedor.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(79, Byte), Integer))
-        Me.BtnProveedor.Location = New System.Drawing.Point(0, 32)
-        Me.BtnProveedor.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.BtnProveedor.Location = New System.Drawing.Point(0, 39)
+        Me.BtnProveedor.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BtnProveedor.Name = "BtnProveedor"
-        Me.BtnProveedor.Size = New System.Drawing.Size(195, 32)
+        Me.BtnProveedor.Size = New System.Drawing.Size(260, 39)
         Me.BtnProveedor.TabIndex = 5
         Me.BtnProveedor.Text = "Agregar Proveedor"
         Me.BtnProveedor.UseVisualStyleBackColor = True
@@ -219,9 +224,9 @@ Partial Class FrmAdmin
         Me.BtnCategoria.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnCategoria.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(79, Byte), Integer))
         Me.BtnCategoria.Location = New System.Drawing.Point(0, 0)
-        Me.BtnCategoria.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.BtnCategoria.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BtnCategoria.Name = "BtnCategoria"
-        Me.BtnCategoria.Size = New System.Drawing.Size(195, 32)
+        Me.BtnCategoria.Size = New System.Drawing.Size(260, 39)
         Me.BtnCategoria.TabIndex = 4
         Me.BtnCategoria.Text = "Agregar Categoria"
         Me.BtnCategoria.UseVisualStyleBackColor = True
@@ -233,10 +238,10 @@ Partial Class FrmAdmin
         Me.BtnInventario.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnInventario.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnInventario.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(79, Byte), Integer))
-        Me.BtnInventario.Location = New System.Drawing.Point(0, 112)
-        Me.BtnInventario.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.BtnInventario.Location = New System.Drawing.Point(0, 138)
+        Me.BtnInventario.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BtnInventario.Name = "BtnInventario"
-        Me.BtnInventario.Size = New System.Drawing.Size(195, 32)
+        Me.BtnInventario.Size = New System.Drawing.Size(260, 40)
         Me.BtnInventario.TabIndex = 4
         Me.BtnInventario.Text = "Administrar Inventario"
         Me.BtnInventario.UseVisualStyleBackColor = True
@@ -248,10 +253,10 @@ Partial Class FrmAdmin
         Me.BtnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnRegresar.Font = New System.Drawing.Font("Times New Roman", 10.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnRegresar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(79, Byte), Integer))
-        Me.BtnRegresar.Location = New System.Drawing.Point(0, 535)
-        Me.BtnRegresar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.BtnRegresar.Location = New System.Drawing.Point(0, 659)
+        Me.BtnRegresar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BtnRegresar.Name = "BtnRegresar"
-        Me.BtnRegresar.Size = New System.Drawing.Size(195, 36)
+        Me.BtnRegresar.Size = New System.Drawing.Size(260, 44)
         Me.BtnRegresar.TabIndex = 5
         Me.BtnRegresar.Text = "Cerrar Seccion"
         Me.BtnRegresar.UseVisualStyleBackColor = True
@@ -261,18 +266,18 @@ Partial Class FrmAdmin
         Me.PanelLogo.Controls.Add(Me.PictureBox1)
         Me.PanelLogo.Dock = System.Windows.Forms.DockStyle.Top
         Me.PanelLogo.Location = New System.Drawing.Point(0, 0)
-        Me.PanelLogo.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PanelLogo.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PanelLogo.Name = "PanelLogo"
-        Me.PanelLogo.Size = New System.Drawing.Size(195, 112)
+        Me.PanelLogo.Size = New System.Drawing.Size(260, 138)
         Me.PanelLogo.TabIndex = 0
         '
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(56, 10)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PictureBox1.Location = New System.Drawing.Point(75, 12)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(91, 97)
+        Me.PictureBox1.Size = New System.Drawing.Size(121, 119)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
@@ -282,10 +287,10 @@ Partial Class FrmAdmin
         Me.PanelFormsAdm.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(153, Byte), Integer))
         Me.PanelFormsAdm.Controls.Add(Me.Label1)
         Me.PanelFormsAdm.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PanelFormsAdm.Location = New System.Drawing.Point(195, 0)
-        Me.PanelFormsAdm.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PanelFormsAdm.Location = New System.Drawing.Point(260, 0)
+        Me.PanelFormsAdm.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PanelFormsAdm.Name = "PanelFormsAdm"
-        Me.PanelFormsAdm.Size = New System.Drawing.Size(848, 571)
+        Me.PanelFormsAdm.Size = New System.Drawing.Size(1131, 703)
         Me.PanelFormsAdm.TabIndex = 1
         '
         'Label1
@@ -296,22 +301,55 @@ Partial Class FrmAdmin
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Times New Roman", 22.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(79, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(323, 268)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label1.Location = New System.Drawing.Point(431, 330)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(218, 34)
+        Me.Label1.Size = New System.Drawing.Size(268, 43)
         Me.Label1.TabIndex = 3
         Me.Label1.Text = "Smart Inventory"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
+        'PanelSubColab
+        '
+        Me.PanelSubColab.Controls.Add(Me.BtnRol)
+        Me.PanelSubColab.Controls.Add(Me.BtnCrearColab)
+        Me.PanelSubColab.Dock = System.Windows.Forms.DockStyle.Top
+        Me.PanelSubColab.Location = New System.Drawing.Point(0, 596)
+        Me.PanelSubColab.Name = "PanelSubColab"
+        Me.PanelSubColab.Size = New System.Drawing.Size(260, 100)
+        Me.PanelSubColab.TabIndex = 4
+        '
+        'BtnCrearColab
+        '
+        Me.BtnCrearColab.Dock = System.Windows.Forms.DockStyle.Top
+        Me.BtnCrearColab.FlatAppearance.BorderSize = 0
+        Me.BtnCrearColab.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnCrearColab.Location = New System.Drawing.Point(0, 0)
+        Me.BtnCrearColab.Name = "BtnCrearColab"
+        Me.BtnCrearColab.Size = New System.Drawing.Size(260, 40)
+        Me.BtnCrearColab.TabIndex = 4
+        Me.BtnCrearColab.Text = "Agregar Colaborador"
+        Me.BtnCrearColab.UseVisualStyleBackColor = True
+        '
+        'BtnRol
+        '
+        Me.BtnRol.Dock = System.Windows.Forms.DockStyle.Top
+        Me.BtnRol.FlatAppearance.BorderSize = 0
+        Me.BtnRol.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnRol.Location = New System.Drawing.Point(0, 40)
+        Me.BtnRol.Name = "BtnRol"
+        Me.BtnRol.Size = New System.Drawing.Size(260, 40)
+        Me.BtnRol.TabIndex = 4
+        Me.BtnRol.Text = "Agregar Rol"
+        Me.BtnRol.UseVisualStyleBackColor = True
+        '
         'FrmAdmin
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1043, 571)
+        Me.ClientSize = New System.Drawing.Size(1391, 703)
         Me.Controls.Add(Me.PanelFormsAdm)
         Me.Controls.Add(Me.PanelMenu)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "FrmAdmin"
         Me.Text = "FrmAdmin"
         Me.PanelMenu.ResumeLayout(False)
@@ -321,6 +359,7 @@ Partial Class FrmAdmin
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PanelFormsAdm.ResumeLayout(False)
         Me.PanelFormsAdm.PerformLayout()
+        Me.PanelSubColab.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -343,4 +382,7 @@ Partial Class FrmAdmin
     Friend WithEvents BtnReportePedidos As Button
     Friend WithEvents BtnReporteVenta As Button
     Friend WithEvents BtnReporte1 As Button
+    Friend WithEvents PanelSubColab As Panel
+    Friend WithEvents BtnCrearColab As Button
+    Friend WithEvents BtnRol As Button
 End Class

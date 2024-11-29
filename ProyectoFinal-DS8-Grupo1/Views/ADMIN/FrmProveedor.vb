@@ -53,6 +53,10 @@
 
 
     Private Sub BtnNuevo_Click(sender As Object, e As EventArgs) Handles BtnNuevo.Click
+        DgvProveedores.DataSource = Nothing
+        DgvProveedores.Columns.Clear()
+
+
         lblNombre.Visible = True
         txtNombre.Visible = True
         lblTelefono.Visible = True
@@ -144,8 +148,53 @@
     End Sub
 
     Private Sub BtnEliminar_Click(sender As Object, e As EventArgs) Handles BtnEliminar.Click
+        ' Validar que los campos obligatorios no estén vacíos
+        If String.IsNullOrEmpty(txtNombre.Text) OrElse String.IsNullOrWhiteSpace(txtTelefono.Text) Then
+            MessageBox.Show("Todos los campos son obligatorios.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            Return
+        ElseIf String.IsNullOrWhiteSpace(txtTelefono.Text) Then
+            MessageBox.Show("El campo Apellido es obligatorio.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            txtTelefono.Focus()
+            Return
+        End If
 
+        ' Mostrar mensaje de confirmación
+        Dim confirmResult As DialogResult = MessageBox.Show("¿Estás seguro de que deseas eliminar este registro?", "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+
+        If confirmResult = DialogResult.Yes Then
+            ' Proceder con la eliminación del registro
+            Dim mensaje As String = String.Empty
+            Dim proveedorID As Integer = Integer.Parse(txtID.Text) ' Asegúrate de capturar el ID del proveedor adecuadamente
+            Dim resultado As String = objProveedor.EliminarProveedor(proveedorID, mensaje)
+
+            If mensaje.StartsWith("Error") Then
+                MessageBox.Show(mensaje, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            Else
+                MessageBox.Show("Registro eliminado. " & mensaje, "Eliminación", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            End If
+        Else
+            ' Cancelar la operación de eliminación
+            MessageBox.Show("Operación cancelada.", "Eliminación", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        End If
+
+        ' Refrescar DataGridView después de guardar
+        DgvProveedores.DataSource = objProveedor.MostrarProveedores()
+        'Limpia Los diferentes controles
+        LimpiarCampos()
+
+        BtnCancelar.Enabled = False
+        BtnEliminar.Enabled = False
+        BtnGuardar.Enabled = False
+        BtnNuevo.Enabled = True
+
+        lblNombre.Visible = False
+        txtNombre.Visible = False
+        lblTelefono.Visible = False
+        txtTelefono.Visible = False
+        lblID.Visible = False
+        txtID.Visible = False
     End Sub
+
 
     Private Sub DataGridViewProveedores_SelectionChanged(sender As Object, e As EventArgs) Handles DgvProveedores.SelectionChanged
         If DgvProveedores.SelectedRows.Count > 0 Then
