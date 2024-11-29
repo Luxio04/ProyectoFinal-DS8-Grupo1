@@ -82,40 +82,4 @@ Public Class FrmFactura
             End If
         End If
     End Sub
-
-    Private Sub btnMostrar_Click(sender As Object, e As EventArgs) Handles btnMostrar.Click
-        Try
-            ' Verificar que hay una fila seleccionada
-            If dgvFactura.SelectedRows.Count > 0 Then
-                ' Obtener el FacturaId de la columna correspondiente en la fila seleccionada
-                Dim facturaId As Integer = Convert.ToInt32(dgvFactura.SelectedRows(0).Cells("FacturaId").Value)
-
-                ' Llamar a la función con el FacturaId
-                Dim detallesFactura As DataTable = objFactura.ObtenerDetalleFactura(facturaId)
-
-                ' Verificar si se obtuvieron datos
-                If detallesFactura.Rows.Count > 0 Then
-                    ' Construir el mensaje con los detalles
-                    Dim mensaje As String = "Detalles de la Factura:" & Environment.NewLine & Environment.NewLine
-
-                    For Each row As DataRow In detallesFactura.Rows
-                        mensaje &= "Producto: " & row("Producto").ToString() & Environment.NewLine
-                        mensaje &= "Precio Unitario: " & Convert.ToDecimal(row("PrecioUnitario")).ToString("C2") & Environment.NewLine
-                        mensaje &= "Cantidad: " & row("Cantidad").ToString() & Environment.NewLine
-                        mensaje &= "Subtotal: " & Convert.ToDecimal(row("Subtotal")).ToString("C2") & Environment.NewLine
-                        mensaje &= "-------------------------------------" & Environment.NewLine
-                    Next
-
-                    ' Mostrar los detalles en un MessageBox
-                    MessageBox.Show(mensaje, "Detalle de Factura", MessageBoxButtons.OK, MessageBoxIcon.Information)
-                Else
-                    MessageBox.Show("No hay detalles disponibles para la factura.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information)
-                End If
-            Else
-                MessageBox.Show("Por favor selecciona una factura.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-            End If
-        Catch ex As Exception
-            MessageBox.Show("Error al mostrar los detalles de la factura: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-        End Try
-    End Sub
 End Class

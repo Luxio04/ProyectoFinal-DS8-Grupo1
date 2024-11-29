@@ -9,6 +9,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DB", "DB", "{605A99D7-AF6A-
 	ProjectSection(SolutionItems) = preProject
 		Esquema_Base_Datos.sql = Esquema_Base_Datos.sql
 		Procedimientos-Almacenados-Consolidados.sql = Procedimientos-Almacenados-Consolidados.sql
+		Procedimientos-Compra.sql = Procedimientos-Compra.sql
 	EndProjectSection
 EndProject
 Global
