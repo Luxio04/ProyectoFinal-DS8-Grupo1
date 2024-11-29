@@ -31,9 +31,11 @@
     Private Sub btnModificar_Click(sender As Object, e As EventArgs) Handles btnModificar.Click
         Dim objConsulta As New clsInventario
         Dim mensaje As String
+        txtProductoID.Visible = True
+        txtProductoID.Enabled = False
 
         ' Validar los datos ingresados
-        If String.IsNullOrWhiteSpace(txtId.Text) Then
+        If String.IsNullOrWhiteSpace(txtProductoID.Text) Then
             MessageBox.Show("Seleccione un producto para modificar.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning)
             Return
         End If
@@ -48,7 +50,7 @@
             Return
         End If
 
-        Dim productoId As Integer = CInt(txtId.Text)
+        Dim productoId As Integer = CInt(txtProductoID.Text)
         Dim nombreProducto As String = txtNombreProducto.Text
         Dim descripcion As String = txtDescripcion.Text
         Dim precio As Decimal = Convert.ToDecimal(txtPrecio.Text)
@@ -131,7 +133,7 @@
         cbxCategoria.DisplayMember = "NombreCategoria"
     End Sub
     Private Sub LimpiarCampos()
-        txtId.Clear()
+        txtProductoID.Clear()
         txtNombreProducto.Clear()
         txtDescripcion.Clear()
         txtPrecio.Clear()
@@ -183,23 +185,22 @@
 
     Private Sub dgvInventario_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvInventario.CellClick
         ' Verificar que se ha hecho clic en una fila válida
-        If e.RowIndex >= 0 Then
+        If e.RowIndex >= 0 AndAlso e.ColumnIndex >= 0 Then
             ' Obtener la fila seleccionada
             Dim row As DataGridViewRow = dgvInventario.Rows(e.RowIndex)
 
             ' Cargar los datos de la fila seleccionada en los TextBoxes
-            txtId.Text = row.Cells("ProductoID").Value.ToString()
+            txtProductoID.Text = row.Cells("ProductoID").Value.ToString()
             txtNombreProducto.Text = row.Cells("NombreProducto").Value.ToString()
             txtDescripcion.Text = row.Cells("descripcion").Value.ToString()
             txtPrecio.Text = row.Cells("PrecioUnitario").Value.ToString()
             txtStock.Text = row.Cells("Stock").Value.ToString()
-
             dtpIngreso.Value = DateTime.Parse(row.Cells("FechaIngreso").Value.ToString())
-
             cbxCategoria.SelectedValue = row.Cells("CategoriaID").Value
             cbxProveedor.SelectedValue = row.Cells("ProveedorID").Value
         End If
     End Sub
+
 
     Private Sub btnLimpiar_Click(sender As Object, e As EventArgs) Handles btnLimpiar.Click
         LimpiarCampos()

@@ -23,6 +23,9 @@ Partial Class FrmInventario
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmInventario))
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -30,13 +33,11 @@ Partial Class FrmInventario
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.txtId = New System.Windows.Forms.TextBox()
         Me.txtNombreProducto = New System.Windows.Forms.TextBox()
         Me.txtDescripcion = New System.Windows.Forms.TextBox()
         Me.txtPrecio = New System.Windows.Forms.TextBox()
         Me.txtStock = New System.Windows.Forms.TextBox()
         Me.dtpIngreso = New System.Windows.Forms.DateTimePicker()
-        Me.dgvInventario = New System.Windows.Forms.DataGridView()
         Me.cbxProveedor = New System.Windows.Forms.ComboBox()
         Me.btnAgregar = New System.Windows.Forms.Button()
         Me.btnModificar = New System.Windows.Forms.Button()
@@ -47,8 +48,10 @@ Partial Class FrmInventario
         Me.btnLimpiar = New System.Windows.Forms.Button()
         Me.PanelSALIR = New System.Windows.Forms.Panel()
         Me.BtnCerrar = New System.Windows.Forms.Button()
-        CType(Me.dgvInventario, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.dgvInventario = New System.Windows.Forms.DataGridView()
+        Me.txtProductoID = New System.Windows.Forms.TextBox()
         Me.PanelSALIR.SuspendLayout()
+        CType(Me.dgvInventario, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -135,15 +138,6 @@ Partial Class FrmInventario
         Me.Label8.TabIndex = 7
         Me.Label8.Text = "Proveedor"
         '
-        'txtId
-        '
-        Me.txtId.Location = New System.Drawing.Point(114, 136)
-        Me.txtId.Margin = New System.Windows.Forms.Padding(4)
-        Me.txtId.Name = "txtId"
-        Me.txtId.Size = New System.Drawing.Size(69, 22)
-        Me.txtId.TabIndex = 8
-        Me.txtId.Visible = False
-        '
         'txtNombreProducto
         '
         Me.txtNombreProducto.Location = New System.Drawing.Point(270, 135)
@@ -184,19 +178,6 @@ Partial Class FrmInventario
         Me.dtpIngreso.Size = New System.Drawing.Size(265, 22)
         Me.dtpIngreso.TabIndex = 14
         '
-        'dgvInventario
-        '
-        Me.dgvInventario.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(89, Byte), Integer))
-        Me.dgvInventario.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.dgvInventario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvInventario.GridColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.dgvInventario.Location = New System.Drawing.Point(52, 396)
-        Me.dgvInventario.Margin = New System.Windows.Forms.Padding(4)
-        Me.dgvInventario.Name = "dgvInventario"
-        Me.dgvInventario.RowHeadersWidth = 51
-        Me.dgvInventario.Size = New System.Drawing.Size(997, 267)
-        Me.dgvInventario.TabIndex = 15
-        '
         'cbxProveedor
         '
         Me.cbxProveedor.FormattingEnabled = True
@@ -208,42 +189,70 @@ Partial Class FrmInventario
         '
         'btnAgregar
         '
-        Me.btnAgregar.Location = New System.Drawing.Point(216, 333)
+        Me.btnAgregar.FlatAppearance.BorderSize = 0
+        Me.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnAgregar.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAgregar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
+        Me.btnAgregar.Image = CType(resources.GetObject("btnAgregar.Image"), System.Drawing.Image)
+        Me.btnAgregar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnAgregar.Location = New System.Drawing.Point(71, 301)
         Me.btnAgregar.Margin = New System.Windows.Forms.Padding(4)
         Me.btnAgregar.Name = "btnAgregar"
-        Me.btnAgregar.Size = New System.Drawing.Size(100, 28)
+        Me.btnAgregar.Size = New System.Drawing.Size(157, 49)
         Me.btnAgregar.TabIndex = 18
         Me.btnAgregar.Text = "Agregar"
+        Me.btnAgregar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.btnAgregar.UseVisualStyleBackColor = True
         '
         'btnModificar
         '
-        Me.btnModificar.Location = New System.Drawing.Point(354, 333)
+        Me.btnModificar.FlatAppearance.BorderSize = 0
+        Me.btnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnModificar.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnModificar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
+        Me.btnModificar.Image = CType(resources.GetObject("btnModificar.Image"), System.Drawing.Image)
+        Me.btnModificar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnModificar.Location = New System.Drawing.Point(271, 301)
         Me.btnModificar.Margin = New System.Windows.Forms.Padding(4)
         Me.btnModificar.Name = "btnModificar"
-        Me.btnModificar.Size = New System.Drawing.Size(100, 28)
+        Me.btnModificar.Size = New System.Drawing.Size(157, 49)
         Me.btnModificar.TabIndex = 19
         Me.btnModificar.Text = "Modificar"
+        Me.btnModificar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.btnModificar.UseVisualStyleBackColor = True
         '
         'btnMostrar
         '
-        Me.btnMostrar.Location = New System.Drawing.Point(668, 333)
+        Me.btnMostrar.FlatAppearance.BorderSize = 0
+        Me.btnMostrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnMostrar.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnMostrar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
+        Me.btnMostrar.Image = CType(resources.GetObject("btnMostrar.Image"), System.Drawing.Image)
+        Me.btnMostrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnMostrar.Location = New System.Drawing.Point(706, 301)
         Me.btnMostrar.Margin = New System.Windows.Forms.Padding(4)
         Me.btnMostrar.Name = "btnMostrar"
-        Me.btnMostrar.Size = New System.Drawing.Size(100, 28)
+        Me.btnMostrar.Size = New System.Drawing.Size(157, 49)
         Me.btnMostrar.TabIndex = 20
         Me.btnMostrar.Text = "Mostrar"
+        Me.btnMostrar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.btnMostrar.UseVisualStyleBackColor = True
         '
         'btnEliminar
         '
-        Me.btnEliminar.Location = New System.Drawing.Point(514, 333)
+        Me.btnEliminar.FlatAppearance.BorderSize = 0
+        Me.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnEliminar.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnEliminar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
+        Me.btnEliminar.Image = CType(resources.GetObject("btnEliminar.Image"), System.Drawing.Image)
+        Me.btnEliminar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnEliminar.Location = New System.Drawing.Point(477, 301)
         Me.btnEliminar.Margin = New System.Windows.Forms.Padding(4)
         Me.btnEliminar.Name = "btnEliminar"
-        Me.btnEliminar.Size = New System.Drawing.Size(100, 28)
+        Me.btnEliminar.Size = New System.Drawing.Size(157, 49)
         Me.btnEliminar.TabIndex = 21
         Me.btnEliminar.Text = "Eliminar"
+        Me.btnEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.btnEliminar.UseVisualStyleBackColor = True
         '
         'Label9
@@ -269,12 +278,19 @@ Partial Class FrmInventario
         '
         'btnLimpiar
         '
-        Me.btnLimpiar.Location = New System.Drawing.Point(815, 333)
+        Me.btnLimpiar.FlatAppearance.BorderSize = 0
+        Me.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnLimpiar.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnLimpiar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
+        Me.btnLimpiar.Image = CType(resources.GetObject("btnLimpiar.Image"), System.Drawing.Image)
+        Me.btnLimpiar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnLimpiar.Location = New System.Drawing.Point(902, 301)
         Me.btnLimpiar.Margin = New System.Windows.Forms.Padding(4)
         Me.btnLimpiar.Name = "btnLimpiar"
-        Me.btnLimpiar.Size = New System.Drawing.Size(100, 28)
+        Me.btnLimpiar.Size = New System.Drawing.Size(157, 49)
         Me.btnLimpiar.TabIndex = 25
         Me.btnLimpiar.Text = "Limpiar"
+        Me.btnLimpiar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.btnLimpiar.UseVisualStyleBackColor = True
         '
         'PanelSALIR
@@ -299,12 +315,65 @@ Partial Class FrmInventario
         Me.BtnCerrar.TabIndex = 0
         Me.BtnCerrar.UseVisualStyleBackColor = False
         '
+        'dgvInventario
+        '
+        Me.dgvInventario.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
+        Me.dgvInventario.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
+        Me.dgvInventario.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(89, Byte), Integer))
+        Me.dgvInventario.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.dgvInventario.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(98, Byte), Integer), CType(CType(19, Byte), Integer), CType(CType(62, Byte), Integer))
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(98, Byte), Integer), CType(CType(19, Byte), Integer), CType(CType(62, Byte), Integer))
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvInventario.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        Me.dgvInventario.ColumnHeadersHeight = 30
+        Me.dgvInventario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
+        Me.dgvInventario.EnableHeadersVisualStyles = False
+        Me.dgvInventario.GridColor = System.Drawing.Color.FromArgb(CType(CType(76, Byte), Integer), CType(CType(31, Byte), Integer), CType(CType(84, Byte), Integer))
+        Me.dgvInventario.Location = New System.Drawing.Point(114, 403)
+        Me.dgvInventario.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.dgvInventario.Name = "dgvInventario"
+        Me.dgvInventario.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(89, Byte), Integer))
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(175, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(133, Byte), Integer))
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvInventario.RowHeadersDefaultCellStyle = DataGridViewCellStyle2
+        Me.dgvInventario.RowHeadersVisible = False
+        Me.dgvInventario.RowHeadersWidth = 51
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(89, Byte), Integer))
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(98, Byte), Integer), CType(CType(19, Byte), Integer), CType(CType(62, Byte), Integer))
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White
+        Me.dgvInventario.RowsDefaultCellStyle = DataGridViewCellStyle3
+        Me.dgvInventario.RowTemplate.Height = 24
+        Me.dgvInventario.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dgvInventario.Size = New System.Drawing.Size(903, 261)
+        Me.dgvInventario.TabIndex = 27
+        '
+        'txtProductoID
+        '
+        Me.txtProductoID.Location = New System.Drawing.Point(114, 136)
+        Me.txtProductoID.Name = "txtProductoID"
+        Me.txtProductoID.Size = New System.Drawing.Size(100, 22)
+        Me.txtProductoID.TabIndex = 28
+        '
         'FrmInventario
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(89, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1131, 703)
+        Me.Controls.Add(Me.txtProductoID)
+        Me.Controls.Add(Me.dgvInventario)
         Me.Controls.Add(Me.PanelSALIR)
         Me.Controls.Add(Me.btnLimpiar)
         Me.Controls.Add(Me.cbxCategoria)
@@ -314,13 +383,11 @@ Partial Class FrmInventario
         Me.Controls.Add(Me.btnModificar)
         Me.Controls.Add(Me.btnAgregar)
         Me.Controls.Add(Me.cbxProveedor)
-        Me.Controls.Add(Me.dgvInventario)
         Me.Controls.Add(Me.dtpIngreso)
         Me.Controls.Add(Me.txtStock)
         Me.Controls.Add(Me.txtPrecio)
         Me.Controls.Add(Me.txtDescripcion)
         Me.Controls.Add(Me.txtNombreProducto)
-        Me.Controls.Add(Me.txtId)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label5)
@@ -332,8 +399,8 @@ Partial Class FrmInventario
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "FrmInventario"
         Me.Text = "FrmInventario"
-        CType(Me.dgvInventario, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PanelSALIR.ResumeLayout(False)
+        CType(Me.dgvInventario, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -346,13 +413,11 @@ Partial Class FrmInventario
     Friend WithEvents Label5 As Label
     Friend WithEvents Label7 As Label
     Friend WithEvents Label8 As Label
-    Friend WithEvents txtId As TextBox
     Friend WithEvents txtNombreProducto As TextBox
     Friend WithEvents txtDescripcion As TextBox
     Friend WithEvents txtPrecio As TextBox
     Friend WithEvents txtStock As TextBox
     Friend WithEvents dtpIngreso As DateTimePicker
-    Friend WithEvents dgvInventario As DataGridView
     Friend WithEvents cbxProveedor As ComboBox
     Friend WithEvents btnAgregar As Button
     Friend WithEvents btnModificar As Button
@@ -363,4 +428,6 @@ Partial Class FrmInventario
     Friend WithEvents btnLimpiar As Button
     Friend WithEvents PanelSALIR As Panel
     Friend WithEvents BtnCerrar As Button
+    Friend WithEvents dgvInventario As DataGridView
+    Friend WithEvents txtProductoID As TextBox
 End Class

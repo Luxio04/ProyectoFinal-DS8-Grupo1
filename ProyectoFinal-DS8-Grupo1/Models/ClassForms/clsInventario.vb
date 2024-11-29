@@ -128,7 +128,7 @@ Public Class clsInventario
         Dim dtProveedores As New DataTable()
         Using conn As New SqlConnection(connectionString)
             conn.Open()
-            Using cmd As New SqlCommand("MostrarProveedor", conn)
+            Using cmd As New SqlCommand("MostrarProveedores", conn)
                 cmd.CommandType = CommandType.StoredProcedure
                 Using da As New SqlDataAdapter(cmd)
                     da.Fill(dtProveedores)
