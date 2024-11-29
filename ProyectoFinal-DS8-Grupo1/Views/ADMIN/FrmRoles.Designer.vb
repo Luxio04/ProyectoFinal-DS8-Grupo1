@@ -36,9 +36,11 @@ Partial Class FrmRoles
         Me.BtnActualizar = New System.Windows.Forms.Button()
         Me.BtnMostrar = New System.Windows.Forms.Button()
         Me.BtnEliminar = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PanelSALIR.SuspendLayout()
         Me.Panel1.SuspendLayout()
         CType(Me.DgvRoles, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'PanelSALIR
@@ -207,6 +209,16 @@ Partial Class FrmRoles
         Me.BtnEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.BtnEliminar.UseVisualStyleBackColor = True
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(1131, 703)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 15
+        Me.PictureBox1.TabStop = False
+        '
         'FrmRoles
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -215,6 +227,7 @@ Partial Class FrmRoles
         Me.ClientSize = New System.Drawing.Size(1131, 703)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.PanelSALIR)
+        Me.Controls.Add(Me.PictureBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "FrmRoles"
         Me.Text = "FrmRoles"
@@ -222,6 +235,7 @@ Partial Class FrmRoles
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         CType(Me.DgvRoles, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -239,4 +253,5 @@ Partial Class FrmRoles
     Friend WithEvents BtnActualizar As Button
     Friend WithEvents BtnRegistrarse As Button
     Friend WithEvents DgvRoles As DataGridView
+    Friend WithEvents PictureBox1 As PictureBox
 End Class
