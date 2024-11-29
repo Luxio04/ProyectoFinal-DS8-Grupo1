@@ -100,6 +100,7 @@
     End Sub
 
     Private Sub BtnRol_Click(sender As Object, e As EventArgs) Handles BtnRol.Click
-
+        OpenForms(New FrmRoles)
+        HideSubMenu()
     End Sub
 End Class

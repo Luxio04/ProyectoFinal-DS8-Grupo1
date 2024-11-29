@@ -71,6 +71,7 @@
         BtnEliminar.Enabled = True
         BtnGuardar.Enabled = True
         BtnNuevo.Enabled = False
+        txtID.Enabled = False
     End Sub
 
     Private Sub BtnGuardar_Click(sender As Object, e As EventArgs) Handles BtnGuardar.Click
@@ -124,6 +125,8 @@
         txtTelefono.Visible = False
         lblID.Visible = False
         txtID.Visible = False
+        txtBusqueda.Enabled = True
+        BtnBuscar.Enabled = True
     End Sub
 
 

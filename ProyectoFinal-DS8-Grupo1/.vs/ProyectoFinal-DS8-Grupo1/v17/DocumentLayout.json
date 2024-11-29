@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\CESAR\\source\\repos\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6C2EF93E-392E-49DB-B9F7-B704F503A79C}|ProyectoFinal-DS8-Grupo1.vbproj|c:\\users\\cesar\\source\\repos\\proyectofinal-ds8-grupo1\\proyectofinal-ds8-grupo1\\views\\admin\\frmroles.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{6C2EF93E-392E-49DB-B9F7-B704F503A79C}|ProyectoFinal-DS8-Grupo1.vbproj|solutionrelative:views\\admin\\frmroles.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{6C2EF93E-392E-49DB-B9F7-B704F503A79C}|ProyectoFinal-DS8-Grupo1.vbproj|c:\\users\\cesar\\source\\repos\\proyectofinal-ds8-grupo1\\proyectofinal-ds8-grupo1\\views\\admin\\frmproveedor.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{6C2EF93E-392E-49DB-B9F7-B704F503A79C}|ProyectoFinal-DS8-Grupo1.vbproj|solutionrelative:views\\admin\\frmproveedor.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6C2EF93E-392E-49DB-B9F7-B704F503A79C}|ProyectoFinal-DS8-Grupo1.vbproj|C:\\Users\\CESAR\\source\\repos\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\views\\admin\\frmroles.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{6C2EF93E-392E-49DB-B9F7-B704F503A79C}|ProyectoFinal-DS8-Grupo1.vbproj|solutionrelative:views\\admin\\frmroles.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6C2EF93E-392E-49DB-B9F7-B704F503A79C}|ProyectoFinal-DS8-Grupo1.vbproj|C:\\Users\\CESAR\\source\\repos\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\views\\admin\\frmcolaborador.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{6C2EF93E-392E-49DB-B9F7-B704F503A79C}|ProyectoFinal-DS8-Grupo1.vbproj|solutionrelative:views\\admin\\frmcolaborador.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6C2EF93E-392E-49DB-B9F7-B704F503A79C}|ProyectoFinal-DS8-Grupo1.vbproj|C:\\Users\\CESAR\\source\\repos\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\views\\admin\\frmadmin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{6C2EF93E-392E-49DB-B9F7-B704F503A79C}|ProyectoFinal-DS8-Grupo1.vbproj|solutionrelative:views\\admin\\frmadmin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C2EF93E-392E-49DB-B9F7-B704F503A79C}|ProyectoFinal-DS8-Grupo1.vbproj|c:\\users\\cesar\\source\\repos\\proyectofinal-ds8-grupo1\\proyectofinal-ds8-grupo1\\views\\admin\\frmroles.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{6C2EF93E-392E-49DB-B9F7-B704F503A79C}|ProyectoFinal-DS8-Grupo1.vbproj|solutionrelative:views\\admin\\frmroles.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C2EF93E-392E-49DB-B9F7-B704F503A79C}|ProyectoFinal-DS8-Grupo1.vbproj|C:\\Users\\CESAR\\source\\repos\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\views\\admin\\frmcolaborador.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{6C2EF93E-392E-49DB-B9F7-B704F503A79C}|ProyectoFinal-DS8-Grupo1.vbproj|solutionrelative:views\\admin\\frmcolaborador.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,11 +30,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "FrmColaborador.vb [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\CESAR\\source\\repos\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\Views\\ADMIN\\FrmColaborador.vb",
               "RelativeDocumentMoniker": "Views\\ADMIN\\FrmColaborador.vb",
@@ -38,7 +42,20 @@
               "RelativeToolTip": "Views\\ADMIN\\FrmColaborador.vb [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2024-11-29T04:06:25.832Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FrmProveedor.vb [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\CESAR\\source\\repos\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\Views\\ADMIN\\FrmProveedor.vb",
+              "RelativeDocumentMoniker": "Views\\ADMIN\\FrmProveedor.vb",
+              "ToolTip": "C:\\Users\\CESAR\\source\\repos\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\Views\\ADMIN\\FrmProveedor.vb [Dise\u00F1o]*",
+              "RelativeToolTip": "Views\\ADMIN\\FrmProveedor.vb [Dise\u00F1o]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-11-29T16:38:50.125Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Bookmark",
@@ -58,13 +75,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "FrmRoles.vb",
               "DocumentMoniker": "C:\\Users\\CESAR\\source\\repos\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\Views\\ADMIN\\FrmRoles.vb",
               "RelativeDocumentMoniker": "Views\\ADMIN\\FrmRoles.vb",
               "ToolTip": "C:\\Users\\CESAR\\source\\repos\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\Views\\ADMIN\\FrmRoles.vb",
               "RelativeToolTip": "Views\\ADMIN\\FrmRoles.vb",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEoAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2024-11-29T09:11:45.141Z",
               "EditorCaption": ""
@@ -78,19 +95,21 @@
               "ToolTip": "C:\\Users\\CESAR\\source\\repos\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\Views\\ADMIN\\FrmRoles.vb [Dise\u00F1o]",
               "RelativeToolTip": "Views\\ADMIN\\FrmRoles.vb [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-11-29T09:01:19.797Z"
+              "WhenOpened": "2024-11-29T09:01:19.797Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "FrmAdmin.vb",
               "DocumentMoniker": "C:\\Users\\CESAR\\source\\repos\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\Views\\ADMIN\\FrmAdmin.vb",
               "RelativeDocumentMoniker": "Views\\ADMIN\\FrmAdmin.vb",
               "ToolTip": "C:\\Users\\CESAR\\source\\repos\\ProyectoFinal-DS8-Grupo1\\ProyectoFinal-DS8-Grupo1\\Views\\ADMIN\\FrmAdmin.vb",
               "RelativeToolTip": "Views\\ADMIN\\FrmAdmin.vb",
-              "ViewState": "AgIAAFMAAAAAAAAAAAAmwAcAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAFMAAAAAAAAAAAA6wGYAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-11-29T06:49:01.648Z"
+              "WhenOpened": "2024-11-29T06:49:01.648Z",
+              "EditorCaption": ""
             }
           ]
         }
