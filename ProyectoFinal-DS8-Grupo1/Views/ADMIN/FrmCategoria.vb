@@ -44,25 +44,25 @@ Public Class FrmCategoria
         Dim categoriaID As Integer
 
         ' Validar el campo ID
-        If String.IsNullOrWhiteSpace(txtId.Text) Then
+        If String.IsNullOrWhiteSpace(txtIdCategoria.Text) Then
             MessageBox.Show("El campo 'ID' no puede estar vacío.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-            txtId.Focus()
+            txtIdCategoria.Focus()
             Return
         End If
 
         ' Verificar si el ID ingresado es un entero válido
-        If Not Integer.TryParse(txtId.Text, categoriaID) Then
+        If Not Integer.TryParse(txtIdCategoria.Text, categoriaID) Then
             MessageBox.Show("El ID de la categoría no es válido.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-            txtId.Focus()
+            txtIdCategoria.Focus()
             Return
         End If
 
         ' Validar el campo Nombre de la Categoría
-        Dim nombreCategoria As String = txtNombre.Text
+        Dim nombreCategoria As String = txtNombreCategoria.Text
 
         If String.IsNullOrWhiteSpace(nombreCategoria) Then
             MessageBox.Show("El nombre de la categoría no puede estar vacío.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-            txtNombre.Focus()
+            txtNombreCategoria.Focus()
             Return
         End If
 
@@ -70,7 +70,7 @@ Public Class FrmCategoria
         Dim regex As New Regex("^[a-zA-Z0-9 ]+$")
         If Not regex.IsMatch(nombreCategoria) Then
             MessageBox.Show("El nombre de la categoría contiene caracteres no permitidos.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-            txtNombre.Focus()
+            txtNombreCategoria.Focus()
             Return
         End If
 
@@ -120,7 +120,7 @@ Public Class FrmCategoria
         ' Validar el campo ID
         If String.IsNullOrWhiteSpace(txtCateElimar.Text) Then
             MessageBox.Show("El campo 'ID' no puede estar vacío.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-            txtId.Focus()
+            txtIdCategoria.Focus()
             Return
         End If
 
@@ -128,7 +128,7 @@ Public Class FrmCategoria
         Dim categoriaID As Integer
         If Not Integer.TryParse(txtCateElimar.Text, categoriaID) Then
             MessageBox.Show("El ID de la categoría no es válido.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-            txtId.Focus()
+            txtIdCategoria.Focus()
             Return
         End If
 
@@ -137,45 +137,45 @@ Public Class FrmCategoria
 
         If objCategoria.EliminarCategoria(categoriaID, mensaje) Then
             MessageBox.Show(mensaje, "Resultado", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            ' Actualizar el DataGridView
+            ActualizarDataGridView()
         Else
             MessageBox.Show(mensaje, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End If
 
-        'Limpiar los datos
+        ' Limpiar los datos
         LimpiarCampos()
     End Sub
+
 
     Private Sub BtnCerrar_Click(sender As Object, e As EventArgs) Handles BtnCerrar.Click
         Me.Close()
     End Sub
     Private Sub BtnBuscarAct_Click(sender As Object, e As EventArgs) Handles BtnBusAct.Click
         ' Validar el campo de búsqueda
-        If String.IsNullOrWhiteSpace(txtCategoria.Text) Then
+        If String.IsNullOrWhiteSpace(txtCategoriaID.Text) Then
             MessageBox.Show("Por favor ingrese un ID válido.", "Error Vacio", MessageBoxButtons.OK, MessageBoxIcon.Warning)
             txtBusqueda.Focus()
             Return
         End If
 
         ' Intentar convertir el ID de cadena a entero
-        Dim categoriaID As Integer
-        If Not Integer.TryParse(txtCategoria.Text, categoriaID) Then
+        Dim categoriaIDAct As Integer
+        If Not Integer.TryParse(txtCategoriaID.Text, categoriaIDAct) Then
             MessageBox.Show("Por favor ingrese un ID válido.", "Error Tipado", MessageBoxButtons.OK, MessageBoxIcon.Warning)
             txtBusqueda.Focus()
             Return
         End If
 
         ' Llamar a la función para rellenar los TextBox con el ID proporcionado
-        RellenarTextBoxesPorID(categoriaID)
-
-        'Limpiar los datos
-        LimpiarCampos()
+        RellenarTextBoxesPorID(categoriaIDAct)
     End Sub
     Private Sub RellenarTextBoxesPorID(categoriaID As Integer)
         Dim categoria As DataRow = objCategoria.BuscarCategoriaPorID(categoriaID)
         If categoria IsNot Nothing Then
             ' Rellenar los TextBox con los datos validados
-            txtId.Text = categoria("CategoriaID").ToString()
-            txtNombre.Text = categoria("NombreCategoria").ToString()
+            txtIdCategoria.Text = categoria("CategoriaID").ToString()
+            txtNombreCategoria.Text = categoria("NombreCategoria").ToString()
         Else
             MessageBox.Show("Categoría no encontrada.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End If
@@ -192,7 +192,7 @@ Public Class FrmCategoria
             dt.Rows.Add(categoria("CategoriaID"), categoria("NombreCategoria"))
 
             ' Llenar el DataGridView con el DataTable
-            DgbCategoria.DataSource = dt
+            DgbCategorias.DataSource = dt
         Else
             MessageBox.Show("Categoría no encontrada.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End If
@@ -200,18 +200,25 @@ Public Class FrmCategoria
     Private Sub MostrarTodasLasCategorias()
         Dim categorias As DataTable = objCategoria.SeleccionarCategorias()
         If categorias IsNot Nothing AndAlso categorias.Rows.Count > 0 Then
-            DgbCategoria.DataSource = categorias
+            DgbCategorias.DataSource = categorias
         Else
             MessageBox.Show("No se encontraron categorías.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information)
         End If
     End Sub
-
+    Private Sub ActualizarDataGridView()
+        Dim categorias As DataTable = objCategoria.SeleccionarCategorias()
+        If categorias IsNot Nothing Then
+            DgvCategoriasE.DataSource = categorias
+        Else
+            MessageBox.Show("No se encontraron categorías.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        End If
+    End Sub
     Private Sub LimpiarCampos()
         txtBusqueda.Clear()
         txtCateElimar.Clear()
-        txtNombre.Clear()
+        txtNombreCategoria.Clear()
         txtCategoriaNew.Clear()
-        txtId.Clear()
-        txtCategoria.Clear()
+        txtIdCategoria.Clear()
+        txtCategoriaID.Clear()
     End Sub
 End Class

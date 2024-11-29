@@ -79,7 +79,7 @@ Public Class clsCategorias
     ' Función para seleccionar todas las categorías
     Public Function SeleccionarCategorias() As DataTable
         Using connection As New SqlConnection(connectionString)
-            Using command As New SqlCommand("SeleccionarCategorias", connection)
+            Using command As New SqlCommand("MostrarCategorias", connection)
                 command.CommandType = CommandType.StoredProcedure
 
                 connection.Open()

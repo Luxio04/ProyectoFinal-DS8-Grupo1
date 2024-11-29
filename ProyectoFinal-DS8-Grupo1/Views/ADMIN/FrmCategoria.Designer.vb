@@ -23,6 +23,12 @@ Partial Class FrmCategoria
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmCategoria))
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.TabControlCategoria = New System.Windows.Forms.TabControl()
         Me.TabPageInsertar = New System.Windows.Forms.TabPage()
         Me.BtnAgregar = New System.Windows.Forms.Button()
@@ -30,37 +36,37 @@ Partial Class FrmCategoria
         Me.Label2 = New System.Windows.Forms.Label()
         Me.TabPageUpdate = New System.Windows.Forms.TabPage()
         Me.BtnBusAct = New System.Windows.Forms.Button()
-        Me.txtCategoria = New System.Windows.Forms.TextBox()
+        Me.txtCategoriaID = New System.Windows.Forms.TextBox()
         Me.BtnActualizar = New System.Windows.Forms.Button()
-        Me.txtNombre = New System.Windows.Forms.TextBox()
-        Me.txtId = New System.Windows.Forms.TextBox()
+        Me.txtNombreCategoria = New System.Windows.Forms.TextBox()
+        Me.txtIdCategoria = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.TabPageMostrar = New System.Windows.Forms.TabPage()
         Me.BtnMostrar = New System.Windows.Forms.Button()
         Me.BtnBusqueda = New System.Windows.Forms.Button()
-        Me.DgbCategoria = New System.Windows.Forms.DataGridView()
         Me.txtBusqueda = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.TabPageEliminar = New System.Windows.Forms.TabPage()
         Me.BtnEliminar = New System.Windows.Forms.Button()
-        Me.DgvCategorias = New System.Windows.Forms.DataGridView()
         Me.txtCateElimar = New System.Windows.Forms.TextBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.PanelSALIR = New System.Windows.Forms.Panel()
         Me.BtnCerrar = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.DgbCategorias = New System.Windows.Forms.DataGridView()
+        Me.DgvCategoriasE = New System.Windows.Forms.DataGridView()
         Me.TabControlCategoria.SuspendLayout()
         Me.TabPageInsertar.SuspendLayout()
         Me.TabPageUpdate.SuspendLayout()
         Me.TabPageMostrar.SuspendLayout()
-        CType(Me.DgbCategoria, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPageEliminar.SuspendLayout()
-        CType(Me.DgvCategorias, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelSALIR.SuspendLayout()
+        CType(Me.DgbCategorias, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DgvCategoriasE, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TabControlCategoria
@@ -101,11 +107,14 @@ Partial Class FrmCategoria
         Me.BtnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnAgregar.Font = New System.Drawing.Font("Times New Roman", 19.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnAgregar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
+        Me.BtnAgregar.Image = CType(resources.GetObject("BtnAgregar.Image"), System.Drawing.Image)
+        Me.BtnAgregar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.BtnAgregar.Location = New System.Drawing.Point(192, 294)
         Me.BtnAgregar.Name = "BtnAgregar"
         Me.BtnAgregar.Size = New System.Drawing.Size(382, 59)
         Me.BtnAgregar.TabIndex = 2
         Me.BtnAgregar.Text = "Agregar Categoria"
+        Me.BtnAgregar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.BtnAgregar.UseVisualStyleBackColor = True
         '
         'txtCategoriaNew
@@ -137,10 +146,10 @@ Partial Class FrmCategoria
         '
         Me.TabPageUpdate.BackColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(89, Byte), Integer))
         Me.TabPageUpdate.Controls.Add(Me.BtnBusAct)
-        Me.TabPageUpdate.Controls.Add(Me.txtCategoria)
+        Me.TabPageUpdate.Controls.Add(Me.txtCategoriaID)
         Me.TabPageUpdate.Controls.Add(Me.BtnActualizar)
-        Me.TabPageUpdate.Controls.Add(Me.txtNombre)
-        Me.TabPageUpdate.Controls.Add(Me.txtId)
+        Me.TabPageUpdate.Controls.Add(Me.txtNombreCategoria)
+        Me.TabPageUpdate.Controls.Add(Me.txtIdCategoria)
         Me.TabPageUpdate.Controls.Add(Me.Label5)
         Me.TabPageUpdate.Controls.Add(Me.Label4)
         Me.TabPageUpdate.Controls.Add(Me.Label3)
@@ -157,20 +166,23 @@ Partial Class FrmCategoria
         Me.BtnBusAct.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnBusAct.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnBusAct.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
-        Me.BtnBusAct.Location = New System.Drawing.Point(461, 290)
+        Me.BtnBusAct.Image = CType(resources.GetObject("BtnBusAct.Image"), System.Drawing.Image)
+        Me.BtnBusAct.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnBusAct.Location = New System.Drawing.Point(427, 290)
         Me.BtnBusAct.Name = "BtnBusAct"
-        Me.BtnBusAct.Size = New System.Drawing.Size(181, 45)
+        Me.BtnBusAct.Size = New System.Drawing.Size(249, 45)
         Me.BtnBusAct.TabIndex = 9
         Me.BtnBusAct.Text = "Buscar Categoria"
+        Me.BtnBusAct.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.BtnBusAct.UseVisualStyleBackColor = True
         '
-        'txtCategoria
+        'txtCategoriaID
         '
-        Me.txtCategoria.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtCategoria.Location = New System.Drawing.Point(225, 93)
-        Me.txtCategoria.Name = "txtCategoria"
-        Me.txtCategoria.Size = New System.Drawing.Size(316, 27)
-        Me.txtCategoria.TabIndex = 8
+        Me.txtCategoriaID.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtCategoriaID.Location = New System.Drawing.Point(225, 93)
+        Me.txtCategoriaID.Name = "txtCategoriaID"
+        Me.txtCategoriaID.Size = New System.Drawing.Size(316, 27)
+        Me.txtCategoriaID.TabIndex = 8
         '
         'BtnActualizar
         '
@@ -178,28 +190,31 @@ Partial Class FrmCategoria
         Me.BtnActualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnActualizar.Font = New System.Drawing.Font("Times New Roman", 13.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnActualizar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
-        Me.BtnActualizar.Location = New System.Drawing.Point(125, 290)
+        Me.BtnActualizar.Image = CType(resources.GetObject("BtnActualizar.Image"), System.Drawing.Image)
+        Me.BtnActualizar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnActualizar.Location = New System.Drawing.Point(64, 290)
         Me.BtnActualizar.Name = "BtnActualizar"
-        Me.BtnActualizar.Size = New System.Drawing.Size(237, 45)
+        Me.BtnActualizar.Size = New System.Drawing.Size(298, 45)
         Me.BtnActualizar.TabIndex = 7
         Me.BtnActualizar.Text = "Actualizar Categoria"
+        Me.BtnActualizar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.BtnActualizar.UseVisualStyleBackColor = True
         '
-        'txtNombre
+        'txtNombreCategoria
         '
-        Me.txtNombre.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtNombre.Location = New System.Drawing.Point(427, 192)
-        Me.txtNombre.Name = "txtNombre"
-        Me.txtNombre.Size = New System.Drawing.Size(249, 27)
-        Me.txtNombre.TabIndex = 6
+        Me.txtNombreCategoria.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtNombreCategoria.Location = New System.Drawing.Point(427, 192)
+        Me.txtNombreCategoria.Name = "txtNombreCategoria"
+        Me.txtNombreCategoria.Size = New System.Drawing.Size(249, 27)
+        Me.txtNombreCategoria.TabIndex = 6
         '
-        'txtId
+        'txtIdCategoria
         '
-        Me.txtId.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtId.Location = New System.Drawing.Point(91, 192)
-        Me.txtId.Name = "txtId"
-        Me.txtId.Size = New System.Drawing.Size(249, 27)
-        Me.txtId.TabIndex = 5
+        Me.txtIdCategoria.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtIdCategoria.Location = New System.Drawing.Point(91, 192)
+        Me.txtIdCategoria.Name = "txtIdCategoria"
+        Me.txtIdCategoria.Size = New System.Drawing.Size(249, 27)
+        Me.txtIdCategoria.TabIndex = 5
         '
         'Label5
         '
@@ -228,18 +243,18 @@ Partial Class FrmCategoria
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Times New Roman", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(223, 37)
+        Me.Label3.Location = New System.Drawing.Point(197, 37)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(320, 23)
+        Me.Label3.Size = New System.Drawing.Size(373, 23)
         Me.Label3.TabIndex = 1
-        Me.Label3.Text = "Seleccione La Categoria A Actualizar"
+        Me.Label3.Text = "Ingrese El ID De La Categoria A Actualizar"
         '
         'TabPageMostrar
         '
         Me.TabPageMostrar.BackColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(89, Byte), Integer))
+        Me.TabPageMostrar.Controls.Add(Me.DgbCategorias)
         Me.TabPageMostrar.Controls.Add(Me.BtnMostrar)
         Me.TabPageMostrar.Controls.Add(Me.BtnBusqueda)
-        Me.TabPageMostrar.Controls.Add(Me.DgbCategoria)
         Me.TabPageMostrar.Controls.Add(Me.txtBusqueda)
         Me.TabPageMostrar.Controls.Add(Me.Label7)
         Me.TabPageMostrar.Controls.Add(Me.Label6)
@@ -276,17 +291,6 @@ Partial Class FrmCategoria
         Me.BtnBusqueda.Text = "Buscar Categoria"
         Me.BtnBusqueda.UseVisualStyleBackColor = True
         '
-        'DgbCategoria
-        '
-        Me.DgbCategoria.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(89, Byte), Integer))
-        Me.DgbCategoria.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DgbCategoria.Location = New System.Drawing.Point(37, 179)
-        Me.DgbCategoria.Name = "DgbCategoria"
-        Me.DgbCategoria.RowHeadersWidth = 51
-        Me.DgbCategoria.RowTemplate.Height = 24
-        Me.DgbCategoria.Size = New System.Drawing.Size(481, 203)
-        Me.DgbCategoria.TabIndex = 3
-        '
         'txtBusqueda
         '
         Me.txtBusqueda.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -302,9 +306,9 @@ Partial Class FrmCategoria
         Me.Label7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
         Me.Label7.Location = New System.Drawing.Point(87, 105)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(256, 19)
+        Me.Label7.Size = New System.Drawing.Size(217, 19)
         Me.Label7.TabIndex = 1
-        Me.Label7.Text = "Ingrese el nombre de la categoria"
+        Me.Label7.Text = "Ingrese el ID de la categoria"
         '
         'Label6
         '
@@ -320,8 +324,8 @@ Partial Class FrmCategoria
         'TabPageEliminar
         '
         Me.TabPageEliminar.BackColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(89, Byte), Integer))
+        Me.TabPageEliminar.Controls.Add(Me.DgvCategoriasE)
         Me.TabPageEliminar.Controls.Add(Me.BtnEliminar)
-        Me.TabPageEliminar.Controls.Add(Me.DgvCategorias)
         Me.TabPageEliminar.Controls.Add(Me.txtCateElimar)
         Me.TabPageEliminar.Controls.Add(Me.Label9)
         Me.TabPageEliminar.Controls.Add(Me.Label8)
@@ -345,17 +349,6 @@ Partial Class FrmCategoria
         Me.BtnEliminar.Text = "Eliminar Categoria"
         Me.BtnEliminar.UseVisualStyleBackColor = True
         '
-        'DgvCategorias
-        '
-        Me.DgvCategorias.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(89, Byte), Integer))
-        Me.DgvCategorias.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DgvCategorias.Location = New System.Drawing.Point(36, 195)
-        Me.DgvCategorias.Name = "DgvCategorias"
-        Me.DgvCategorias.RowHeadersWidth = 51
-        Me.DgvCategorias.RowTemplate.Height = 24
-        Me.DgvCategorias.Size = New System.Drawing.Size(469, 183)
-        Me.DgvCategorias.TabIndex = 3
-        '
         'txtCateElimar
         '
         Me.txtCateElimar.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -371,9 +364,9 @@ Partial Class FrmCategoria
         Me.Label9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
         Me.Label9.Location = New System.Drawing.Point(92, 131)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(237, 19)
+        Me.Label9.Size = New System.Drawing.Size(298, 19)
         Me.Label9.TabIndex = 1
-        Me.Label9.Text = "Ingrese la categoria a eliminar"
+        Me.Label9.Text = "Ingrese el ID de la categoria a eliminar"
         '
         'Label8
         '
@@ -419,6 +412,94 @@ Partial Class FrmCategoria
         Me.Label1.TabIndex = 12
         Me.Label1.Text = "CATEGORIAS"
         '
+        'DgbCategorias
+        '
+        Me.DgbCategorias.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
+        Me.DgbCategorias.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
+        Me.DgbCategorias.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(89, Byte), Integer))
+        Me.DgbCategorias.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.DgbCategorias.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(98, Byte), Integer), CType(CType(19, Byte), Integer), CType(CType(62, Byte), Integer))
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(98, Byte), Integer), CType(CType(19, Byte), Integer), CType(CType(62, Byte), Integer))
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DgbCategorias.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        Me.DgbCategorias.ColumnHeadersHeight = 30
+        Me.DgbCategorias.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
+        Me.DgbCategorias.EnableHeadersVisualStyles = False
+        Me.DgbCategorias.GridColor = System.Drawing.Color.FromArgb(CType(CType(76, Byte), Integer), CType(CType(31, Byte), Integer), CType(CType(84, Byte), Integer))
+        Me.DgbCategorias.Location = New System.Drawing.Point(24, 173)
+        Me.DgbCategorias.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.DgbCategorias.Name = "DgbCategorias"
+        Me.DgbCategorias.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(89, Byte), Integer))
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(175, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(133, Byte), Integer))
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DgbCategorias.RowHeadersDefaultCellStyle = DataGridViewCellStyle2
+        Me.DgbCategorias.RowHeadersVisible = False
+        Me.DgbCategorias.RowHeadersWidth = 51
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(89, Byte), Integer))
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(98, Byte), Integer), CType(CType(19, Byte), Integer), CType(CType(62, Byte), Integer))
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White
+        Me.DgbCategorias.RowsDefaultCellStyle = DataGridViewCellStyle3
+        Me.DgbCategorias.RowTemplate.Height = 24
+        Me.DgbCategorias.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.DgbCategorias.Size = New System.Drawing.Size(458, 204)
+        Me.DgbCategorias.TabIndex = 17
+        '
+        'DgvCategoriasE
+        '
+        Me.DgvCategoriasE.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
+        Me.DgvCategoriasE.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
+        Me.DgvCategoriasE.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(89, Byte), Integer))
+        Me.DgvCategoriasE.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.DgvCategoriasE.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(CType(CType(98, Byte), Integer), CType(CType(19, Byte), Integer), CType(CType(62, Byte), Integer))
+        DataGridViewCellStyle4.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
+        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(98, Byte), Integer), CType(CType(19, Byte), Integer), CType(CType(62, Byte), Integer))
+        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DgvCategoriasE.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle4
+        Me.DgvCategoriasE.ColumnHeadersHeight = 30
+        Me.DgvCategoriasE.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
+        Me.DgvCategoriasE.EnableHeadersVisualStyles = False
+        Me.DgvCategoriasE.GridColor = System.Drawing.Color.FromArgb(CType(CType(76, Byte), Integer), CType(CType(31, Byte), Integer), CType(CType(84, Byte), Integer))
+        Me.DgvCategoriasE.Location = New System.Drawing.Point(31, 177)
+        Me.DgvCategoriasE.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.DgvCategoriasE.Name = "DgvCategoriasE"
+        Me.DgvCategoriasE.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
+        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(89, Byte), Integer))
+        DataGridViewCellStyle5.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(175, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(133, Byte), Integer))
+        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DgvCategoriasE.RowHeadersDefaultCellStyle = DataGridViewCellStyle5
+        Me.DgvCategoriasE.RowHeadersVisible = False
+        Me.DgvCategoriasE.RowHeadersWidth = 51
+        DataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(89, Byte), Integer))
+        DataGridViewCellStyle6.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
+        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(98, Byte), Integer), CType(CType(19, Byte), Integer), CType(CType(62, Byte), Integer))
+        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White
+        Me.DgvCategoriasE.RowsDefaultCellStyle = DataGridViewCellStyle6
+        Me.DgvCategoriasE.RowTemplate.Height = 24
+        Me.DgvCategoriasE.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.DgvCategoriasE.Size = New System.Drawing.Size(458, 204)
+        Me.DgvCategoriasE.TabIndex = 18
+        '
         'FrmCategoria
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -438,11 +519,11 @@ Partial Class FrmCategoria
         Me.TabPageUpdate.PerformLayout()
         Me.TabPageMostrar.ResumeLayout(False)
         Me.TabPageMostrar.PerformLayout()
-        CType(Me.DgbCategoria, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPageEliminar.ResumeLayout(False)
         Me.TabPageEliminar.PerformLayout()
-        CType(Me.DgvCategorias, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PanelSALIR.ResumeLayout(False)
+        CType(Me.DgbCategorias, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DgvCategoriasE, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -462,20 +543,20 @@ Partial Class FrmCategoria
     Friend WithEvents Label3 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents Label4 As Label
-    Friend WithEvents txtNombre As TextBox
-    Friend WithEvents txtId As TextBox
+    Friend WithEvents txtNombreCategoria As TextBox
+    Friend WithEvents txtIdCategoria As TextBox
     Friend WithEvents BtnMostrar As Button
     Friend WithEvents BtnBusqueda As Button
-    Friend WithEvents DgbCategoria As DataGridView
     Friend WithEvents txtBusqueda As TextBox
     Friend WithEvents Label7 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents BtnEliminar As Button
-    Friend WithEvents DgvCategorias As DataGridView
     Friend WithEvents txtCateElimar As TextBox
     Friend WithEvents Label9 As Label
     Friend WithEvents Label8 As Label
     Friend WithEvents BtnActualizar As Button
-    Friend WithEvents txtCategoria As TextBox
+    Friend WithEvents txtCategoriaID As TextBox
     Friend WithEvents BtnBusAct As Button
+    Friend WithEvents DgbCategorias As DataGridView
+    Friend WithEvents DgvCategoriasE As DataGridView
 End Class
