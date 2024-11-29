@@ -54,77 +54,91 @@ Partial Class FrmInventario
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(112, 103)
+        Me.Label1.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
+        Me.Label1.Location = New System.Drawing.Point(155, 103)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(20, 16)
+        Me.Label1.Size = New System.Drawing.Size(27, 19)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "ID"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(268, 103)
+        Me.Label2.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
+        Me.Label2.Location = New System.Drawing.Point(311, 103)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(135, 16)
+        Me.Label2.Size = New System.Drawing.Size(169, 19)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Nombre del Producto"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(512, 103)
+        Me.Label3.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
+        Me.Label3.Location = New System.Drawing.Point(555, 103)
         Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(79, 16)
+        Me.Label3.Size = New System.Drawing.Size(99, 19)
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "Descripcion"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(706, 103)
+        Me.Label4.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
+        Me.Label4.Location = New System.Drawing.Point(749, 103)
         Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(46, 16)
+        Me.Label4.Size = New System.Drawing.Size(59, 19)
         Me.Label4.TabIndex = 3
         Me.Label4.Text = "Precio"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(883, 103)
+        Me.Label5.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
+        Me.Label5.Location = New System.Drawing.Point(926, 103)
         Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(41, 16)
+        Me.Label5.Size = New System.Drawing.Size(50, 19)
         Me.Label5.TabIndex = 4
         Me.Label5.Text = "Stock"
         '
         'Label7
         '
         Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
         Me.Label7.Location = New System.Drawing.Point(206, 225)
         Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(112, 16)
+        Me.Label7.Size = New System.Drawing.Size(134, 19)
         Me.Label7.TabIndex = 6
         Me.Label7.Text = "Fecha de Ingreso"
         '
         'Label8
         '
         Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
         Me.Label8.Location = New System.Drawing.Point(717, 225)
         Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(71, 16)
+        Me.Label8.Size = New System.Drawing.Size(87, 19)
         Me.Label8.TabIndex = 7
         Me.Label8.Text = "Proveedor"
         '
         'txtId
         '
-        Me.txtId.Location = New System.Drawing.Point(116, 136)
-        Me.txtId.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtId.Location = New System.Drawing.Point(114, 136)
+        Me.txtId.Margin = New System.Windows.Forms.Padding(4)
         Me.txtId.Name = "txtId"
         Me.txtId.Size = New System.Drawing.Size(69, 22)
         Me.txtId.TabIndex = 8
@@ -132,32 +146,32 @@ Partial Class FrmInventario
         '
         'txtNombreProducto
         '
-        Me.txtNombreProducto.Location = New System.Drawing.Point(272, 135)
-        Me.txtNombreProducto.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtNombreProducto.Location = New System.Drawing.Point(270, 135)
+        Me.txtNombreProducto.Margin = New System.Windows.Forms.Padding(4)
         Me.txtNombreProducto.Name = "txtNombreProducto"
         Me.txtNombreProducto.Size = New System.Drawing.Size(204, 22)
         Me.txtNombreProducto.TabIndex = 9
         '
         'txtDescripcion
         '
-        Me.txtDescripcion.Location = New System.Drawing.Point(516, 135)
-        Me.txtDescripcion.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtDescripcion.Location = New System.Drawing.Point(514, 135)
+        Me.txtDescripcion.Margin = New System.Windows.Forms.Padding(4)
         Me.txtDescripcion.Name = "txtDescripcion"
         Me.txtDescripcion.Size = New System.Drawing.Size(132, 22)
         Me.txtDescripcion.TabIndex = 10
         '
         'txtPrecio
         '
-        Me.txtPrecio.Location = New System.Drawing.Point(710, 135)
-        Me.txtPrecio.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtPrecio.Location = New System.Drawing.Point(708, 135)
+        Me.txtPrecio.Margin = New System.Windows.Forms.Padding(4)
         Me.txtPrecio.Name = "txtPrecio"
         Me.txtPrecio.Size = New System.Drawing.Size(132, 22)
         Me.txtPrecio.TabIndex = 11
         '
         'txtStock
         '
-        Me.txtStock.Location = New System.Drawing.Point(887, 136)
-        Me.txtStock.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtStock.Location = New System.Drawing.Point(885, 136)
+        Me.txtStock.Margin = New System.Windows.Forms.Padding(4)
         Me.txtStock.Name = "txtStock"
         Me.txtStock.Size = New System.Drawing.Size(132, 22)
         Me.txtStock.TabIndex = 12
@@ -165,19 +179,19 @@ Partial Class FrmInventario
         'dtpIngreso
         '
         Me.dtpIngreso.Location = New System.Drawing.Point(210, 254)
-        Me.dtpIngreso.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.dtpIngreso.Margin = New System.Windows.Forms.Padding(4)
         Me.dtpIngreso.Name = "dtpIngreso"
         Me.dtpIngreso.Size = New System.Drawing.Size(265, 22)
         Me.dtpIngreso.TabIndex = 14
         '
         'dgvInventario
         '
-        Me.dgvInventario.BackgroundColor = System.Drawing.Color.SpringGreen
+        Me.dgvInventario.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(89, Byte), Integer))
         Me.dgvInventario.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.dgvInventario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvInventario.GridColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.dgvInventario.Location = New System.Drawing.Point(52, 396)
-        Me.dgvInventario.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.dgvInventario.Margin = New System.Windows.Forms.Padding(4)
         Me.dgvInventario.Name = "dgvInventario"
         Me.dgvInventario.RowHeadersWidth = 51
         Me.dgvInventario.Size = New System.Drawing.Size(997, 267)
@@ -187,7 +201,7 @@ Partial Class FrmInventario
         '
         Me.cbxProveedor.FormattingEnabled = True
         Me.cbxProveedor.Location = New System.Drawing.Point(721, 257)
-        Me.cbxProveedor.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cbxProveedor.Margin = New System.Windows.Forms.Padding(4)
         Me.cbxProveedor.Name = "cbxProveedor"
         Me.cbxProveedor.Size = New System.Drawing.Size(203, 24)
         Me.cbxProveedor.TabIndex = 16
@@ -195,7 +209,7 @@ Partial Class FrmInventario
         'btnAgregar
         '
         Me.btnAgregar.Location = New System.Drawing.Point(216, 333)
-        Me.btnAgregar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnAgregar.Margin = New System.Windows.Forms.Padding(4)
         Me.btnAgregar.Name = "btnAgregar"
         Me.btnAgregar.Size = New System.Drawing.Size(100, 28)
         Me.btnAgregar.TabIndex = 18
@@ -205,7 +219,7 @@ Partial Class FrmInventario
         'btnModificar
         '
         Me.btnModificar.Location = New System.Drawing.Point(354, 333)
-        Me.btnModificar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnModificar.Margin = New System.Windows.Forms.Padding(4)
         Me.btnModificar.Name = "btnModificar"
         Me.btnModificar.Size = New System.Drawing.Size(100, 28)
         Me.btnModificar.TabIndex = 19
@@ -215,7 +229,7 @@ Partial Class FrmInventario
         'btnMostrar
         '
         Me.btnMostrar.Location = New System.Drawing.Point(668, 333)
-        Me.btnMostrar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnMostrar.Margin = New System.Windows.Forms.Padding(4)
         Me.btnMostrar.Name = "btnMostrar"
         Me.btnMostrar.Size = New System.Drawing.Size(100, 28)
         Me.btnMostrar.TabIndex = 20
@@ -225,7 +239,7 @@ Partial Class FrmInventario
         'btnEliminar
         '
         Me.btnEliminar.Location = New System.Drawing.Point(514, 333)
-        Me.btnEliminar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnEliminar.Margin = New System.Windows.Forms.Padding(4)
         Me.btnEliminar.Name = "btnEliminar"
         Me.btnEliminar.Size = New System.Drawing.Size(100, 28)
         Me.btnEliminar.TabIndex = 21
@@ -235,10 +249,12 @@ Partial Class FrmInventario
         'Label9
         '
         Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
         Me.Label9.Location = New System.Drawing.Point(525, 225)
         Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(66, 16)
+        Me.Label9.Size = New System.Drawing.Size(83, 19)
         Me.Label9.TabIndex = 23
         Me.Label9.Text = "Categoria"
         '
@@ -246,7 +262,7 @@ Partial Class FrmInventario
         '
         Me.cbxCategoria.FormattingEnabled = True
         Me.cbxCategoria.Location = New System.Drawing.Point(529, 257)
-        Me.cbxCategoria.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cbxCategoria.Margin = New System.Windows.Forms.Padding(4)
         Me.cbxCategoria.Name = "cbxCategoria"
         Me.cbxCategoria.Size = New System.Drawing.Size(160, 24)
         Me.cbxCategoria.TabIndex = 24
@@ -254,7 +270,7 @@ Partial Class FrmInventario
         'btnLimpiar
         '
         Me.btnLimpiar.Location = New System.Drawing.Point(815, 333)
-        Me.btnLimpiar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnLimpiar.Margin = New System.Windows.Forms.Padding(4)
         Me.btnLimpiar.Name = "btnLimpiar"
         Me.btnLimpiar.Size = New System.Drawing.Size(100, 28)
         Me.btnLimpiar.TabIndex = 25
@@ -263,7 +279,7 @@ Partial Class FrmInventario
         '
         'PanelSALIR
         '
-        Me.PanelSALIR.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(153, Byte), Integer))
+        Me.PanelSALIR.BackColor = System.Drawing.Color.FromArgb(CType(CType(98, Byte), Integer), CType(CType(19, Byte), Integer), CType(CType(62, Byte), Integer))
         Me.PanelSALIR.Controls.Add(Me.BtnCerrar)
         Me.PanelSALIR.Dock = System.Windows.Forms.DockStyle.Top
         Me.PanelSALIR.Location = New System.Drawing.Point(0, 0)
@@ -273,7 +289,7 @@ Partial Class FrmInventario
         '
         'BtnCerrar
         '
-        Me.BtnCerrar.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(153, Byte), Integer))
+        Me.BtnCerrar.BackColor = System.Drawing.Color.FromArgb(CType(CType(98, Byte), Integer), CType(CType(19, Byte), Integer), CType(CType(62, Byte), Integer))
         Me.BtnCerrar.BackgroundImage = CType(resources.GetObject("BtnCerrar.BackgroundImage"), System.Drawing.Image)
         Me.BtnCerrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.BtnCerrar.Dock = System.Windows.Forms.DockStyle.Left
@@ -287,7 +303,7 @@ Partial Class FrmInventario
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(115, Byte), Integer), CType(CType(101, Byte), Integer))
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(89, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1131, 703)
         Me.Controls.Add(Me.PanelSALIR)
         Me.Controls.Add(Me.btnLimpiar)
@@ -313,7 +329,7 @@ Partial Class FrmInventario
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "FrmInventario"
         Me.Text = "FrmInventario"
         CType(Me.dgvInventario, System.ComponentModel.ISupportInitialize).EndInit()
