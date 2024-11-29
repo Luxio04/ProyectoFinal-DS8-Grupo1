@@ -26,12 +26,15 @@ Partial Class FrmColaborador
         Me.PanelSALIR = New System.Windows.Forms.Panel()
         Me.BtnCerrar = New System.Windows.Forms.Button()
         Me.PanelRegColab = New System.Windows.Forms.Panel()
+        Me.Label5 = New System.Windows.Forms.Label()
         Me.BtnMostrar = New System.Windows.Forms.Button()
         Me.BtnEmail = New System.Windows.Forms.Button()
         Me.DgvColaboradores = New System.Windows.Forms.DataGridView()
         Me.BtnPassword = New System.Windows.Forms.Button()
         Me.txtID = New System.Windows.Forms.TextBox()
+        Me.txtRolID = New System.Windows.Forms.TextBox()
         Me.txtPassColab = New System.Windows.Forms.TextBox()
+        Me.Label10 = New System.Windows.Forms.Label()
         Me.txtUserName = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -50,9 +53,6 @@ Partial Class FrmColaborador
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.BtnModificar = New System.Windows.Forms.Button()
         Me.BtnEliminar = New System.Windows.Forms.Button()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.txtRolID = New System.Windows.Forms.TextBox()
-        Me.Label5 = New System.Windows.Forms.Label()
         Me.PanelSALIR.SuspendLayout()
         Me.PanelRegColab.SuspendLayout()
         CType(Me.DgvColaboradores, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -111,6 +111,18 @@ Partial Class FrmColaborador
         Me.PanelRegColab.Name = "PanelRegColab"
         Me.PanelRegColab.Size = New System.Drawing.Size(1051, 573)
         Me.PanelRegColab.TabIndex = 13
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Enabled = False
+        Me.Label5.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
+        Me.Label5.Location = New System.Drawing.Point(722, 258)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(27, 19)
+        Me.Label5.TabIndex = 32
+        Me.Label5.Text = "ID"
         '
         'BtnMostrar
         '
@@ -181,6 +193,16 @@ Partial Class FrmColaborador
         Me.txtID.Size = New System.Drawing.Size(291, 22)
         Me.txtID.TabIndex = 26
         '
+        'txtRolID
+        '
+        Me.txtRolID.Enabled = False
+        Me.txtRolID.Location = New System.Drawing.Point(394, 279)
+        Me.txtRolID.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtRolID.Name = "txtRolID"
+        Me.txtRolID.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.txtRolID.Size = New System.Drawing.Size(291, 22)
+        Me.txtRolID.TabIndex = 26
+        '
         'txtPassColab
         '
         Me.txtPassColab.Location = New System.Drawing.Point(38, 279)
@@ -189,6 +211,17 @@ Partial Class FrmColaborador
         Me.txtPassColab.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.txtPassColab.Size = New System.Drawing.Size(291, 22)
         Me.txtPassColab.TabIndex = 26
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Font = New System.Drawing.Font("Times New Roman", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
+        Me.Label10.Location = New System.Drawing.Point(391, 260)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(52, 17)
+        Me.Label10.TabIndex = 24
+        Me.Label10.Text = "Rol ID"
         '
         'txtUserName
         '
@@ -346,7 +379,6 @@ Partial Class FrmColaborador
         'PictureBox1
         '
         Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
         Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(1131, 703)
@@ -385,39 +417,6 @@ Partial Class FrmColaborador
         Me.BtnEliminar.Text = "Eliminar"
         Me.BtnEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.BtnEliminar.UseVisualStyleBackColor = True
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Times New Roman", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
-        Me.Label10.Location = New System.Drawing.Point(391, 260)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(52, 17)
-        Me.Label10.TabIndex = 24
-        Me.Label10.Text = "Rol ID"
-        '
-        'txtRolID
-        '
-        Me.txtRolID.Enabled = False
-        Me.txtRolID.Location = New System.Drawing.Point(394, 279)
-        Me.txtRolID.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.txtRolID.Name = "txtRolID"
-        Me.txtRolID.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.txtRolID.Size = New System.Drawing.Size(291, 22)
-        Me.txtRolID.TabIndex = 26
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Enabled = False
-        Me.Label5.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
-        Me.Label5.Location = New System.Drawing.Point(722, 258)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(27, 19)
-        Me.Label5.TabIndex = 32
-        Me.Label5.Text = "ID"
         '
         'FrmColaborador
         '
