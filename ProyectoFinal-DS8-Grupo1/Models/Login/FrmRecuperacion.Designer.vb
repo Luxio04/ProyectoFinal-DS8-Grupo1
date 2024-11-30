@@ -130,9 +130,11 @@ Partial Class FrmRecuperacion
         '
         Me.PictureBoxFondo.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(153, Byte), Integer))
         Me.PictureBoxFondo.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PictureBoxFondo.Image = CType(resources.GetObject("PictureBoxFondo.Image"), System.Drawing.Image)
         Me.PictureBoxFondo.Location = New System.Drawing.Point(0, 0)
         Me.PictureBoxFondo.Name = "PictureBoxFondo"
         Me.PictureBoxFondo.Size = New System.Drawing.Size(1006, 531)
+        Me.PictureBoxFondo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBoxFondo.TabIndex = 2
         Me.PictureBoxFondo.TabStop = False
         '
