@@ -92,4 +92,9 @@
         FrmCreateUser.Show()
         Me.Hide()
     End Sub
+
+    Private Sub LinkPass_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkPass.LinkClicked
+        FrmRecuperacion.Show()
+        Me.Hide()
+    End Sub
 End Class

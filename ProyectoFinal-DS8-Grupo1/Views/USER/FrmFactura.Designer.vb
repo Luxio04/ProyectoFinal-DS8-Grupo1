@@ -325,7 +325,7 @@ Partial Class FrmFactura
         Me.dgvFactura.EnableHeadersVisualStyles = False
         Me.dgvFactura.GridColor = System.Drawing.Color.FromArgb(CType(CType(76, Byte), Integer), CType(CType(31, Byte), Integer), CType(CType(84, Byte), Integer))
         Me.dgvFactura.Location = New System.Drawing.Point(19, 321)
-        Me.dgvFactura.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.dgvFactura.Margin = New System.Windows.Forms.Padding(4)
         Me.dgvFactura.Name = "dgvFactura"
         Me.dgvFactura.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
         DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
@@ -350,7 +350,7 @@ Partial Class FrmFactura
         'txtMetododePago
         '
         Me.txtMetododePago.Location = New System.Drawing.Point(637, 193)
-        Me.txtMetododePago.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtMetododePago.Margin = New System.Windows.Forms.Padding(4)
         Me.txtMetododePago.Name = "txtMetododePago"
         Me.txtMetododePago.Size = New System.Drawing.Size(132, 22)
         Me.txtMetododePago.TabIndex = 23
@@ -382,7 +382,7 @@ Partial Class FrmFactura
         'txtApellido
         '
         Me.txtApellido.Location = New System.Drawing.Point(199, 151)
-        Me.txtApellido.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtApellido.Margin = New System.Windows.Forms.Padding(4)
         Me.txtApellido.Name = "txtApellido"
         Me.txtApellido.Size = New System.Drawing.Size(240, 22)
         Me.txtApellido.TabIndex = 26
@@ -395,7 +395,7 @@ Partial Class FrmFactura
         Me.btnMostrar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnMostrar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(123, Byte), Integer))
         Me.btnMostrar.Location = New System.Drawing.Point(845, 412)
-        Me.btnMostrar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnMostrar.Margin = New System.Windows.Forms.Padding(4)
         Me.btnMostrar.Name = "btnMostrar"
         Me.btnMostrar.Size = New System.Drawing.Size(232, 44)
         Me.btnMostrar.TabIndex = 27
